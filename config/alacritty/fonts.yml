@@ -1,0 +1,18 @@
+font:
+  offset:
+    x: 0
+    y: 0
+  normal:
+    family: Pragmatasevka
+    style: Regular
+
+  bold:
+    style: Bold
+  
+  italic:
+    style: Italic
+
+  bold_italic:
+    style: Bold Italic
+
+  size: 12

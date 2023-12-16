@@ -1,0 +1,134 @@
+# Keybindings
+
+# Terminal
+super + Return
+	alacritty
+super + shift + Return
+  alacritty --class float,Alacritty -o window.dimensions.lines=22 window.dimensions.columns=90
+
+# Launcher
+super + d
+	rofi -show drun -theme $HOME/.config/bspwm/config/rofi/theme.rasi
+
+# Power menu
+super + shift + e
+    $HOME/.config/bspwm/bin/powermenu
+
+# Window menu
+super + Tab
+    rofi -show window -theme $HOME/.config/bspwm/config/rofi/theme.rasi
+
+# Toggle compositor
+super + shift + p
+  $HOME/.config/bspwm/bin/toggle-comp
+
+# Quit/Restart BSPWM
+super + alt + {q,r}
+	bspc {quit,wm -r}
+
+# Restart sxhkd
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# Close (all) window(s)
+super + {_,shift + }q
+	bspc node -{c,k}
+
+# Maximize window
+super + m
+	bspc desktop -l next
+
+# Hide window
+super + n
+  $HOME/.config/bspwm/bin/minimize
+
+super + y
+	bspc node newest.marked.local -n newest.!automatic.local
+
+# Change layout
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# Rotate
+super + r
+  bspc node @/ --rotate {90,-90}
+
+# Equalize
+super + equal
+  bspc node @/ --equalize
+
+super + ctrl + {m,x,y,z}
+	bspc node -g {marked,locked,sticky,private}
+
+# Move window
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+super + {_,shift + }{Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
+
+super + {p,b,comma,period}
+	bspc node -f @{parent,brother,first,second}
+
+# Previous/Next workspace
+super + bracket{left,right}
+	bspc desktop -f {prev,next}.local
+
+# Change workspace/Move window to workspace
+super + {_,shift + }{1-9}
+	bspc {desktop -f,node -d} '^{1-9}'
+
+# Preselect
+super + ctrl + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+super + ctrl + {1-9}
+	bspc node -o 0.{1-9}
+
+# Cancel preselect
+super + ctrl + space
+	bspc node -p cancel
+super + ctrl + shift + space
+	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
+
+# Resize window
+super + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+super + alt + {Left,Down,Up,Right}
+  bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# Focus workspace
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# Screenshot
+Print
+  $HOME/.config/bspwm/bin/screenshot
+super + Delete
+  $HOME/.config/bspwm/bin/screenshot
+
+# Wiki
+super + grave
+  $BROWSER https://github.com/p3nguin-kun/penguinRice/wiki/
+
+# Colorscheme changer
+super + shift + c
+  $HOME/.config/bspwm/bin/colorchanger
+
+# Volume
+super + ctrl + {minus,equal,0}
+    ~/.config/bspwm/bin/volume {--down,--up,--toggle}
+{XF86AudioLowerVolume,XF86AudioRaiseVolume,XF86AudioMute}
+    ~/.config/bspwm/bin/volume {--down,--up,--toggle}
+
+# Brightness
+super + ctrl + bracket{left,right}
+    $HOME/.config/bspwm/bin/brightness {--down,--up}
+{XF86MonBrightnessDown,XF86MonBrightnessUp}
+    $HOME/.config/bspwm/bin/brightness {--down,--up}
+
+# Lock screen
+super + BackSpace
+    $HOME/.config/bspwm/bin/lockscreen
+
+# Toggle Polybar
+super + shift + b
+    $HOME/.config/bspwm/bin/toggle-bar

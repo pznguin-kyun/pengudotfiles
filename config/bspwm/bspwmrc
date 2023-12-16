@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# penguinRice
+
+# Start sxhkd
+killall -q sxhkd 
+sleep 0.2
+sxhkd -c $HOME/.config/bspwm/config/bspwm/keys &
+
+# Audio
+audio(){
+  if pgrep -f pipewire; then
+    return
+  else
+    pipewire &
+  fi
+}
+
+# audio
+
+# Config files
+$HOME/.screenlayout/monitor.sh &
+$HOME/.config/bspwm/config/bspwm/cfg &
+$HOME/.config/bspwm/config/bspwm/autostart & 
+$HOME/.config/bspwm/config/bspwm/decoration & 
+$HOME/.config/bspwm/config/bspwm/misc &
+bspc config external_rules_command $HOME/.config/bspwm/config/bspwm/externalrules &

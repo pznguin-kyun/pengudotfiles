@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+dir="$HOME/.config/bspwm/config/rofi"
+theme='theme-nosearch'
+
+wifi='Wifi'
+bt='Bluetooth'
+
+rofi_cmd() {
+	rofi -dmenu \
+    -p "Network" \
+		-theme ${dir}/${theme}.rasi
+}
+
+run_rofi(){
+  echo -e "$wifi\n$bt" | rofi_cmd
+}
+
+chosen="$(run_rofi)"
+case ${chosen} in
+  $wifi) $HOME/.config/bspwm/bin/wifi-menu ;;
+  $bt) $HOME/.config/bspwm/bin/bt-menu ;;
+esac

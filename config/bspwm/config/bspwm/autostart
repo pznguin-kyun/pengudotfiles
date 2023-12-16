@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+# Autostart file for penguinRice
+
+# Bar
+$HOME/.config/bspwm/bin/bar &
+
+# Xresources
+xrdb merge $HOME/.Xresources &
+
+# Wallpaper
+$HOME/.fehbg &
+
+# Compositor
+picom --config $HOME/.config/bspwm/config/picom/picom.conf &
+
+# Network Manager Applet
+#nm-applet &
+
+# Polkit
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# Notification
+killall -q dunst
+dunst -config $HOME/.config/bspwm/config/dunst/dunstrc &
+
+# Autolock
+xss-lock -- $HOME/.config/bspwm/bin/lockscreen &
+
+# MPD
+mpd &
+
+# Ibus daemon
+ibus-daemon -drx &
+
+# Bluetooth
+blueberry-tray &
+
+# Syncthing
+syncthing --no-browser &

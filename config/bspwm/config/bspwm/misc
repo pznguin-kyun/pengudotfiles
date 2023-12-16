@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Cursor config
+xsetroot -cursor_name left_ptr
+
+# Fix java apps
+export _JAVA_AWT_WM_NONREPARENTING=1

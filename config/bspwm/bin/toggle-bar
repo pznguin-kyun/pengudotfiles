@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+bar_status(){
+  if [ -f /tmp/polybarhidden ]; then
+    bar="🍫 Bar has been hidden"
+  else
+    bar="🍫 Bar has been shown"
+  fi
+  echo $bar
+}
+
+notify_cmd(){
+  dunstify --replace=11113 "Toggle bar" "$(bar_status)"
+}
+
+if [ -f /tmp/polybarhidden ]; then 
+  polybar-msg cmd show 
+  bspc config bottom_padding 38
+  rm /tmp/polybarhidden
+  notify_cmd
+else 
+  polybar-msg cmd hide 
+  bspc config bottom_padding 0
+  touch /tmp/polybarhidden 
+  notify_cmd
+fi

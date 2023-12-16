@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=macintosh
+Comment=macintosh gtk
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=macintosh
+MetacityTheme=macintosh
+IconTheme=macintosh
+CursorTheme=Breeze
+ButtonLayout=menu
