@@ -3,7 +3,7 @@ font:
     x: 0
     y: 0
   normal:
-    family: Pragmatasevka
+    family: Cascadia Code
     style: Regular
 
   bold:
@@ -15,4 +15,4 @@ font:
   bold_italic:
     style: Bold Italic
 
-  size: 12
+  size: 11
