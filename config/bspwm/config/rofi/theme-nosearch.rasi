@@ -12,6 +12,9 @@ configuration {
   disable-history: false;
 	sidebar-mode: false;
   window-format: "{w} - {c} - {t}";
+  me-select-entry: "";
+  me-accept-entry: "MousePrimary";
+  me-accept-custom: "MouseMiddle";
 }
 
 // window properties
