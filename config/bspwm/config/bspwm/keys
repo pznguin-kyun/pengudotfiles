@@ -111,10 +111,6 @@ Print
 super + Delete
   $HOME/.config/bspwm/bin/screenshot
 
-# Wiki
-super + grave
-  $BROWSER https://github.com/p3nguin-kun/penguinRice/wiki/
-
 # Colorscheme changer
 super + shift + c
   $HOME/.config/bspwm/bin/colorchanger
