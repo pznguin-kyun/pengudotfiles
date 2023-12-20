@@ -9,6 +9,9 @@ setopt auto_list
 setopt hist_find_no_dups
 setopt hist_ignore_dups
 
+# Greeting
+echo "Welcome to $HOST, $USER!"
+
 # Prompt
 PROMPT='%~ > '
 
