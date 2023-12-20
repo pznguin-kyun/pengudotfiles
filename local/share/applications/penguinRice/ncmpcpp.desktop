@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=ncmpcpp
+Comment=Music Player
+Type=Application
+Exec=ncmpcpp
+Terminal=true
+Categories=media;music;player;

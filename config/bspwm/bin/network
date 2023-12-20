@@ -5,6 +5,7 @@ theme='theme-nosearch'
 
 wifi='Wifi'
 bt='Bluetooth'
+close='Close menu'
 
 rofi_cmd() {
 	rofi -dmenu \
@@ -13,7 +14,7 @@ rofi_cmd() {
 }
 
 run_rofi(){
-  echo -e "$wifi\n$bt" | rofi_cmd
+  echo -e "$wifi\n$bt\n$close" | rofi_cmd
 }
 
 chosen="$(run_rofi)"

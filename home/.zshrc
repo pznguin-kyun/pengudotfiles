@@ -10,7 +10,7 @@ setopt hist_find_no_dups
 setopt hist_ignore_dups
 
 # Prompt
-PROMPT='%~ '
+PROMPT='%~ > '
 
 # Auto startx
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then

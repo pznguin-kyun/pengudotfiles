@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Calcurse
+Comment=Calendar
+Type=Application
+Exec=calcurse
+Terminal=true
+Categories=calendar;

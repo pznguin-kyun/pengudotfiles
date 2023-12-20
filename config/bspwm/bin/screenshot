@@ -5,6 +5,7 @@ option_1="Capture Desktop"
 option_2="Capture Area"
 option_3="Capture in 5s"
 option_4="Capture in 10s"
+close='Close menu'
 
 # Rofi CMD
 rofi_cmd() {
@@ -13,7 +14,7 @@ rofi_cmd() {
 
 # Pass variables to rofi dmenu
 run_rofi() {
-	echo -e "$option_1\n$option_2\n$option_3\n$option_4" | rofi_cmd
+	echo -e "$option_1\n$option_2\n$option_3\n$option_4\n$close" | rofi_cmd
 }
 
 # Screenshot

@@ -6,6 +6,10 @@ super + Return
 super + shift + Return
   alacritty --class float,Alacritty -o window.dimensions.lines=22 window.dimensions.columns=90
 
+# Menu
+super + x
+  $HOME/.config/bspwm/bin/menu
+
 # Launcher
 super + d
 	rofi -show drun -theme $HOME/.config/bspwm/config/rofi/theme.rasi
