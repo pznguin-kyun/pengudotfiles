@@ -29,8 +29,8 @@ term_col(){
 
 ui_col(){
   # BSPWM
-  sed -i -e "s/bspc config normal_border_color .*/bspc config normal_border_color \"$bg\"/g"\
-         -e "s/bspc config focused_border_color .*/bspc config focused_border_color \"$br\"/g" $HOME/.config/bspwm/config/bspwm/decoration
+  sed -i -e "s/bspc config normal_border_color .*/bspc config normal_border_color \"$br\"/g"\
+         -e "s/bspc config focused_border_color .*/bspc config focused_border_color \"$br2\"/g" $HOME/.config/bspwm/config/bspwm/decoration
   # Polybar
   sed -i -e "s/background = .*/background = $bg/g"\
          -e "s/foreground = .*/foreground = $fg/g"\
