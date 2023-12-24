@@ -55,12 +55,10 @@ color1 = "white"
 color2 = "blue"
 
 # UI Appearance
-now_playing_prefix = "$b$6> "
+now_playing_prefix = "$b$6» "
 now_playing_suffix = "$/b$9"
 current_item_prefix = "$b$3* "
 song_list_format = "{{%a - %t}|{%f}}{$R%l}"
-song_status_format = {%a - %t}|{%f}
-#song_status_format = "{{%a{ "%b"{ (%y)}} - }{%t$/b}}|{$b%f$/b}"
-#song_library_format = {{{%t} - %a{ "%b"{ (%y)}}}}|{%f}
+song_status_format = {%a » %t}|{%f}
 song_library_format = {{%a - %t} (%b)}|{%f}
 
