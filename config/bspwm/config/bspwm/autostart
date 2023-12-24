@@ -14,7 +14,7 @@ $HOME/.fehbg &
 picom --config $HOME/.config/bspwm/config/picom/picom.conf &
 
 # Network Manager Applet
-#nm-applet &
+# nm-applet &
 
 # Polkit
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
@@ -30,7 +30,10 @@ xss-lock -- $HOME/.config/bspwm/bin/lockscreen &
 mpd &
 
 # Ibus daemon
-ibus-daemon -drx &
+# ibus-daemon -drx &
+
+# Fcitx5
+# fcitx5 &
 
 # Bluetooth
 blueberry-tray &
