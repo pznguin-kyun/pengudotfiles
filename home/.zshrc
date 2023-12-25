@@ -33,6 +33,9 @@ alias ll='ls -l --color=auto'
 alias la='ls -la --color=auto'
 alias grep='grep --color=auto'
 alias cl='clear'
+alias cp="cp -i"
+alias df='df -h'
+alias free='free -m'
 
 # History
 HISTFILE=~/.histfile
