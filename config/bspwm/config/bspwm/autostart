@@ -33,7 +33,7 @@ mpd &
 # ibus-daemon -drx &
 
 # Fcitx5
-fcitx5 &
+# fcitx5 &
 
 # Bluetooth
 blueberry-tray &
