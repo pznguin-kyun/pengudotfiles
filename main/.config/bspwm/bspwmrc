@@ -8,7 +8,7 @@ sxhkd -c $HOME/.config/bspwm/config/bspwm/keys &
 
 # Audio
 audio(){
-  if [ ! $(pgrep -f pipewire) ]; then
+  if ! pgrep -f pipewire; then
     pipewire &
   fi
 }
