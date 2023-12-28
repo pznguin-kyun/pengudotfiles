@@ -24,7 +24,7 @@ generate_fehbg(){
 }
 
 term_col(){
-    sed -i -e "s/colors: .*/colors: *$color/" $HOME/.config/alacritty/colors.yml
+    echo "import = [ '~/.config/alacritty/colors/$color.toml' ]" > $HOME/.config/alacritty/colors.toml
 }
 
 ui_col(){
