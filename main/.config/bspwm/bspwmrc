@@ -4,7 +4,7 @@
 # Start sxhkd
 killall -q sxhkd 
 sleep 0.2
-sxhkd -c $HOME/.config/bspwm/config/bspwm/keys &
+sxhkd -c "$HOME"/.config/bspwm/config/bspwm/keys &
 
 # Audio
 audio(){
@@ -21,9 +21,9 @@ bspc config left_padding 0
 bspc config right_padding 0
 
 # Config files
-$HOME/.screenlayout/monitor.sh &
-$HOME/.config/bspwm/config/bspwm/cfg &
-$HOME/.config/bspwm/config/bspwm/autostart & 
-$HOME/.config/bspwm/config/bspwm/decoration & 
-$HOME/.config/bspwm/config/bspwm/misc &
-bspc config external_rules_command $HOME/.config/bspwm/config/bspwm/externalrules &
+"$HOME"/.screenlayout/monitor.sh &
+"$HOME"/.config/bspwm/config/bspwm/cfg &
+"$HOME"/.config/bspwm/config/bspwm/autostart & 
+"$HOME"/.config/bspwm/config/bspwm/decoration & 
+"$HOME"/.config/bspwm/config/bspwm/misc &
+bspc config external_rules_command "$HOME"/.config/bspwm/config/bspwm/externalrules &

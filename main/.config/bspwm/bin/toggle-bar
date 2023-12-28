@@ -6,7 +6,7 @@ bar_status(){
   else
     bar="🍫 Bar has been shown"
   fi
-  echo $bar
+  echo "$bar"
 }
 
 notify_cmd(){

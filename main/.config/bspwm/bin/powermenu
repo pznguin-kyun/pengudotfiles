@@ -15,7 +15,7 @@ close='Close menu'
 rofi_cmd() {
 	rofi -dmenu \
     -p "Power" \
-		-theme ${dir}/${theme}.rasi
+		-theme "$dir"/"$theme".rasi
 }
 
 # Pass variables to rofi dmenu
@@ -57,10 +57,10 @@ option_suspend() {
 
 # Run
 chosen="$(run_rofi)"
-case ${chosen} in
-    $shutdown) option_poweroff ;;
-    $reboot) option_reboot ;;
-    $lock) $HOME/.config/bspwm/bin/lockscreen ;;
-    $suspend) option_suspend ;;
-    $logout) bspc quit ;;
+case "$chosen" in
+    "$shutdown") option_poweroff ;;
+    "$reboot") option_reboot ;;
+    "$lock") "$HOME"/.config/bspwm/bin/lockscreen ;;
+    "$suspend") option_suspend ;;
+    "$logout") bspc quit ;;
 esac

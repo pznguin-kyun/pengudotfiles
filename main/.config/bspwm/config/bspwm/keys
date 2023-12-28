@@ -8,11 +8,11 @@ super + shift + Return
 
 # Menu
 super + x
-  $HOME/.config/bspwm/bin/menu
+  "$HOME"/.config/bspwm/bin/menu
 
 # Launcher
 super + d
-	rofi -show drun -theme $HOME/.config/bspwm/config/rofi/theme.rasi
+	rofi -show drun -theme "$HOME"/.config/bspwm/config/rofi/theme.rasi
 
 # Power menu
 super + shift + e
@@ -20,11 +20,11 @@ super + shift + e
 
 # Window menu
 super + Tab
-    rofi -show window -theme $HOME/.config/bspwm/config/rofi/theme.rasi
+    rofi -show window -theme "$HOME"/.config/bspwm/config/rofi/theme.rasi
 
 # Toggle compositor
 super + shift + p
-  $HOME/.config/bspwm/bin/toggle-comp
+  "$HOME"/.config/bspwm/bin/toggle-comp
 
 # Quit/Restart BSPWM
 super + alt + {q,r}
@@ -107,30 +107,30 @@ super + {Left,Down,Up,Right}
 
 # Screenshot
 Print
-  $HOME/.config/bspwm/bin/screenshot
+  "$HOME"/.config/bspwm/bin/screenshot
 super + Delete
-  $HOME/.config/bspwm/bin/screenshot
+  "$HOME"/.config/bspwm/bin/screenshot
 
 # Colorscheme changer
 super + shift + c
-  $HOME/.config/bspwm/bin/colorchanger
+  "$HOME"/.config/bspwm/bin/colorchanger
 
 # Volume
 super + ctrl + {minus,equal,0}
-    ~/.config/bspwm/bin/volume {--down,--up,--toggle}
+    "$HOME"/.config/bspwm/bin/volume {--down,--up,--toggle}
 {XF86AudioLowerVolume,XF86AudioRaiseVolume,XF86AudioMute}
-    ~/.config/bspwm/bin/volume {--down,--up,--toggle}
+    "$HOME"/.config/bspwm/bin/volume {--down,--up,--toggle}
 
 # Brightness
 super + ctrl + bracket{left,right}
-    $HOME/.config/bspwm/bin/brightness {--down,--up}
+    "$HOME"/.config/bspwm/bin/brightness {--down,--up}
 {XF86MonBrightnessDown,XF86MonBrightnessUp}
-    $HOME/.config/bspwm/bin/brightness {--down,--up}
+    "$HOME"/.config/bspwm/bin/brightness {--down,--up}
 
 # Lock screen
 super + BackSpace
-    $HOME/.config/bspwm/bin/lockscreen
+    "$HOME"/.config/bspwm/bin/lockscreen
 
 # Toggle Polybar
 super + shift + b
-    $HOME/.config/bspwm/bin/toggle-bar
+    "$HOME"/.config/bspwm/bin/toggle-bar

@@ -15,34 +15,33 @@ color=$(printf "%s\n" "${options[@]}" | $rofi_command)
 # If a valid option was selected, write the value to config files
 [[ -n "$color" ]] || exit 1
 
-source $HOME/.config/bspwm/color/$color/$color.sh
+source "$HOME"/.config/bspwm/color/"$color"/"$color".sh
 
 generate_fehbg(){
-  [ -f $HOME/.fehbg ] && rm -rf $HOME/.fehbg
-  printf "#!/usr/bin/env sh\nfeh --no-fehbg --bg-fill $HOME/.config/bspwm/color/$color/$color.png" >> $HOME/.fehbg
-  chmod 777 $HOME/.fehbg
+  printf "#!/usr/bin/env sh\nfeh --no-fehbg --bg-fill $HOME/.config/bspwm/color/$color/$color.png" > "$HOME"/.fehbg
+  chmod 777 "$HOME"/.fehbg
 }
 
 term_col(){
-    echo "import = [ '~/.config/alacritty/colors/$color.toml' ]" > $HOME/.config/alacritty/colors.toml
+    echo "import = [ '~/.config/alacritty/colors/$color.toml' ]" > "$HOME"/.config/alacritty/colors.toml
 }
 
 ui_col(){
   # BSPWM
   sed -i -e "s/bspc config normal_border_color .*/bspc config normal_border_color \"$br\"/g"\
-         -e "s/bspc config focused_border_color .*/bspc config focused_border_color \"$br2\"/g" $HOME/.config/bspwm/config/bspwm/decoration
+         -e "s/bspc config focused_border_color .*/bspc config focused_border_color \"$br2\"/g" "$HOME"/.config/bspwm/config/bspwm/decoration
   # Polybar
   sed -i -e "s/background = .*/background = $bg/g"\
          -e "s/foreground = .*/foreground = $fg/g"\
-         -e "s/alert = .*/alert = $r/g" $HOME/.config/bspwm/config/polybar/colors.ini
+         -e "s/alert = .*/alert = $r/g" "$HOME"/.config/bspwm/config/polybar/colors.ini
   # Rofi
   sed -i -e "s/background: .*/background: $bg;/g"\
-         -e "s/foreground: .*/foreground: $fg;/g" $HOME/.config/bspwm/config/rofi/shared/colors.rasi
+         -e "s/foreground: .*/foreground: $fg;/g" "$HOME"/.config/bspwm/config/rofi/shared/colors.rasi
   # Dunst
   sed -i -e "s/background = .*/background = \"$bg\"/g"\
-         -e "s/foreground = .*/foreground = \"$fg\"/g" $HOME/.config/bspwm/config/dunst/dunstrc
+         -e "s/foreground = .*/foreground = \"$fg\"/g" "$HOME"/.config/bspwm/config/dunst/dunstrc
   # GTK
-  sed -i -e "s/gtk-theme-name=.*/gtk-theme-name=$color/" $HOME/.config/gtk-3.0/settings.ini
+  sed -i -e "s/gtk-theme-name=.*/gtk-theme-name=$color/" "$HOME"/.config/gtk-3.0/settings.ini
 }
 
 restart(){

@@ -12,7 +12,7 @@ close='Close menu'
 rofi_cmd() {
 	rofi -dmenu \
     -p "Menu" \
-		-theme ${dir}/${theme}.rasi
+		-theme "$dir"/"$theme".rasi
 }
 
 run_rofi(){
@@ -21,8 +21,8 @@ run_rofi(){
 
 chosen="$(run_rofi)"
 case ${chosen} in
-  $apps) rofi -show drun -theme $HOME/.config/bspwm/config/rofi/theme.rasi ;;
-  $power) $HOME/.config/bspwm/bin/powermenu ;;
-  $net) $HOME/.config/bspwm/bin/network ;;
-  $colors) $HOME/.config/bspwm/bin/colorchanger ;;
+  "$apps") rofi -show drun -theme "$HOME"/.config/bspwm/config/rofi/theme.rasi ;;
+  "$power") "$HOME"/.config/bspwm/bin/powermenu ;;
+  "$net") "$HOME"/.config/bspwm/bin/network ;;
+  "$colors") "$HOME"/.config/bspwm/bin/colorchanger ;;
 esac

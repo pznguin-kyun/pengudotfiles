@@ -9,7 +9,7 @@ close='Close menu'
 
 # Rofi CMD
 rofi_cmd() {
-	rofi -dmenu -p "Screenshot" -theme $HOME/.config/bspwm/config/rofi/theme-nosearch.rasi
+	rofi -dmenu -p "Screenshot" -theme "$HOME"/.config/bspwm/config/rofi/theme-nosearch.rasi
 }
 
 # Pass variables to rofi dmenu
@@ -20,7 +20,7 @@ run_rofi() {
 # Screenshot
 time=$(date +%Y%m%d-%H%M%S)
 dir="$(xdg-user-dir PICTURES)/Screenshots"
-file="Screenshot_${time}.png"
+file="Screenshot_$time.png"
 
 # Directory
 if [[ ! -d "$dir" ]]; then
@@ -45,7 +45,7 @@ copy_shot () {
 
 # countdown
 countdown () {
-	for sec in `seq $1 -1 1`; do
+  for sec in $(seq "$1" -1 1); do
 		dunstify -t 1000 -h string:x-dunst-stack-tag:screenshottimer -i /usr/share/archcraft/icons/dunst/timer.png "Taking shot in: $sec"
 		sleep 1
 	done
@@ -53,24 +53,24 @@ countdown () {
 
 # take shots
 shotnow () {
-	cd ${dir} && sleep 0.5 && maim -u -f png | copy_shot
+	cd "$dir" && sleep 0.5 && maim -u -f png | copy_shot
 	notify_view
 }
 
 shot5 () {
 	countdown '5'
-	sleep 1 && cd ${dir} && maim -u -f png | copy_shot
+	sleep 1 && cd "$dir" && maim -u -f png | copy_shot
 	notify_view
 }
 
 shot10 () {
 	countdown '10'
-	sleep 1 && cd ${dir} && maim -u -f png | copy_shot
+	sleep 1 && cd "$dir" && maim -u -f png | copy_shot
 	notify_view
 }
 
 shotarea () {
-	cd ${dir} && maim -u -f png -s -b 2 -c 0.35,0.55,0.85,0.25 -l | copy_shot
+	cd "$dir" && maim -u -f png -s -b 2 -c 0.35,0.55,0.85,0.25 -l | copy_shot
 	notify_view
 }
 
@@ -80,14 +80,12 @@ case $1 in
   --delay) shot5 ;;
 esac
 
-return
-
 chosen="$(run_rofi)"
-case ${chosen} in
-    $option_1) shotnow ;;
-    $option_2) shotarea ;;
-    $option_3) shot5 ;;
-    $option_4) shot10 ;;
+case "$chosen" in
+    "$option_1") shotnow ;;
+    "$option_2") shotarea ;;
+    "$option_3") shot5 ;;
+    "$option_4") shot10 ;;
 esac
 
 

@@ -10,7 +10,7 @@ close='Close menu'
 rofi_cmd() {
 	rofi -dmenu \
     -p "Network" \
-		-theme ${dir}/${theme}.rasi
+		-theme "$dir"/"$theme".rasi
 }
 
 run_rofi(){
@@ -19,6 +19,6 @@ run_rofi(){
 
 chosen="$(run_rofi)"
 case ${chosen} in
-  $wifi) $HOME/.config/bspwm/bin/wifi-menu ;;
-  $bt) $HOME/.config/bspwm/bin/bt-menu ;;
+  "$wifi") "$HOME"/.config/bspwm/bin/wifi-menu ;;
+  "$bt") "$HOME"/.config/bspwm/bin/bt-menu ;;
 esac
