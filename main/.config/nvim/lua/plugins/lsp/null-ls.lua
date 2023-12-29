@@ -13,9 +13,6 @@ null_ls.setup({
         formatting.deno_fmt.with({ extra_args = { "--style", "{IndentWidth: 4}" } }),
         formatting.prettier.with({ extra_args = { "--style", "{IndentWidth: 4}" } }),
 
-        -- Lua
-        formatting.stylua.with({ extra_args = { "--style", "{IndentWidth: 4}" } }),
-
         -- Cpp, C with indent width 4
         formatting.clang_format.with({ extra_args = { "--style", "{IndentWidth: 4}" } }),
 
@@ -31,4 +28,16 @@ null_ls.setup({
         -- Gitsigns
         null_ls.builtins.code_actions.gitsigns,
     },
+    -- configure format on save
+    on_attach = function(client, bufnr)
+        if client.supports_method("textDocument/formatting") then
+            vim.api.nvim_clear_autocmds({ buffer = bufnr })
+            vim.api.nvim_create_autocmd("BufWritePre", {
+                buffer = bufnr,
+                callback = function()
+                    vim.lsp.buf.format({ bufnr = bufnr, timeout = 100 })
+                end,
+            })
+        end
+    end,
 })

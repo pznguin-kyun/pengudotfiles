@@ -20,7 +20,7 @@ require("neo-tree").setup({
         container = { enable_character_fade = true },
         indent = {
             indent_size = 2,
-            padding = 1,
+            padding = 0,
             with_markers = false,
             indent_marker = "│",
             last_indent_marker = "└",
@@ -42,7 +42,7 @@ require("neo-tree").setup({
         git_status = {
             symbols = {
                 added = "+",
-                modified = "",
+                modified = "#",
                 deleted = "-",
                 renamed = "->",
                 untracked = "",
@@ -88,35 +88,11 @@ require("neo-tree").setup({
         },
     },
     source_selector = {
-        winbar = false,
+        winbar = true,
         sources = {
-            { source = "filesystem", display_name = "files" },
-            { source = "buffers",    display_name = "bufs" },
-            { source = "git_status", display_name = "git" },
-        },
-    },
-    event_handlers = {
-        -- {
-        -- event = "file_opened",
-        -- handler = function()
-        -- require("neo-tree.command").execute({ action = "close" })
-        -- end,
-        -- },
-        {
-            event = "neo_tree_window_after_open",
-            handler = function(args)
-                if args.position == "left" or args.position == "right" then
-                    vim.cmd("wincmd =")
-                end
-            end,
-        },
-        {
-            event = "neo_tree_window_after_close",
-            handler = function(args)
-                if args.position == "left" or args.position == "right" then
-                    vim.cmd("wincmd =")
-                end
-            end,
+            { source = "filesystem", display_name = "Files" },
+            { source = "buffers",    display_name = "Bufs" },
+            { source = "git_status", display_name = "Git" },
         },
     },
 })

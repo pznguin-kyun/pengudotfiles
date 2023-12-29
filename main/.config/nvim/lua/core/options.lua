@@ -7,9 +7,9 @@ opt.completeopt = { 'menu', 'menuone', 'noselect' }
 opt.mouse = 'a'               -- allow the mouse to be used in Nvim
 
 -- Tab
-opt.tabstop = 2      -- number of visual spaces per TAB
-opt.softtabstop = 2  -- number of spacesin tab when editing
-opt.shiftwidth = 2   -- insert 2 spaces on a tab
+opt.tabstop = 4      -- number of visual spaces per TAB
+opt.softtabstop = 4  -- number of spaces in tab when editing
+opt.shiftwidth = 4   -- insert 4 spaces on a tab
 opt.expandtab = true -- tabs are spaces, mainly because of python
 
 -- UI config
@@ -33,3 +33,6 @@ opt.shortmess:append "sI"
 
 -- Leader key
 g.mapleader = " "
+
+-- Some plugins options
+g.skip_ts_context_commentstring_module = true

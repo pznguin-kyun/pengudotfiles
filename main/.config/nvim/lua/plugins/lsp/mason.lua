@@ -33,3 +33,4 @@ local install_server = {
 vim.api.nvim_create_user_command("MasonInstallAll", function()
     vim.cmd("MasonInstall " .. table.concat(install_server, " "))
 end, {})
+

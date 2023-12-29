@@ -20,6 +20,10 @@ map("n", "<C-e>", "<cmd>Neotree toggle<cr>", opts)
 -- Toggle Term
 map("n", [[<C-t>]], "<cmd>ToggleTerm size=10 direction=horizontal<cr>", opts)
 
+-- Save
+map("n", "<C-s>", "<cmd>w<CR>", opts)
+map("i", "<C-s>", "<ESC>:w<CR>", opts)
+
 -- Hint: see `:h vim.map.set()`
 -- Better window navigation
 map('n', '<C-h>', '<C-w>h', opts)

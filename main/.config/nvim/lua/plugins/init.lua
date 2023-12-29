@@ -61,6 +61,68 @@ local plugins = {
             require("plugins.cmp.autopairs")
         end
     },
+    -- Indent blankline
+    {
+		  "lukas-reineke/indent-blankline.nvim",
+		  event = "BufRead",
+		  version = "2.20.8",
+		  dependencies = {
+			  {
+				  "shellRaining/hlchunk.nvim",
+				  config = function()
+					  require("hlchunk").setup {
+						  chunk = { notify = false },
+						  indent = { enable = false },
+						  line_num = { enable = false },
+						  blank = { enable = false }
+					  }
+				    end
+			  },
+		  },
+		  config = function()
+			  require("indent_blankline").setup({
+				  char = "▏",
+				  show_first_indent_level = false,
+			  })
+		  end
+	  },
+    -- Comment
+    {
+		  "numToStr/Comment.nvim",
+		  event = { "BufReadPost", "BufNewFile" },
+		  dependencies = {
+			  {
+				  "JoosepAlviste/nvim-ts-context-commentstring",
+				  config = function() require('ts_context_commentstring').setup {} end
+			  }
+		  },
+		  config = function()
+			  require("Comment").setup({
+				  pre_hook = require("ts_context_commentstring.integrations.comment_nvim").create_pre_hook(),
+			})
+		  end
+	  },
+    {
+		  "folke/todo-comments.nvim",
+		  event = "VeryLazy",
+		  config = function() require("todo-comments").setup() end
+	  },
+    -- Colorizer
+	{
+		"NvChad/nvim-colorizer.lua",
+		event = "BufRead",
+		config = function() require("plugins.config.colorizer") end
+	},
+    -- Illuminate
+	{
+		"RRethy/vim-illuminate",
+		event = { "BufReadPost", "BufNewFile" },
+		config = function()
+			require("illuminate").configure {
+				filetypes_denylist = { "neo-tree", "Trouble", "DressingSelect", "TelescopePrompt" }
+			}
+		end
+	},
     -- Treesitter
     {
         "nvim-treesitter/nvim-treesitter",
@@ -127,6 +189,11 @@ local plugins = {
         lazy = true,
         cmd = { "LspInfo", "LspInstall", "LspUninstall", "LspStart" },
         dependencies = {
+			{
+				"nvimdev/lspsaga.nvim",
+				event = "LspAttach",
+				config = function() require("plugins.lsp.lspsaga") end
+			},
             {
                 "jose-elias-alvarez/null-ls.nvim",
                 config = function()
