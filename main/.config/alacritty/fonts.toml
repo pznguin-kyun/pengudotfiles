@@ -1,8 +1,8 @@
 [font]
-size = 11
+size = 12
 
 [font.normal]
-family = "SF Mono"
+family = "Pragmatasevka"
 style = "Regular"
 
 [font.bold]
