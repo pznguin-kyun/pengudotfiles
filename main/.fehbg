@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-feh --no-fehbg --bg-fill $HOME/.config/bspwm/color/macaroni/macaroni.png
+feh --no-fehbg --bg-fill $HOME/.config/bspwm/color/macaroni/wall/macaroni.png
