@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 color_dir="$HOME/.config/bspwm/color"
-rofi_command="rofi -dmenu -p Colors -theme $HOME/.config/bspwm/config/rofi/theme-nosearch.rasi"
+rofi_command="rofi -dmenu -p Colors -theme $HOME/.config/rofi/theme-nosearch.rasi"
 
 # List colorschemes
 options=()
@@ -18,7 +18,7 @@ color=$(printf "%s\n" "${options[@]}" | $rofi_command)
 source "$HOME"/.config/bspwm/color/"$color"/"$color".sh
 
 generate_fehbg(){
-  printf "#!/usr/bin/env sh\nfeh --no-fehbg --bg-fill $HOME/.config/bspwm/color/$color/$color.png" > "$HOME"/.fehbg
+  printf "#!/usr/bin/env sh\nfeh --no-fehbg --bg-fill --randomize $HOME/.config/bspwm/color/$color/" > "$HOME"/.fehbg
   chmod 777 "$HOME"/.fehbg
 }
 
@@ -29,17 +29,17 @@ term_col(){
 ui_col(){
   # BSPWM
   sed -i -e "s/bspc config normal_border_color .*/bspc config normal_border_color \"$br\"/g"\
-         -e "s/bspc config focused_border_color .*/bspc config focused_border_color \"$br2\"/g" "$HOME"/.config/bspwm/config/bspwm/decoration
+         -e "s/bspc config focused_border_color .*/bspc config focused_border_color \"$br2\"/g" "$HOME"/.config/bspwm/config/decoration
   # Polybar
   sed -i -e "s/background = .*/background = $bg/g"\
          -e "s/foreground = .*/foreground = $fg/g"\
-         -e "s/alert = .*/alert = $r/g" "$HOME"/.config/bspwm/config/polybar/colors.ini
+         -e "s/alert = .*/alert = $r/g" "$HOME"/.config/polybar/colors.ini
   # Rofi
   sed -i -e "s/background: .*/background: $bg;/g"\
-         -e "s/foreground: .*/foreground: $fg;/g" "$HOME"/.config/bspwm/config/rofi/shared/colors.rasi
+         -e "s/foreground: .*/foreground: $fg;/g" "$HOME"/.config/rofi/shared/colors.rasi
   # Dunst
   sed -i -e "s/background = .*/background = \"$bg\"/g"\
-         -e "s/foreground = .*/foreground = \"$fg\"/g" "$HOME"/.config/bspwm/config/dunst/dunstrc
+         -e "s/foreground = .*/foreground = \"$fg\"/g" "$HOME"/.config/dunst/dunstrc
   # GTK
   sed -i -e "s/gtk-theme-name=.*/gtk-theme-name=$color/" "$HOME"/.config/gtk-3.0/settings.ini
 }

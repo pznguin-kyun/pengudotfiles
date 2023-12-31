@@ -12,15 +12,15 @@ super + x
 
 # Launcher
 super + d
-	rofi -show drun -theme "$HOME"/.config/bspwm/config/rofi/theme.rasi
+	rofi -show drun -theme "$HOME"/.config/rofi/theme.rasi
 
 # Power menu
-super + shift + e
-    $HOME/.config/bspwm/bin/powermenu
+super + BackSpace
+    "$HOME"/.config/bspwm/bin/powermenu
 
 # Window menu
 super + Tab
-    rofi -show window -theme "$HOME"/.config/bspwm/config/rofi/theme.rasi
+    rofi -show window -theme "$HOME"/.config/rofi/theme.rasi
 
 # Toggle compositor
 super + shift + p
@@ -126,10 +126,6 @@ super + ctrl + bracket{left,right}
     "$HOME"/.config/bspwm/bin/brightness {--down,--up}
 {XF86MonBrightnessDown,XF86MonBrightnessUp}
     "$HOME"/.config/bspwm/bin/brightness {--down,--up}
-
-# Lock screen
-super + BackSpace
-    "$HOME"/.config/bspwm/bin/lockscreen
 
 # Toggle Polybar
 super + shift + b

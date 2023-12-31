@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Import Current Theme
-RASI="$HOME/.config/bspwm/config/rofi/theme.rasi"
+RASI="$HOME/.config/rofi/theme.rasi"
 
 # Constants
 divider="---------"

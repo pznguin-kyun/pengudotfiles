@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-dir="$HOME/.config/bspwm/config/rofi"
-theme='theme-nosearch'
+dir="$HOME/.config/rofi"
+theme='theme'
 
 # Options
 shutdown='Shutdown'

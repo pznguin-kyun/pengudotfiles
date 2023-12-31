@@ -2,7 +2,7 @@
 # Autostart file for penguinRice
 
 # Bar
-"$HOME"/.config/bspwm/bin/bar &
+"$HOME"/.config/polybar/launch &
 
 # Xresources
 xrdb merge "$HOME"/.Xresources &
@@ -11,7 +11,7 @@ xrdb merge "$HOME"/.Xresources &
 "$HOME"/.fehbg &
 
 # Compositor
-picom --config "$HOME"/.config/bspwm/config/picom/picom.conf &
+picom &
 
 # Network Manager Applet
 # nm-applet &
@@ -21,7 +21,7 @@ picom --config "$HOME"/.config/bspwm/config/picom/picom.conf &
 
 # Notification
 killall -q dunst
-dunst -config "$HOME"/.config/bspwm/config/dunst/dunstrc &
+dunst &
 
 # Autolock
 xss-lock -- "$HOME"/.config/bspwm/bin/lockscreen &
