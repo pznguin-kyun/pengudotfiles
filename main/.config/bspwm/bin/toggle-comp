@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ -f /tmp/picom.lock ]; then
-  picom --config "$HOME"/.config/bspwm/config/picom/picom.conf &
+  picom &
   rm /tmp/picom.lock
 else
   killall -q picom &
