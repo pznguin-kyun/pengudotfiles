@@ -25,9 +25,9 @@ window {
 	border:	0px;
   border-color:	@border;
   border-radius: 1px 1px 0px 0px;
-  width: 25%;
-	height: 100%;
-  location: west;
+  width: 40%;
+	height: 60%;
+  location: center;
 }
 
 // prompt
@@ -36,6 +36,18 @@ prompt {
 	padding: 0% 0% 0% 0%;
 	background-color: @background-alt;
 	text-color: @foreground;
+}
+
+// text entry
+entry {
+  background-color: @background-alt;
+  text-color: @foreground;
+  expand: true;
+  placeholder: "Type to search";
+  placeholder-color: @foreground-alt;
+  horizontal-align: 0.05;
+  padding: 0% 0% 0% 0%;
+  blink: false;
 }
 
 /// search bar
@@ -108,6 +120,7 @@ button {
     border-radius:               0px;
     background-color:            @background-alt;
     text-color:                  inherit;
+    cursor:                      pointer;
 }
 
 button selected {
