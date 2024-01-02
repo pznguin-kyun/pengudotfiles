@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-dir="$HOME/.config/rofi"
-theme='theme-nosearch'
-
 apps='Apps'
 power='Power'
 net='Network'
@@ -10,9 +7,7 @@ colors='Colorschemes'
 close='Close menu'
 
 rofi_cmd() {
-	rofi -dmenu \
-    -p "Menu" \
-		-theme "$dir"/"$theme".rasi
+	rofi -dmenu -p "Menu"
 }
 
 run_rofi(){
@@ -21,7 +16,7 @@ run_rofi(){
 
 chosen="$(run_rofi)"
 case ${chosen} in
-  "$apps") rofi -show drun -theme "$HOME"/.config/bspwm/config/rofi/theme.rasi ;;
+  "$apps") rofi -show drun ;;
   "$power") "$HOME"/.config/bspwm/bin/powermenu ;;
   "$net") "$HOME"/.config/bspwm/bin/network ;;
   "$colors") "$HOME"/.config/bspwm/bin/colorchanger ;;

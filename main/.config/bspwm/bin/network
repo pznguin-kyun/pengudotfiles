@@ -1,16 +1,11 @@
 #!/usr/bin/env bash
 
-dir="$HOME/.config/rofi"
-theme='theme-nosearch'
-
 wifi='Wifi'
 bt='Bluetooth'
 close='Close menu'
 
 rofi_cmd() {
-	rofi -dmenu \
-    -p "Network" \
-		-theme "$dir"/"$theme".rasi
+	rofi -dmenu -p "Network"
 }
 
 run_rofi(){

@@ -25,9 +25,9 @@ window {
 	border:	0px;
   border-color:	@border;
   border-radius: 1px 1px 0px 0px;
-  width: 25%;
-	height: 100%;
-  location: west;
+  width: 40%;
+    height: 60%;
+  location: center;
 }
 
 // prompt
@@ -127,4 +127,3 @@ button selected {
     background-color: @background-bar;
     text-color: @foreground;
 }
-

@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-dir="$HOME/.config/rofi"
-theme='theme'
-
 # Options
 shutdown='Shutdown'
 reboot='Reboot'
@@ -13,9 +10,7 @@ close='Close menu'
 
 # Rofi CMD
 rofi_cmd() {
-	rofi -dmenu \
-    -p "Power" \
-		-theme "$dir"/"$theme".rasi
+	rofi -dmenu -p "Power"
 }
 
 # Pass variables to rofi dmenu

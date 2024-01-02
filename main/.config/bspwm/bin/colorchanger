@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 color_dir="$HOME/.config/bspwm/color"
-rofi_command="rofi -dmenu -p Colors -theme $HOME/.config/rofi/theme-nosearch.rasi"
+rofi_command="rofi -dmenu -p Colors"
 
 # List colorschemes
 options=()
@@ -13,12 +13,13 @@ done
 color=$(printf "%s\n" "${options[@]}" | $rofi_command)
 
 # If a valid option was selected, write the value to config files
-[[ -n "$color" ]] || exit 1
+[[ -n "$color" ]] || exit 0
+[[ -d "$HOME"/.config/bspwm/color/"$color" ]] || exit 0
 
 source "$HOME"/.config/bspwm/color/"$color"/"$color".sh
 
 generate_fehbg(){
-  printf "#!/usr/bin/env sh\nfeh --no-fehbg --bg-fill --randomize $HOME/.config/bspwm/color/$color/wall/" > "$HOME"/.fehbg
+  echo -e "#!/usr/bin/env sh\nfeh --no-fehbg --bg-fill --randomize $HOME/.config/bspwm/color/$color/wall/" > "$HOME"/.fehbg
   chmod 777 "$HOME"/.fehbg
 }
 

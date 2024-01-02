@@ -9,7 +9,7 @@ close='Close menu'
 
 # Rofi CMD
 rofi_cmd() {
-	rofi -dmenu -p "Screenshot" -theme "$HOME"/.config/rofi/theme-nosearch.rasi
+	rofi -dmenu -p "Screenshot" 
 }
 
 # Pass variables to rofi dmenu
