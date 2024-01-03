@@ -13,7 +13,14 @@ setopt hist_ignore_dups
 echo "Welcome to $HOST, $USER!"
 
 # Prompt
-PROMPT='%~ » '
+emoji=(🥝 🍀 🍘 🍚 🍙 🐸 🌈 🌑 🌕 🌙 🌚 🌝 🍛 🍞 🍟 🍡 🍢 🍣 🍥 💔 💜 🥑 🥦 🥥 🥪 🥒 🥓 🦑 🧀)
+
+choose_emoji() {
+  local random_index=$((RANDOM % ${#emoji[@]}))
+  echo "${emoji[random_index]}"
+}
+
+PROMPT='$(choose_emoji) %~ » '
 
 # Auto startx
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
