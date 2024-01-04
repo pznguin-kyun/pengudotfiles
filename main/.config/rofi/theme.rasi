@@ -1,129 +1,108 @@
-@import "shared/colors.rasi"
 @import "shared/fonts.rasi"
+@import "shared/colors.rasi"
 
-configuration {
-  show-icons: false;
-  modi: "drun,run,window,filebrowser";
-  display-drun: "Apps";
-  display-run: "Bin";
-  display-window: "Window";
-  display-filebrowser: "Files";
-  drun-display-format: "{name}";
-  disable-history: false;
-	sidebar-mode: false;
-  window-format: "{w} - {c} - {t}";
-  me-select-entry: "";
-  me-accept-entry: "MousePrimary";
-  me-accept-custom: "MouseMiddle";
-}
-
-// window properties
 window {
-  transparency: "real";
-  background-color: @background;
-  text-color: @foreground;
-	border:	0px;
-  border-color:	@border;
-  border-radius: 1px 1px 0px 0px;
-  width: 40%;
-    height: 60%;
-  location: center;
+    transparency: "real";
+    background-color: var(background);
+    text-color: var(foreground);
+    padding: 20px 20px 30px 20px;
+    width: 1000px;
 }
 
-// prompt
-prompt {
-  enabled: true;
-	padding: 0% 0% 0% 0%;
-	background-color: @background-alt;
-	text-color: @foreground;
-}
-
-// text entry
-entry {
-  background-color: @background-alt;
-  text-color: @foreground;
-  expand: true;
-  placeholder: "Type to search";
-  placeholder-color: @foreground-alt;
-  horizontal-align: 0.05;
-  padding: 0% 0% 0% 0%;
-  blink: false;
-}
-
-/// search bar
 inputbar {
-	children: [ prompt, entry ];
-  background-color: @background-alt;
-  text-color: @foreground;
-  expand: false;
-	border:	0% 0% 0% 0%;
-  border-radius: 1px;
-	border-color:	@accent;
-  margin: 0% 0% 0% 0%;
-  padding: 1.5%;
+    background-color: var(background);
+    text-color: var(background);
+    padding: 10px;
+    children: [ "prompt","textbox-prompt-colon","entry"];
 }
 
-// applications view
-listview {
-  background-color: @background-alt;
-  columns: 1;
-  lines: 100;
-  spacing: 2%;
-  cycle: true;
-  dynamic: true;
-  layout: vertical;
+prompt {
+    background-color: var(background);
+    text-color: var(foreground-alt);
 }
 
-// the mainbox
+textbox-prompt-colon {
+    background-color: var(background);
+    margin:     0px 4px 0px 0px ;
+    expand:     false;
+    str:        ":";
+    text-color: var(foreground);
+}
+
 mainbox {
-  background-color: @background-alt;
-	border:	0% 0% 0% 0%;
-  border-radius: 0% 0% 0% 0%;
-	border-color:	@accent;
-  children: [ inputbar, listview ];
-  spacing: 3%;
-  padding: 4% 2% 2% 2%;
+    background-color: var(background);
+    children: ["inputbar", "listview", "mode-switcher"];
 }
 
-// elements
-element {
-  children: [ element-text ];
-  background-color: @background-alt;
-  text-color: @foreground;
-  orientation: vertical;
-  border-radius: 0%;
-  padding: 1% 0% 1.5% 0%;
+entry {
+    background-color: var(background);
+    text-color:        var(foreground);
+    cursor:            text;
+    spacing:           0;
+    placeholder-color: Gray;
+    placeholder:       "Type to filter";
 }
 
-// app name
+listview {
+    background-color: var(background);
+    padding: 10px;
+    columns: 3;
+    spacing: 4px;
+    lines: 12;
+}
+
 element-text {
-  background-color: #00000000;
-  text-color: inherit;
-  expand: false;
-  horizontal-align: 0;
-  vertical-align: 0;
-  margin: 0% 0.5% -0.5% 0.5%;
+    background-color: transparent;
+    cursor:           inherit;
+    highlight:        inherit;
+    text-color:       inherit;
 }
 
-// selected element
-element selected {
-  background-color: @background-bar;
-  text-color: @foreground;
-	border:	0% 0% 0% 0%;
-  border-radius: 1px;
-  border-color: @accent;
+element normal.normal {
+    background-color: var(background);
+    text-color: var(foreground);
+}
+
+element normal.active {
+    background-color: var(background);
+    text-color: var(foreground);
+}
+
+element alternate.normal {
+    background-color: var(background);
+    text-color: var(foreground);
+}
+
+element alternate.normal {
+    background-color: var(background);
+    text-color: var(foreground);
+}
+
+element selected.normal {
+    background-color: var(background);
+    text-color: var(foreground-alt);
+}
+
+mode-switcher{
+    enabled:                     true;
+    spacing:                     10px;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px solid;
+    border-radius:               0px;
+    background-color:            var(background);
+    text-color:                  var(foreground);
 }
 
 button {
     padding:                     5px 10px;
     border:                      0px solid;
-    border-radius:               0px;
-    background-color:            @background-alt;
+    background-color:            var(background);
     text-color:                  inherit;
     cursor:                      pointer;
 }
 
 button selected {
-    background-color: @background-bar;
-    text-color: @foreground;
+    background-color:   var(background);
+    text-color:     var(foreground-alt);
 }

@@ -1,13 +1,22 @@
 configuration {
-  terminal : "alacritty";
-  timeout {
-    action: "kb-cancel";
-    delay:  0;
-  }
-  filebrowser {
-    directories-first: true;
-    sorting-method:    "name";
-  }
+    terminal : "alacritty";
+    timeout {
+        action: "kb-cancel";
+        delay:  0;
+    }
+    filebrowser {
+        directories-first: true;
+        sorting-method:    "name";
+    }
+    modi: "drun,run,window,filebrowser";
+    display-drun: "Apps";
+    display-run: "Bin";
+    display-window: "Window";
+    display-filebrowser: "Files";
+    window-format: "{w} · {c} · {t}";
+    me-select-entry: "";
+    me-accept-entry: "MousePrimary";
+    me-accept-custom: "MouseMiddle";
 }
 
 @theme "theme.rasi"
