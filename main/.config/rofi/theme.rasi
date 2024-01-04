@@ -2,11 +2,12 @@
 @import "shared/colors.rasi"
 
 window {
+    width: 55%;
+    height: 45%;
     transparency: "real";
     background-color: var(background);
     text-color: var(foreground);
     padding: 20px 20px 30px 20px;
-    width: 1000px;
 }
 
 inputbar {
