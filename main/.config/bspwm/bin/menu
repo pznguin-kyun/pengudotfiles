@@ -1,17 +1,28 @@
 #!/usr/bin/env bash
 
-apps='Apps'
-power='Power'
-net='Network'
-colors='Colorschemes'
-close='Close menu'
+# Get current status
+stats(){
+    # Blue light filter
+    [ -f /tmp/redshift.lock ] && bluelight_stat='On' || bluelight_stat='Off'
+    # Current colorscheme
+    source "$HOME"/.config/bspwm/.color
+}
+
+stats
 
 rofi_cmd() {
 	rofi -dmenu -p "Menu"
 }
 
+apps='Apps'
+power='Power'
+net='Network'
+blue_light="Blue Light Filter: $bluelight_stat"
+colors="Colorschemes: $color"
+close='Close menu'
+
 run_rofi(){
-  echo -e "$apps\n$net\n$colors\n$power\n$close" | rofi_cmd
+  echo -e "$apps\n$net\n$blue_light\n$colors\n$power\n$close" | rofi_cmd
 }
 
 chosen="$(run_rofi)"
@@ -19,5 +30,6 @@ case ${chosen} in
   "$apps") rofi -show drun ;;
   "$power") "$HOME"/.config/bspwm/bin/powermenu ;;
   "$net") "$HOME"/.config/bspwm/bin/network ;;
+  "$blue_light") "$HOME"/.config/bspwm/bin/blue-light ;;
   "$colors") "$HOME"/.config/bspwm/bin/colorchanger ;;
 esac

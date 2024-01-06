@@ -65,7 +65,7 @@ function rofi_menu() {
 	selection_action
 }
 function rofi_cmd() {
-    	rofi -dmenu -i -location "$LOCATION" -yoffset "$Y_AXIS" -xoffset "$X_AXIS" $3 -theme-str 'window{width: '26'em;}listview{columns: 1;}textbox-prompt-colon{str:"'"$PROMPT"':";}'"$4"''
+    	rofi -dmenu -p Wifi -i -location "$LOCATION" -yoffset "$Y_AXIS" -xoffset "$X_AXIS" $3 -theme-str 'window{width: '26'em;}listview{columns: 1;}'
 }
 function change_wireless_interface() {
 	{ [[ ${#WIRELESS_INTERFACES[@]} -eq "2" ]] && { [[ $WLAN_INT -eq "0" ]] && WLAN_INT=1 || WLAN_INT=0; }; } || {
