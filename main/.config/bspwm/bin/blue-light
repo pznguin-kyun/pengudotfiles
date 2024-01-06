@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ ! -f /tmp/redshift.lock ]; then
-    redshift -l 0:0 -t 4000:4000 &
+    redshift -l 0:0 -t 4000:4000 -r &
     touch /tmp/redshift.lock
 else
     redshift -x && pkill redshift && killall redshift
