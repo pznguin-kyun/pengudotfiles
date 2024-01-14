@@ -29,7 +29,7 @@ fi
 
 # Vars
 export TERMINAL="alacritty"
-export BROWSER="firefox"
+export BROWSER="chromium"
 export EDITOR="nvim"
 export VISUAL="${EDITOR}"
 
