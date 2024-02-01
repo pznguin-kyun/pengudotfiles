@@ -12,7 +12,7 @@ visualizer_output_name = my_fifo
 visualizer_in_stereo = "no"
 visualizer_fps = "60"
 visualizer_type = wave
-visualizer_look = "││"
+visualizer_look = "┃┃"
 visualizer_color = blue, green, yellow, magenta, red
 visualizer_spectrum_smooth_look = "no"
 
