@@ -1,5 +1,5 @@
-@import "shared/fonts.rasi"
-@import "shared/colors.rasi"
+@import "fonts.rasi"
+@import "colors.rasi"
 
 window {
     width: 65%;
