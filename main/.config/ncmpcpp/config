@@ -47,7 +47,7 @@ progressbar_elapsed_color = "magenta"
 header_visibility = "yes"
 statusbar_visibility = "yes"
 titles_visibility = "yes"
-enable_window_title = "yes"
+enable_window_title = "no"
 clock_display_seconds = no
 
 # Colors
