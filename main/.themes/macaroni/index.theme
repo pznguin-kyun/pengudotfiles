@@ -1,12 +1,11 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Material-Black-Blueberry
-Comment=A Material Design theme
+Name=oomox-macaroni
+Comment=nahhhh.
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Material-Black-Blueberry
-MetacityTheme=Material-Black-Blueberry
-IconTheme=Material-Black-Blueberry
-CursorTheme=Material-Black-Blueberry
-CursorSize=24
+Name=oomox-macaroni
+GtkTheme=oomox-macaroni
+IconTheme=oomox-macaroni
+MetacityTheme=oomox-macaroni
