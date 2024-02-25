@@ -3,7 +3,7 @@
 /*$dark_shadow: #000;*/
 /*$light_shadow: #fff;*/
 /* dark color scheme */
-@define-color dark_bg_color #242424;
+@define-color dark_bg_color #121212;
 @define-color dark_fg_color #fefefe;
 /* colormap actually used by the theme, to be overridden in other css files */
 @define-color theme_bg_color #000507;
@@ -44,14 +44,14 @@
 @define-color panel_bg_color @dark_bg_color;
 @define-color panel_fg_color @dark_fg_color;
 /* osd */
-@define-color osd_base #242424;
-@define-color osd_bg rgba(36, 36, 36, 0.8);
+@define-color osd_base #121212;
+@define-color osd_bg rgba(18, 18, 18, 0.8);
 @define-color osd_fg #fefefe;
 /* lightdm greeter colors */
-@define-color lightdm_bg_color #242424;
+@define-color lightdm_bg_color #121212;
 @define-color lightdm_fg_color #fefefe;
 /* window manager colors */
-@define-color wm_bg_focused #242424;
+@define-color wm_bg_focused #121212;
 @define-color wm_bg_unfocused #000507;
 @define-color wm_border_focused #fefa67;
 @define-color wm_border_unfocused #242424;
@@ -230,86 +230,86 @@ NemoPathbarButton, column-header, .osd.button, .osd .button,
     box-shadow: none; }
 
 .button, .selection-mode.header-bar .button.suggested-action, .selection-mode.toolbar .button.suggested-action {
-  background-color: #a978f6;
+  background-color: #242424;
   background-image: none;
-  border-color: rgba(29, 29, 29, 0.22);
-  color: #242424;
-  box-shadow: 0 1px 2px -1px rgba(51, 51, 51, 0.12); }
+  border-color: rgba(205, 205, 190, 0.32);
+  color: #f8f8f6;
+  box-shadow: 0 1px 2px -1px rgba(51, 51, 51, 0.22); }
   .button:focus, .selection-mode.header-bar .button.suggested-action:focus, .selection-mode.toolbar .button.suggested-action:focus, .button:hover, .selection-mode.header-bar .button.suggested-action:hover, .selection-mode.toolbar .button.suggested-action:hover {
-    border-color: mix(#fefa67,rgba(36, 36, 36, 0.22),0.3); }
+    border-color: mix(#fefa67,rgba(248, 248, 246, 0.32),0.3); }
   .button:active, .selection-mode.header-bar .button.suggested-action:active, .selection-mode.toolbar .button.suggested-action:active, .button:active:hover, .button:active:focus, .button:active:hover:focus, .button:checked, .selection-mode.header-bar .button.suggested-action:checked, .selection-mode.toolbar .button.suggested-action:checked, .button:checked:hover, .button:checked:focus, .button:checked:hover:focus {
-    border-color: rgba(25, 25, 25, 0.22); }
+    border-color: rgba(183, 183, 163, 0.32); }
   .button:insensitive, .selection-mode.header-bar .button.suggested-action:insensitive, .selection-mode.toolbar .button.suggested-action:insensitive {
-    border-color: rgba(31, 31, 31, 0.22); }
+    border-color: rgba(216, 216, 204, 0.32); }
   .button:active:insensitive, .selection-mode.header-bar .button.suggested-action:active:insensitive, .selection-mode.toolbar .button.suggested-action:active:insensitive, .button:checked:insensitive, .selection-mode.header-bar .button.suggested-action:checked:insensitive, .selection-mode.toolbar .button.suggested-action:checked:insensitive {
-    border-color: rgba(29, 29, 29, 0.22); }
+    border-color: rgba(205, 205, 190, 0.32); }
   .button.flat, .selection-mode.header-bar .flat.button.suggested-action, .selection-mode.toolbar .flat.button.suggested-action {
-    border-color: rgba(169, 120, 246, 0);
-    color: #242424;
-    background-color: rgba(169, 120, 246, 0);
+    border-color: rgba(36, 36, 36, 0);
+    color: #f8f8f6;
+    background-color: rgba(36, 36, 36, 0);
     background-image: none;
     box-shadow: none; }
   .button:hover, .selection-mode.header-bar .button.suggested-action:hover, .selection-mode.toolbar .button.suggested-action:hover, .button.flat:hover {
-    background-color: #b489f7;
+    background-color: #262626;
     background-image: none;
-    border-color: rgba(29, 29, 29, 0.3);
-    color: #242424;
-    box-shadow: 0 1px 2px -1px rgba(51, 51, 51, 0.22); }
-    .button:hover:focus, .button:hover:hover, .selection-mode.header-bar .button.suggested-action:hover:hover, .selection-mode.toolbar .button.suggested-action:hover:hover, .button.flat:hover:focus, .button.flat:hover:hover {
-      border-color: mix(#fefa67,rgba(36, 36, 36, 0.3),0.3); }
-    .button:hover:active, .selection-mode.header-bar .button.suggested-action:hover:active, .selection-mode.toolbar .button.suggested-action:hover:active, .button:hover:active:focus, .button.flat:hover:active:focus, .button:hover:checked, .selection-mode.header-bar .button.suggested-action:hover:checked, .selection-mode.toolbar .button.suggested-action:hover:checked, .button:hover:checked:focus, .button.flat:hover:checked:focus, .button.flat:hover:active, .button.flat:hover:active:hover:focus, .button.flat:hover:checked, .button.flat:hover:checked:hover:focus {
-      border-color: rgba(25, 25, 25, 0.3); }
-    .button:hover:insensitive, .selection-mode.header-bar .button.suggested-action:hover:insensitive, .selection-mode.toolbar .button.suggested-action:hover:insensitive, .button.flat:hover:insensitive {
-      border-color: rgba(31, 31, 31, 0.3); }
-    .button:hover:active:insensitive, .button:hover:checked:insensitive, .button.flat:hover:active:insensitive, .button.flat:hover:checked:insensitive {
-      border-color: rgba(29, 29, 29, 0.3); }
-  .button:focus, .selection-mode.header-bar .button.suggested-action:focus, .selection-mode.toolbar .button.suggested-action:focus, .button.flat:focus {
-    background-color: #b489f7;
-    background-image: none;
-    border-color: rgba(36, 36, 36, 0.22);
-    color: #242424;
+    border-color: rgba(205, 205, 190, 0.4);
+    color: #f8f8f6;
     box-shadow: 0 1px 2px -1px rgba(51, 51, 51, 0.32); }
+    .button:hover:focus, .button:hover:hover, .selection-mode.header-bar .button.suggested-action:hover:hover, .selection-mode.toolbar .button.suggested-action:hover:hover, .button.flat:hover:focus, .button.flat:hover:hover {
+      border-color: mix(#fefa67,rgba(248, 248, 246, 0.4),0.3); }
+    .button:hover:active, .selection-mode.header-bar .button.suggested-action:hover:active, .selection-mode.toolbar .button.suggested-action:hover:active, .button:hover:active:focus, .button.flat:hover:active:focus, .button:hover:checked, .selection-mode.header-bar .button.suggested-action:hover:checked, .selection-mode.toolbar .button.suggested-action:hover:checked, .button:hover:checked:focus, .button.flat:hover:checked:focus, .button.flat:hover:active, .button.flat:hover:active:hover:focus, .button.flat:hover:checked, .button.flat:hover:checked:hover:focus {
+      border-color: rgba(183, 183, 163, 0.4); }
+    .button:hover:insensitive, .selection-mode.header-bar .button.suggested-action:hover:insensitive, .selection-mode.toolbar .button.suggested-action:hover:insensitive, .button.flat:hover:insensitive {
+      border-color: rgba(216, 216, 204, 0.4); }
+    .button:hover:active:insensitive, .button:hover:checked:insensitive, .button.flat:hover:active:insensitive, .button.flat:hover:checked:insensitive {
+      border-color: rgba(205, 205, 190, 0.4); }
+  .button:focus, .selection-mode.header-bar .button.suggested-action:focus, .selection-mode.toolbar .button.suggested-action:focus, .button.flat:focus {
+    background-color: #262626;
+    background-image: none;
+    border-color: rgba(248, 248, 246, 0.32);
+    color: #f8f8f6;
+    box-shadow: 0 1px 2px -1px rgba(51, 51, 51, 0.42); }
     .button:focus:hover, .selection-mode.header-bar .button.suggested-action:focus:hover, .selection-mode.toolbar .button.suggested-action:focus:hover, .button.flat:focus:hover {
-      background-color: #bf9af8;
+      background-color: #282828;
       background-image: none;
-      border-color: rgba(29, 29, 29, 0.3);
-      box-shadow: 0 1px 2px -1px rgba(51, 51, 51, 0.38); }
+      border-color: rgba(205, 205, 190, 0.4);
+      box-shadow: 0 1px 2px -1px rgba(51, 51, 51, 0.48); }
       .button:focus:hover:hover, .button.flat:focus:hover:hover {
-        border-color: mix(#fefa67,rgba(36, 36, 36, 0.3),0.3); }
+        border-color: mix(#fefa67,rgba(248, 248, 246, 0.4),0.3); }
       .button:focus:hover:active, .button.flat:focus:hover:active, .button.flat:focus:hover:active:focus, .button:focus:hover:checked, .button.flat:focus:hover:checked, .button.flat:focus:hover:checked:focus, .button.flat:focus:hover:active:hover:focus, .button.flat:focus:hover:checked:hover:focus {
-        border-color: rgba(25, 25, 25, 0.3); }
+        border-color: rgba(183, 183, 163, 0.4); }
       .button:focus:hover:insensitive, .button.flat:focus:hover:insensitive {
-        border-color: rgba(31, 31, 31, 0.3); }
+        border-color: rgba(216, 216, 204, 0.4); }
       .button:focus:hover:active:insensitive, .button:focus:hover:checked:insensitive, .button.flat:focus:hover:active:insensitive, .button.flat:focus:hover:checked:insensitive {
-        border-color: rgba(29, 29, 29, 0.3); }
+        border-color: rgba(205, 205, 190, 0.4); }
   .button:checked, .selection-mode.header-bar .button.suggested-action:checked, .selection-mode.toolbar .button.suggested-action:checked, .button:active, .selection-mode.header-bar .button.suggested-action:active, .selection-mode.toolbar .button.suggested-action:active, .button.flat:checked, .button.flat:active {
     background-color: #fefa67;
     background-image: none;
-    border-color: rgba(29, 29, 29, 0.22);
+    border-color: rgba(205, 205, 190, 0.32);
     color: #000507;
-    box-shadow: inset 1px 0 rgba(36, 36, 36, 0.06), inset 0 1px rgba(36, 36, 36, 0.07), inset -1px 0 rgba(36, 36, 36, 0.06), inset 0 -1px rgba(36, 36, 36, 0.05); }
+    box-shadow: inset 1px 0 rgba(248, 248, 246, 0.06), inset 0 1px rgba(248, 248, 246, 0.07), inset -1px 0 rgba(248, 248, 246, 0.06), inset 0 -1px rgba(248, 248, 246, 0.05); }
     .button:checked:focus, .selection-mode.header-bar .button.suggested-action:checked:focus, .selection-mode.toolbar .button.suggested-action:checked:focus, .button:checked:hover, .selection-mode.header-bar .button.suggested-action:checked:hover, .selection-mode.toolbar .button.suggested-action:checked:hover, .button:active:focus, .selection-mode.header-bar .button.suggested-action:active:focus, .selection-mode.toolbar .button.suggested-action:active:focus, .button:active:hover, .selection-mode.header-bar .button.suggested-action:active:hover, .selection-mode.toolbar .button.suggested-action:active:hover, .button.flat:checked:focus, .button.flat:checked:hover, .button.flat:active:focus, .button.flat:active:hover {
-      border-color: mix(#fefa67,rgba(36, 36, 36, 0.22),0.3); }
+      border-color: mix(#fefa67,rgba(248, 248, 246, 0.32),0.3); }
     .button:active:checked, .button:active:checked:hover, .button:active:checked:focus, .button:active:checked:hover:focus, .selection-mode.header-bar .button.suggested-action:checked:checked, .selection-mode.toolbar .button.suggested-action:checked:checked, .selection-mode.header-bar .button.suggested-action:active:active, .selection-mode.toolbar .button.suggested-action:active:active, .button.flat:active:checked, .button.flat:active:checked:hover, .button.flat:active:checked:focus, .button.flat:active:checked:hover:focus {
-      border-color: rgba(25, 25, 25, 0.22); }
+      border-color: rgba(183, 183, 163, 0.32); }
     .button:checked:insensitive, .selection-mode.header-bar .button.suggested-action:checked:insensitive, .selection-mode.toolbar .button.suggested-action:checked:insensitive, .button:active:insensitive, .selection-mode.header-bar .button.suggested-action:active:insensitive, .selection-mode.toolbar .button.suggested-action:active:insensitive, .button.flat:checked:insensitive, .button.flat:active:insensitive {
-      border-color: rgba(31, 31, 31, 0.22); }
+      border-color: rgba(216, 216, 204, 0.32); }
     .button:active:checked:insensitive, .button.flat:active:checked:insensitive {
-      border-color: rgba(29, 29, 29, 0.22); }
+      border-color: rgba(205, 205, 190, 0.32); }
     .button:checked:focus, .selection-mode.header-bar .button.suggested-action:checked:focus, .selection-mode.toolbar .button.suggested-action:checked:focus, .button:checked:hover, .selection-mode.header-bar .button.suggested-action:checked:hover, .selection-mode.toolbar .button.suggested-action:checked:hover, .button:active:focus, .selection-mode.header-bar .button.suggested-action:active:focus, .selection-mode.toolbar .button.suggested-action:active:focus, .button:active:hover, .selection-mode.header-bar .button.suggested-action:active:hover, .selection-mode.toolbar .button.suggested-action:active:hover, .button.flat:checked:focus, .button.flat:checked:hover, .button.flat:active:focus, .button.flat:active:hover {
       background-color: #fefb79;
       background-image: none;
       color: #000507; }
   .button:focus, .selection-mode.header-bar .button.suggested-action:focus, .selection-mode.toolbar .button.suggested-action:focus, .button:hover, .selection-mode.header-bar .button.suggested-action:hover, .selection-mode.toolbar .button.suggested-action:hover, .button.flat:focus, .button.flat:hover {
-    color: #242424; }
+    color: #f8f8f6; }
   .button:insensitive:insensitive, .selection-mode.header-bar .button.suggested-action:insensitive:insensitive, .selection-mode.toolbar .button.suggested-action:insensitive:insensitive, .button.flat:insensitive:insensitive {
-    background-color: alpha(mix(#a978f6,#242424,0.2),0.4);
+    background-color: alpha(mix(#242424,#f8f8f6,0.2),0.4);
     background-image: none;
     opacity: .6;
-    color: mix(#a978f6,#242424,0.6);
+    color: mix(#242424,#f8f8f6,0.6);
     box-shadow: none; }
     .button:insensitive:insensitive :insensitive, .button.flat:insensitive:insensitive :insensitive {
-      color: mix(#a978f6,#242424,0.6); }
+      color: mix(#242424,#f8f8f6,0.6); }
   .button:active:insensitive, .selection-mode.header-bar .button.suggested-action:active:insensitive, .selection-mode.toolbar .button.suggested-action:active:insensitive, .button:checked:insensitive, .selection-mode.header-bar .button.suggested-action:checked:insensitive, .selection-mode.toolbar .button.suggested-action:checked:insensitive {
     background-color: rgba(254, 250, 103, 0.6);
     background-image: none;
@@ -319,9 +319,9 @@ NemoPathbarButton, column-header, .osd.button, .osd .button,
       color: rgba(0, 5, 7, 0.85); }
   .button.separator, .selection-mode.header-bar .separator.button.suggested-action, .selection-mode.toolbar .separator.button.suggested-action, .button .separator, .selection-mode.header-bar .button.suggested-action .separator, .selection-mode.toolbar .button.suggested-action .separator {
     border: 1px solid currentColor;
-    color: rgba(169, 120, 246, 0.9); }
+    color: rgba(36, 36, 36, 0.9); }
     .button.separator:insensitive, .selection-mode.header-bar .separator.button.suggested-action:insensitive, .selection-mode.toolbar .separator.button.suggested-action:insensitive, .button .separator:insensitive, .selection-mode.header-bar .button.suggested-action .separator:insensitive, .selection-mode.toolbar .button.suggested-action .separator:insensitive {
-      color: rgba(169, 120, 246, 0.85); }
+      color: rgba(36, 36, 36, 0.85); }
   .button.default, .selection-mode.header-bar .default.button.suggested-action, .selection-mode.toolbar .default.button.suggested-action {
     background-color: #fefa67;
     background-image: none;
@@ -416,17 +416,17 @@ NemoPathbarButton, column-header, .osd.button, .osd .button,
       .button.default.separator:insensitive, .button.default .separator:insensitive {
         color: rgba(254, 250, 103, 0.85); }
   .button.linked, .selection-mode.header-bar .linked.button.suggested-action, .selection-mode.toolbar .linked.button.suggested-action, .linked .button, .linked .selection-mode.header-bar .button.suggested-action, .selection-mode.header-bar .linked .button.suggested-action, .linked .selection-mode.toolbar .button.suggested-action, .selection-mode.toolbar .linked .button.suggested-action {
-    box-shadow: inset -1px 0 rgba(0, 0, 0, 0.22), 0 1px 2px -1px rgba(51, 51, 51, 0.12); }
+    box-shadow: inset -1px 0 rgba(0, 0, 0, 0.32), 0 1px 2px -1px rgba(51, 51, 51, 0.22); }
     .button.linked:focus, .selection-mode.header-bar .linked.button.suggested-action:focus, .selection-mode.toolbar .linked.button.suggested-action:focus, .button.linked:hover, .selection-mode.header-bar .linked.button.suggested-action:hover, .selection-mode.toolbar .linked.button.suggested-action:hover, .linked .button:focus, .linked .selection-mode.header-bar .button.suggested-action:focus, .selection-mode.header-bar .linked .button.suggested-action:focus, .linked .selection-mode.toolbar .button.suggested-action:focus, .selection-mode.toolbar .linked .button.suggested-action:focus, .linked .button:hover, .linked .selection-mode.header-bar .button.suggested-action:hover, .selection-mode.header-bar .linked .button.suggested-action:hover, .linked .selection-mode.toolbar .button.suggested-action:hover, .selection-mode.toolbar .linked .button.suggested-action:hover {
-      box-shadow: inset -1px 0 mix(#fefa67,rgba(0, 0, 0, 0.22),0.3), 0 1px 2px -1px rgba(51, 51, 51, 0.32); }
+      box-shadow: inset -1px 0 mix(#fefa67,rgba(0, 0, 0, 0.32),0.3), 0 1px 2px -1px rgba(51, 51, 51, 0.42); }
     .button.linked:active, .selection-mode.header-bar .linked.button.suggested-action:active, .selection-mode.toolbar .linked.button.suggested-action:active, .button.linked:active:hover, .button.linked:active:focus, .button.linked:active:hover:focus, .button.linked:checked, .selection-mode.header-bar .linked.button.suggested-action:checked, .selection-mode.toolbar .linked.button.suggested-action:checked, .button.linked:checked:hover, .button.linked:checked:focus, .button.linked:checked:hover:focus, .linked .button:active, .linked .selection-mode.header-bar .button.suggested-action:active, .selection-mode.header-bar .linked .button.suggested-action:active, .linked .selection-mode.toolbar .button.suggested-action:active, .selection-mode.toolbar .linked .button.suggested-action:active, .linked .button:active:hover, .linked .button:active:focus, .linked .button:active:hover:focus, .linked .button:checked, .linked .selection-mode.header-bar .button.suggested-action:checked, .selection-mode.header-bar .linked .button.suggested-action:checked, .linked .selection-mode.toolbar .button.suggested-action:checked, .selection-mode.toolbar .linked .button.suggested-action:checked, .linked .button:checked:hover, .linked .button:checked:focus, .linked .button:checked:hover:focus {
-      box-shadow: inset -1px 0 rgba(0, 0, 0, 0.22), inset 0 1px rgba(51, 51, 51, 0.07), inset 0 -1px rgba(51, 51, 51, 0.05); }
+      box-shadow: inset -1px 0 rgba(0, 0, 0, 0.32), inset 0 1px rgba(51, 51, 51, 0.07), inset 0 -1px rgba(51, 51, 51, 0.05); }
     .button.linked:insensitive, .selection-mode.header-bar .linked.button.suggested-action:insensitive, .selection-mode.toolbar .linked.button.suggested-action:insensitive, .linked .button:insensitive, .linked .selection-mode.header-bar .button.suggested-action:insensitive, .selection-mode.header-bar .linked .button.suggested-action:insensitive, .linked .selection-mode.toolbar .button.suggested-action:insensitive, .selection-mode.toolbar .linked .button.suggested-action:insensitive {
-      box-shadow: inset -1px 0 #7d33f1; }
+      box-shadow: inset -1px 0 #1d1d1d; }
     .button.linked:last-child, .selection-mode.header-bar .linked.button.suggested-action:last-child, .selection-mode.toolbar .linked.button.suggested-action:last-child, .button.linked:only-child, .selection-mode.header-bar .linked.button.suggested-action:only-child, .selection-mode.toolbar .linked.button.suggested-action:only-child, .linked .button:last-child, .linked .selection-mode.header-bar .button.suggested-action:last-child, .selection-mode.header-bar .linked .button.suggested-action:last-child, .linked .selection-mode.toolbar .button.suggested-action:last-child, .selection-mode.toolbar .linked .button.suggested-action:last-child, .linked .button:only-child, .linked .selection-mode.header-bar .button.suggested-action:only-child, .selection-mode.header-bar .linked .button.suggested-action:only-child, .linked .selection-mode.toolbar .button.suggested-action:only-child, .selection-mode.toolbar .linked .button.suggested-action:only-child {
-      box-shadow: 0 1px 2px -1px rgba(51, 51, 51, 0.12); }
+      box-shadow: 0 1px 2px -1px rgba(51, 51, 51, 0.22); }
     .button.linked:last-child:hover, .button.linked:only-child:hover, .linked .button:last-child:hover, .linked .button:only-child:hover {
-      box-shadow: 0 1px 2px -1px rgba(51, 51, 51, 0.32); }
+      box-shadow: 0 1px 2px -1px rgba(51, 51, 51, 0.42); }
     .button.linked:insensitive:last-child, .button.linked:insensitive:only-child, .button.linked:active:insensitive:last-child, .button.linked:active:insensitive:only-child, .button.linked:checked:insensitive:last-child, .button.linked:checked:insensitive:only-child, .linked .button:insensitive:last-child, .linked .button:insensitive:only-child, .linked .button:active:insensitive:last-child, .linked .button:active:insensitive:only-child, .linked .button:checked:insensitive:last-child, .linked .button:checked:insensitive:only-child {
       box-shadow: none; }
     .button.linked:active:last-child, .button.linked:active:last-child:focus, .button.linked:active:last-child:hover, .button.linked:active:last-child:hover:focus, .button.linked:checked:last-child, .button.linked:checked:last-child:focus, .button.linked:checked:last-child:hover, .button.linked:checked:last-child:hover:focus, .linked .button:active:last-child, .linked .button:active:last-child:focus, .linked .button:active:last-child:hover, .linked .button:active:last-child:hover:focus, .linked .button:checked:last-child, .linked .button:checked:last-child:focus, .linked .button:checked:last-child:hover, .linked .button:checked:last-child:hover:focus {
@@ -756,25 +756,25 @@ GtkPopover .entry, .menuitem .entry, .entry {
     background-color: #000507; }
 
 .header-bar {
-  background-color: #242424;
+  background-color: #121212;
   background-image: none;
-  border-color: #1d1d1d;
+  border-color: #0e0e0e;
   padding: 6px;
   color: #fefefe;
   border-width: 0 0 1px;
   border-style: solid; }
   .header-bar:focus, .header-bar:hover {
-    border-color: mix(#fefa67,#242424,0.3); }
+    border-color: mix(#fefa67,#121212,0.3); }
   .header-bar:active, .header-bar:active:hover, .header-bar:active:focus, .header-bar:active:hover:focus, .header-bar:checked, .header-bar:checked:hover, .header-bar:checked:focus, .header-bar:checked:hover:focus {
-    border-color: #191919; }
+    border-color: #0d0d0d; }
   .header-bar:insensitive {
-    border-color: #1f1f1f; }
+    border-color: #0f0f0f; }
   .header-bar:active:insensitive, .header-bar:checked:insensitive {
-    border-color: #1d1d1d; }
+    border-color: #0e0e0e; }
   .header-bar:insensitive {
-    background-color: #202020;
+    background-color: #101010;
     background-image: none;
-    color: mix(#fefefe,#242424,0.5); }
+    color: mix(#fefefe,#121212,0.5); }
   .header-bar .title {
     font: bold;
     padding: 0 6px; }
@@ -899,16 +899,16 @@ GtkPopover .entry, .menuitem .entry, .entry {
     .header-bar GtkComboBox.image-button, .header-bar .button.image-button, .selection-mode.header-bar .image-button.button.suggested-action, .header-bar .selection-mode.toolbar .image-button.button.suggested-action, .selection-mode.toolbar .header-bar .image-button.button.suggested-action {
       padding: 4px 2px 4px 3px; }
   .header-bar GtkSeparatorToolItem, .header-bar .separator, .header-bar .separator:insensitive {
-    color: #202020;
+    color: #101010;
     border-color: currentColor;
     -GtkWidget-window-dragging: true; }
   .header-bar .menubar {
     -GtkToolbar-button-relief: normal; }
   .header-bar .button, .selection-mode.header-bar .button.suggested-action, .header-bar .selection-mode.toolbar .button.suggested-action, .selection-mode.toolbar .header-bar .button.suggested-action {
-    color: #242424; }
+    color: #f8f8f6; }
 
 .titlebar {
-  background-color: #242424;
+  background-color: #121212;
   background-image: none;
   border-radius: 2px 2px 0 0;
   color: #fefefe; }
@@ -2036,7 +2036,7 @@ GtkPopover .entry, .menuitem .entry, .entry {
 .menubar {
   -GtkWidget-window-dragging: true;
   border: 0;
-  background-color: #242424;
+  background-color: #121212;
   background-image: none;
   color: #fefefe; }
   .menubar.menuitem, .menubar .menuitem {
@@ -2046,8 +2046,8 @@ GtkPopover .entry, .menuitem .entry, .entry {
     background-image: none;
     color: #fefefe; }
     .menubar.menuitem:hover, .menubar .menuitem:hover {
-      border-color: mix(#242424,#fefefe,0.21);
-      background-color: mix(#242424,#fefefe,0.21);
+      border-color: mix(#121212,#fefefe,0.21);
+      background-color: mix(#121212,#fefefe,0.21);
       background-image: none;
       color: white; }
     .menubar.menuitem *:hover, .menubar .menuitem *:hover {
@@ -2061,14 +2061,14 @@ GtkPopover .entry, .menuitem .entry, .entry {
   -GtkMenu-vertical-padding: 0; }
 
 GtkTreeMenu.menu, GtkTreeMenu .menu, GtkMenuToolButton.menu, GtkMenuToolButton .menu, GtkComboBox.menu, GtkComboBox .menu {
-  background-color: #242424;
+  background-color: #121212;
   margin: 3px; }
 
 #toolbar-popup, .menu {
   padding: 0;
   border-radius: 0;
-  border: 1px solid mix(#242424,#fefefe,0.21);
-  background-color: #242424;
+  border: 1px solid mix(#121212,#fefefe,0.21);
+  background-color: #121212;
   color: #fefefe; }
   #toolbar-popup:selected, .menu:selected {
     background-color: #fefa67; }
@@ -2100,7 +2100,7 @@ GtkTreeMenu .menuitem {
   .menuitem *:active, .menuitem *:hover, .menu .menuitem *:active, .menu .menuitem *:hover {
     color: #000507; }
   .menuitem:insensitive, .menuitem *:insensitive, .menu .menuitem:insensitive, .menu .menuitem *:insensitive {
-    color: mix(#fefefe,#242424,0.5); }
+    color: mix(#fefefe,#121212,0.5); }
 
 .menuitem.check, GtkIconView.menuitem.content-view.check, .menuitem.check:focus, .menuitem.check:hover, .menuitem.check:insensitive, .menuitem.radio, .menuitem.radio:focus, .menuitem.radio:hover, .menuitem.radio:insensitive {
   background-image: none; }
@@ -2113,7 +2113,7 @@ GtkTreeMenu .menuitem {
   -GtkMenuItem-horizontal-padding: 0;
   -GtkWidget-separator-height: 1;
   border-style: none;
-  color: #202020; }
+  color: #101010; }
 
 .menuitem.button, .selection-mode.header-bar .menuitem.button.suggested-action, .selection-mode.toolbar .menuitem.button.suggested-action, .menuitem.button:focus, .menuitem.button:active, .menuitem.button:insensitive, .menuitem.button:active:insensitive, .menuitem.button.flat, .menuitem.button.flat:focus, .menuitem.button.flat:active, .menuitem.button.flat:insensitive, .menuitem.button.flat:active:insensitive {
   background-color: transparent;
@@ -2128,7 +2128,7 @@ GtkTreeMenu .menuitem {
   color: #000507; }
 
 .menuitem GtkCalendar:inconsistent {
-  color: mix(#fefefe,#242424,0.5); }
+  color: mix(#fefefe,#121212,0.5); }
 
 .menuitem GtkCalendar .button, .menuitem GtkCalendar .selection-mode.header-bar .button.suggested-action, .selection-mode.header-bar .menuitem GtkCalendar .button.suggested-action, .menuitem GtkCalendar .selection-mode.toolbar .button.suggested-action, .selection-mode.toolbar .menuitem GtkCalendar .button.suggested-action {
   border-style: none;
@@ -2140,27 +2140,27 @@ GtkTreeMenu .menuitem {
   .menuitem .accelerator:hover {
     color: rgba(0, 5, 7, 0.8); }
   .menuitem .accelerator:insensitive {
-    color: alpha(mix(#fefefe,#242424,0.5),0.4); }
+    color: alpha(mix(#fefefe,#121212,0.5),0.4); }
 
 .menuitem .entry {
-  background-color: #242424;
+  background-color: #121212;
   background-image: none;
-  border-color: #1d1d1d;
+  border-color: #0e0e0e;
   color: #fefefe; }
   .menuitem .entry:focus, .menuitem .entry:hover {
-    border-color: mix(#fefa67,#242424,0.3); }
+    border-color: mix(#fefa67,#121212,0.3); }
   .menuitem .entry:active, .menuitem .entry:active:hover, .menuitem .entry:active:focus, .menuitem .entry:active:hover:focus, .menuitem .entry:checked, .menuitem .entry:checked:hover, .menuitem .entry:checked:focus, .menuitem .entry:checked:hover:focus {
-    border-color: #191919; }
+    border-color: #0d0d0d; }
   .menuitem .entry:insensitive {
-    border-color: #1f1f1f; }
+    border-color: #0f0f0f; }
   .menuitem .entry:active:insensitive, .menuitem .entry:checked:insensitive {
-    border-color: #1d1d1d; }
+    border-color: #0e0e0e; }
   .menuitem .entry:focus, .menuitem .entry:active {
     border-color: #fefa67; }
   .menuitem .entry:insensitive {
-    background-color: #202020;
+    background-color: #101010;
     background-image: none;
-    color: mix(#242424,#fefefe,0.5); }
+    color: mix(#121212,#fefefe,0.5); }
 
 GtkModelMenuItem GtkBox GtkImage {
   padding-right: 3px; }
@@ -2169,28 +2169,28 @@ GtkModelMenuItem GtkBox GtkImage {
  ! Popover
 **********/
 GtkPopover {
-  border-color: #1d1d1d;
+  border-color: #0e0e0e;
   margin: 10px;
   padding: 3px;
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
   background-clip: border-box;
-  background-color: #242424;
+  background-color: #121212;
   background-image: none;
   color: #fefefe;
   box-shadow: 0 3px 6px rgba(102, 102, 102, 0.16); }
   GtkPopover:focus, GtkPopover:hover {
-    border-color: mix(#fefa67,#242424,0.3); }
+    border-color: mix(#fefa67,#121212,0.3); }
   GtkPopover:active, GtkPopover:active:hover, GtkPopover:active:focus, GtkPopover:active:hover:focus, GtkPopover:checked, GtkPopover:checked:hover, GtkPopover:checked:focus, GtkPopover:checked:hover:focus {
-    border-color: #191919; }
+    border-color: #0d0d0d; }
   GtkPopover:insensitive {
-    border-color: #1f1f1f; }
+    border-color: #0f0f0f; }
   GtkPopover:active:insensitive, GtkPopover:checked:insensitive {
-    border-color: #1d1d1d; }
+    border-color: #0e0e0e; }
   GtkPopover.background {
     background-image: none;
-    background-color: #242424;
+    background-color: #121212;
     color: #fefefe; }
   GtkPopover:backdrop {
     box-shadow: none; }
@@ -2202,7 +2202,7 @@ GtkPopover {
       background-color: transparent;
       background-image: none; }
   GtkPopover .view, GtkPopover GtkHTML, GtkPopover .list {
-    background-color: #2f2f2f;
+    background-color: #171717;
     background-image: none;
     color: #fefefe; }
     GtkPopover .view:hover, GtkPopover GtkHTML:hover, GtkPopover .list:hover {
@@ -2218,7 +2218,7 @@ GtkPopover {
       background-color: #fefa67;
       color: #000507; }
   GtkPopover .frame {
-    border-color: #1d1d1d;
+    border-color: #0e0e0e;
     border-radius: 2px; }
   GtkPopover .entry {
     background-color: #000507;
@@ -2240,86 +2240,86 @@ GtkPopover {
       background-image: none;
       color: mix(#000507,#fefefe,0.5); }
   GtkPopover .button, GtkPopover .selection-mode.header-bar .button.suggested-action, .selection-mode.header-bar GtkPopover .button.suggested-action, GtkPopover .selection-mode.toolbar .button.suggested-action, .selection-mode.toolbar GtkPopover .button.suggested-action {
-    background-color: #a978f6;
+    background-color: #242424;
     background-image: none;
-    border-color: rgba(29, 29, 29, 0.22);
-    color: #242424;
-    box-shadow: 0 1px 2px -1px rgba(51, 51, 51, 0.12); }
+    border-color: rgba(205, 205, 190, 0.32);
+    color: #f8f8f6;
+    box-shadow: 0 1px 2px -1px rgba(51, 51, 51, 0.22); }
     GtkPopover .button:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:focus, GtkPopover .button:hover, GtkPopover .selection-mode.header-bar .button.suggested-action:hover, .selection-mode.header-bar GtkPopover .button.suggested-action:hover, GtkPopover .selection-mode.toolbar .button.suggested-action:hover, .selection-mode.toolbar GtkPopover .button.suggested-action:hover {
-      border-color: mix(#fefa67,rgba(36, 36, 36, 0.22),0.3); }
+      border-color: mix(#fefa67,rgba(248, 248, 246, 0.32),0.3); }
     GtkPopover .button:active, GtkPopover .selection-mode.header-bar .button.suggested-action:active, .selection-mode.header-bar GtkPopover .button.suggested-action:active, GtkPopover .selection-mode.toolbar .button.suggested-action:active, .selection-mode.toolbar GtkPopover .button.suggested-action:active, GtkPopover .button:active:hover, GtkPopover .button:active:focus, GtkPopover .button:active:hover:focus, GtkPopover .button:checked, GtkPopover .selection-mode.header-bar .button.suggested-action:checked, .selection-mode.header-bar GtkPopover .button.suggested-action:checked, GtkPopover .selection-mode.toolbar .button.suggested-action:checked, .selection-mode.toolbar GtkPopover .button.suggested-action:checked, GtkPopover .button:checked:hover, GtkPopover .button:checked:focus, GtkPopover .button:checked:hover:focus {
-      border-color: rgba(25, 25, 25, 0.22); }
+      border-color: rgba(183, 183, 163, 0.32); }
     GtkPopover .button:insensitive, GtkPopover .selection-mode.header-bar .button.suggested-action:insensitive, .selection-mode.header-bar GtkPopover .button.suggested-action:insensitive, GtkPopover .selection-mode.toolbar .button.suggested-action:insensitive, .selection-mode.toolbar GtkPopover .button.suggested-action:insensitive {
-      border-color: rgba(31, 31, 31, 0.22); }
+      border-color: rgba(216, 216, 204, 0.32); }
     GtkPopover .button:active:insensitive, GtkPopover .selection-mode.header-bar .button.suggested-action:active:insensitive, .selection-mode.header-bar GtkPopover .button.suggested-action:active:insensitive, GtkPopover .selection-mode.toolbar .button.suggested-action:active:insensitive, .selection-mode.toolbar GtkPopover .button.suggested-action:active:insensitive, GtkPopover .button:checked:insensitive, GtkPopover .selection-mode.header-bar .button.suggested-action:checked:insensitive, .selection-mode.header-bar GtkPopover .button.suggested-action:checked:insensitive, GtkPopover .selection-mode.toolbar .button.suggested-action:checked:insensitive, .selection-mode.toolbar GtkPopover .button.suggested-action:checked:insensitive {
-      border-color: rgba(29, 29, 29, 0.22); }
+      border-color: rgba(205, 205, 190, 0.32); }
     GtkPopover .button.flat, GtkPopover .selection-mode.header-bar .flat.button.suggested-action, .selection-mode.header-bar GtkPopover .flat.button.suggested-action, GtkPopover .selection-mode.toolbar .flat.button.suggested-action, .selection-mode.toolbar GtkPopover .flat.button.suggested-action {
-      border-color: rgba(169, 120, 246, 0);
-      color: #242424;
-      background-color: rgba(169, 120, 246, 0);
+      border-color: rgba(36, 36, 36, 0);
+      color: #f8f8f6;
+      background-color: rgba(36, 36, 36, 0);
       background-image: none;
       box-shadow: none; }
     GtkPopover .button:hover, GtkPopover .selection-mode.header-bar .button.suggested-action:hover, .selection-mode.header-bar GtkPopover .button.suggested-action:hover, GtkPopover .selection-mode.toolbar .button.suggested-action:hover, .selection-mode.toolbar GtkPopover .button.suggested-action:hover, GtkPopover .button.flat:hover {
-      background-color: #b489f7;
+      background-color: #262626;
       background-image: none;
-      border-color: rgba(29, 29, 29, 0.3);
-      color: #242424;
-      box-shadow: 0 1px 2px -1px rgba(51, 51, 51, 0.22); }
-      GtkPopover .button:hover:focus, GtkPopover .button:hover:hover, GtkPopover .selection-mode.header-bar .button.suggested-action:hover:hover, .selection-mode.header-bar GtkPopover .button.suggested-action:hover:hover, GtkPopover .selection-mode.toolbar .button.suggested-action:hover:hover, .selection-mode.toolbar GtkPopover .button.suggested-action:hover:hover, GtkPopover .button.flat:hover:focus, GtkPopover .button.flat:hover:hover {
-        border-color: mix(#fefa67,rgba(36, 36, 36, 0.3),0.3); }
-      GtkPopover .button:hover:active, GtkPopover .selection-mode.header-bar .button.suggested-action:hover:active, .selection-mode.header-bar GtkPopover .button.suggested-action:hover:active, GtkPopover .selection-mode.toolbar .button.suggested-action:hover:active, .selection-mode.toolbar GtkPopover .button.suggested-action:hover:active, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:hover:active, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:hover:active, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:hover:active, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:hover:active, GtkPopover .button:hover:active:hover, GtkPopover .selection-mode.header-bar .button.suggested-action:hover:active:hover, .selection-mode.header-bar GtkPopover .button.suggested-action:hover:active:hover, GtkPopover .selection-mode.toolbar .button.suggested-action:hover:active:hover, .selection-mode.toolbar GtkPopover .button.suggested-action:hover:active:hover, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:hover:active:hover, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:hover:active:hover, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:hover:active:hover, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:hover:active:hover, GtkPopover .button:hover:active:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:hover:active:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:hover:active:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:hover:active:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:hover:active:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:hover:active:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:hover:active:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:hover:active:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:hover:active:focus, GtkPopover .button:hover:active:hover:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:hover:active:hover:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:hover:active:hover:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:hover:active:hover:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:hover:active:hover:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:hover:active:hover:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:hover:active:hover:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:hover:active:hover:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:hover:active:hover:focus, GtkPopover .button:hover:checked, GtkPopover .selection-mode.header-bar .button.suggested-action:hover:checked, .selection-mode.header-bar GtkPopover .button.suggested-action:hover:checked, GtkPopover .selection-mode.toolbar .button.suggested-action:hover:checked, .selection-mode.toolbar GtkPopover .button.suggested-action:hover:checked, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:hover:checked, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:hover:checked, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:hover:checked, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:hover:checked, GtkPopover .button:hover:checked:hover, GtkPopover .selection-mode.header-bar .button.suggested-action:hover:checked:hover, .selection-mode.header-bar GtkPopover .button.suggested-action:hover:checked:hover, GtkPopover .selection-mode.toolbar .button.suggested-action:hover:checked:hover, .selection-mode.toolbar GtkPopover .button.suggested-action:hover:checked:hover, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:hover:checked:hover, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:hover:checked:hover, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:hover:checked:hover, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:hover:checked:hover, GtkPopover .button:hover:checked:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:hover:checked:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:hover:checked:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:hover:checked:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:hover:checked:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:hover:checked:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:hover:checked:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:hover:checked:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:hover:checked:focus, GtkPopover .button:hover:checked:hover:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:hover:checked:hover:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:hover:checked:hover:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:hover:checked:hover:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:hover:checked:hover:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:hover:checked:hover:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:hover:checked:hover:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:hover:checked:hover:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:hover:checked:hover:focus, GtkPopover .button.flat:hover:active, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:hover:active, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:hover:active, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:hover:active, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:hover:active, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:hover:active, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:hover:active, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:hover:active, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:hover:active, GtkPopover .button.flat:hover:active:hover, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:hover:active:hover, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:hover:active:hover, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:hover:active:hover, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:hover:active:hover, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:hover:active:hover, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:hover:active:hover, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:hover:active:hover, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:hover:active:hover, GtkPopover .button.flat:hover:active:focus, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:hover:active:focus, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:hover:active:focus, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:hover:active:focus, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:hover:active:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:hover:active:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:hover:active:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:hover:active:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:hover:active:focus, GtkPopover .button.flat:hover:active:hover:focus, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:hover:active:hover:focus, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:hover:active:hover:focus, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:hover:active:hover:focus, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:hover:active:hover:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:hover:active:hover:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:hover:active:hover:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:hover:active:hover:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:hover:active:hover:focus, GtkPopover .button.flat:hover:checked, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:hover:checked, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:hover:checked, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:hover:checked, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:hover:checked, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:hover:checked, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:hover:checked, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:hover:checked, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:hover:checked, GtkPopover .button.flat:hover:checked:hover, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:hover:checked:hover, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:hover:checked:hover, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:hover:checked:hover, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:hover:checked:hover, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:hover:checked:hover, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:hover:checked:hover, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:hover:checked:hover, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:hover:checked:hover, GtkPopover .button.flat:hover:checked:focus, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:hover:checked:focus, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:hover:checked:focus, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:hover:checked:focus, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:hover:checked:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:hover:checked:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:hover:checked:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:hover:checked:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:hover:checked:focus, GtkPopover .button.flat:hover:checked:hover:focus, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:hover:checked:hover:focus, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:hover:checked:hover:focus, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:hover:checked:hover:focus, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:hover:checked:hover:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:hover:checked:hover:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:hover:checked:hover:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:hover:checked:hover:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:hover:checked:hover:focus {
-        border-color: rgba(25, 25, 25, 0.3); }
-      GtkPopover .button:hover:insensitive, GtkPopover .selection-mode.header-bar .button.suggested-action:hover:insensitive, .selection-mode.header-bar GtkPopover .button.suggested-action:hover:insensitive, GtkPopover .selection-mode.toolbar .button.suggested-action:hover:insensitive, .selection-mode.toolbar GtkPopover .button.suggested-action:hover:insensitive, GtkPopover .button.flat:hover:insensitive {
-        border-color: rgba(31, 31, 31, 0.3); }
-      GtkPopover .button:hover:active:insensitive, GtkPopover .button:hover:checked:insensitive, GtkPopover .button.flat:hover:active:insensitive, GtkPopover .button.flat:hover:checked:insensitive {
-        border-color: rgba(29, 29, 29, 0.3); }
-    GtkPopover .button:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:focus, GtkPopover .button.flat:focus {
-      background-color: #b489f7;
-      background-image: none;
-      border-color: rgba(36, 36, 36, 0.22);
-      color: #242424;
+      border-color: rgba(205, 205, 190, 0.4);
+      color: #f8f8f6;
       box-shadow: 0 1px 2px -1px rgba(51, 51, 51, 0.32); }
+      GtkPopover .button:hover:focus, GtkPopover .button:hover:hover, GtkPopover .selection-mode.header-bar .button.suggested-action:hover:hover, .selection-mode.header-bar GtkPopover .button.suggested-action:hover:hover, GtkPopover .selection-mode.toolbar .button.suggested-action:hover:hover, .selection-mode.toolbar GtkPopover .button.suggested-action:hover:hover, GtkPopover .button.flat:hover:focus, GtkPopover .button.flat:hover:hover {
+        border-color: mix(#fefa67,rgba(248, 248, 246, 0.4),0.3); }
+      GtkPopover .button:hover:active, GtkPopover .selection-mode.header-bar .button.suggested-action:hover:active, .selection-mode.header-bar GtkPopover .button.suggested-action:hover:active, GtkPopover .selection-mode.toolbar .button.suggested-action:hover:active, .selection-mode.toolbar GtkPopover .button.suggested-action:hover:active, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:hover:active, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:hover:active, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:hover:active, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:hover:active, GtkPopover .button:hover:active:hover, GtkPopover .selection-mode.header-bar .button.suggested-action:hover:active:hover, .selection-mode.header-bar GtkPopover .button.suggested-action:hover:active:hover, GtkPopover .selection-mode.toolbar .button.suggested-action:hover:active:hover, .selection-mode.toolbar GtkPopover .button.suggested-action:hover:active:hover, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:hover:active:hover, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:hover:active:hover, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:hover:active:hover, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:hover:active:hover, GtkPopover .button:hover:active:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:hover:active:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:hover:active:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:hover:active:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:hover:active:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:hover:active:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:hover:active:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:hover:active:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:hover:active:focus, GtkPopover .button:hover:active:hover:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:hover:active:hover:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:hover:active:hover:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:hover:active:hover:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:hover:active:hover:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:hover:active:hover:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:hover:active:hover:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:hover:active:hover:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:hover:active:hover:focus, GtkPopover .button:hover:checked, GtkPopover .selection-mode.header-bar .button.suggested-action:hover:checked, .selection-mode.header-bar GtkPopover .button.suggested-action:hover:checked, GtkPopover .selection-mode.toolbar .button.suggested-action:hover:checked, .selection-mode.toolbar GtkPopover .button.suggested-action:hover:checked, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:hover:checked, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:hover:checked, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:hover:checked, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:hover:checked, GtkPopover .button:hover:checked:hover, GtkPopover .selection-mode.header-bar .button.suggested-action:hover:checked:hover, .selection-mode.header-bar GtkPopover .button.suggested-action:hover:checked:hover, GtkPopover .selection-mode.toolbar .button.suggested-action:hover:checked:hover, .selection-mode.toolbar GtkPopover .button.suggested-action:hover:checked:hover, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:hover:checked:hover, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:hover:checked:hover, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:hover:checked:hover, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:hover:checked:hover, GtkPopover .button:hover:checked:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:hover:checked:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:hover:checked:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:hover:checked:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:hover:checked:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:hover:checked:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:hover:checked:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:hover:checked:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:hover:checked:focus, GtkPopover .button:hover:checked:hover:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:hover:checked:hover:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:hover:checked:hover:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:hover:checked:hover:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:hover:checked:hover:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:hover:checked:hover:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:hover:checked:hover:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:hover:checked:hover:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:hover:checked:hover:focus, GtkPopover .button.flat:hover:active, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:hover:active, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:hover:active, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:hover:active, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:hover:active, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:hover:active, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:hover:active, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:hover:active, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:hover:active, GtkPopover .button.flat:hover:active:hover, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:hover:active:hover, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:hover:active:hover, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:hover:active:hover, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:hover:active:hover, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:hover:active:hover, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:hover:active:hover, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:hover:active:hover, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:hover:active:hover, GtkPopover .button.flat:hover:active:focus, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:hover:active:focus, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:hover:active:focus, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:hover:active:focus, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:hover:active:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:hover:active:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:hover:active:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:hover:active:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:hover:active:focus, GtkPopover .button.flat:hover:active:hover:focus, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:hover:active:hover:focus, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:hover:active:hover:focus, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:hover:active:hover:focus, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:hover:active:hover:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:hover:active:hover:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:hover:active:hover:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:hover:active:hover:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:hover:active:hover:focus, GtkPopover .button.flat:hover:checked, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:hover:checked, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:hover:checked, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:hover:checked, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:hover:checked, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:hover:checked, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:hover:checked, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:hover:checked, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:hover:checked, GtkPopover .button.flat:hover:checked:hover, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:hover:checked:hover, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:hover:checked:hover, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:hover:checked:hover, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:hover:checked:hover, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:hover:checked:hover, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:hover:checked:hover, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:hover:checked:hover, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:hover:checked:hover, GtkPopover .button.flat:hover:checked:focus, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:hover:checked:focus, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:hover:checked:focus, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:hover:checked:focus, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:hover:checked:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:hover:checked:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:hover:checked:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:hover:checked:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:hover:checked:focus, GtkPopover .button.flat:hover:checked:hover:focus, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:hover:checked:hover:focus, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:hover:checked:hover:focus, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:hover:checked:hover:focus, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:hover:checked:hover:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:hover:checked:hover:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:hover:checked:hover:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:hover:checked:hover:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:hover:checked:hover:focus {
+        border-color: rgba(183, 183, 163, 0.4); }
+      GtkPopover .button:hover:insensitive, GtkPopover .selection-mode.header-bar .button.suggested-action:hover:insensitive, .selection-mode.header-bar GtkPopover .button.suggested-action:hover:insensitive, GtkPopover .selection-mode.toolbar .button.suggested-action:hover:insensitive, .selection-mode.toolbar GtkPopover .button.suggested-action:hover:insensitive, GtkPopover .button.flat:hover:insensitive {
+        border-color: rgba(216, 216, 204, 0.4); }
+      GtkPopover .button:hover:active:insensitive, GtkPopover .button:hover:checked:insensitive, GtkPopover .button.flat:hover:active:insensitive, GtkPopover .button.flat:hover:checked:insensitive {
+        border-color: rgba(205, 205, 190, 0.4); }
+    GtkPopover .button:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:focus, GtkPopover .button.flat:focus {
+      background-color: #262626;
+      background-image: none;
+      border-color: rgba(248, 248, 246, 0.32);
+      color: #f8f8f6;
+      box-shadow: 0 1px 2px -1px rgba(51, 51, 51, 0.42); }
       GtkPopover .button:focus:hover, GtkPopover .selection-mode.header-bar .button.suggested-action:focus:hover, .selection-mode.header-bar GtkPopover .button.suggested-action:focus:hover, GtkPopover .selection-mode.toolbar .button.suggested-action:focus:hover, .selection-mode.toolbar GtkPopover .button.suggested-action:focus:hover, GtkPopover .button.flat:focus:hover {
-        background-color: #bf9af8;
+        background-color: #282828;
         background-image: none;
-        border-color: rgba(29, 29, 29, 0.3);
-        box-shadow: 0 1px 2px -1px rgba(51, 51, 51, 0.38); }
+        border-color: rgba(205, 205, 190, 0.4);
+        box-shadow: 0 1px 2px -1px rgba(51, 51, 51, 0.48); }
         GtkPopover .button:focus:hover:hover, GtkPopover .button.flat:focus:hover:hover {
-          border-color: mix(#fefa67,rgba(36, 36, 36, 0.3),0.3); }
+          border-color: mix(#fefa67,rgba(248, 248, 246, 0.4),0.3); }
         GtkPopover .button:focus:hover:active, GtkPopover .selection-mode.header-bar .button.suggested-action:focus:hover:active, .selection-mode.header-bar GtkPopover .button.suggested-action:focus:hover:active, GtkPopover .selection-mode.toolbar .button.suggested-action:focus:hover:active, .selection-mode.toolbar GtkPopover .button.suggested-action:focus:hover:active, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:focus:hover:active, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:focus:hover:active, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:focus:hover:active, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:focus:hover:active, GtkPopover .button:focus:hover:active:hover, GtkPopover .selection-mode.header-bar .button.suggested-action:focus:hover:active:hover, .selection-mode.header-bar GtkPopover .button.suggested-action:focus:hover:active:hover, GtkPopover .selection-mode.toolbar .button.suggested-action:focus:hover:active:hover, .selection-mode.toolbar GtkPopover .button.suggested-action:focus:hover:active:hover, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:focus:hover:active:hover, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:focus:hover:active:hover, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:focus:hover:active:hover, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:focus:hover:active:hover, GtkPopover .button:focus:hover:active:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:focus:hover:active:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:focus:hover:active:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:focus:hover:active:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:focus:hover:active:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:focus:hover:active:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:focus:hover:active:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:focus:hover:active:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:focus:hover:active:focus, GtkPopover .button:focus:hover:active:hover:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:focus:hover:active:hover:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:focus:hover:active:hover:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:focus:hover:active:hover:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:focus:hover:active:hover:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:focus:hover:active:hover:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:focus:hover:active:hover:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:focus:hover:active:hover:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:focus:hover:active:hover:focus, GtkPopover .button:focus:hover:checked, GtkPopover .selection-mode.header-bar .button.suggested-action:focus:hover:checked, .selection-mode.header-bar GtkPopover .button.suggested-action:focus:hover:checked, GtkPopover .selection-mode.toolbar .button.suggested-action:focus:hover:checked, .selection-mode.toolbar GtkPopover .button.suggested-action:focus:hover:checked, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:focus:hover:checked, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:focus:hover:checked, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:focus:hover:checked, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:focus:hover:checked, GtkPopover .button:focus:hover:checked:hover, GtkPopover .selection-mode.header-bar .button.suggested-action:focus:hover:checked:hover, .selection-mode.header-bar GtkPopover .button.suggested-action:focus:hover:checked:hover, GtkPopover .selection-mode.toolbar .button.suggested-action:focus:hover:checked:hover, .selection-mode.toolbar GtkPopover .button.suggested-action:focus:hover:checked:hover, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:focus:hover:checked:hover, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:focus:hover:checked:hover, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:focus:hover:checked:hover, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:focus:hover:checked:hover, GtkPopover .button:focus:hover:checked:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:focus:hover:checked:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:focus:hover:checked:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:focus:hover:checked:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:focus:hover:checked:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:focus:hover:checked:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:focus:hover:checked:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:focus:hover:checked:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:focus:hover:checked:focus, GtkPopover .button:focus:hover:checked:hover:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:focus:hover:checked:hover:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:focus:hover:checked:hover:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:focus:hover:checked:hover:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:focus:hover:checked:hover:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:focus:hover:checked:hover:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:focus:hover:checked:hover:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:focus:hover:checked:hover:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:focus:hover:checked:hover:focus, GtkPopover .button.flat:focus:hover:active, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:focus:hover:active, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:focus:hover:active, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:focus:hover:active, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:focus:hover:active, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:focus:hover:active, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:focus:hover:active, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:focus:hover:active, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:focus:hover:active, GtkPopover .button.flat:focus:hover:active:hover, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:focus:hover:active:hover, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:focus:hover:active:hover, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:focus:hover:active:hover, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:focus:hover:active:hover, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:focus:hover:active:hover, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:focus:hover:active:hover, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:focus:hover:active:hover, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:focus:hover:active:hover, GtkPopover .button.flat:focus:hover:active:focus, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:focus:hover:active:focus, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:focus:hover:active:focus, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:focus:hover:active:focus, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:focus:hover:active:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:focus:hover:active:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:focus:hover:active:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:focus:hover:active:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:focus:hover:active:focus, GtkPopover .button.flat:focus:hover:active:hover:focus, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:focus:hover:active:hover:focus, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:focus:hover:active:hover:focus, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:focus:hover:active:hover:focus, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:focus:hover:active:hover:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:focus:hover:active:hover:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:focus:hover:active:hover:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:focus:hover:active:hover:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:focus:hover:active:hover:focus, GtkPopover .button.flat:focus:hover:checked, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:focus:hover:checked, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:focus:hover:checked, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:focus:hover:checked, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:focus:hover:checked, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:focus:hover:checked, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:focus:hover:checked, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:focus:hover:checked, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:focus:hover:checked, GtkPopover .button.flat:focus:hover:checked:hover, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:focus:hover:checked:hover, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:focus:hover:checked:hover, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:focus:hover:checked:hover, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:focus:hover:checked:hover, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:focus:hover:checked:hover, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:focus:hover:checked:hover, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:focus:hover:checked:hover, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:focus:hover:checked:hover, GtkPopover .button.flat:focus:hover:checked:focus, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:focus:hover:checked:focus, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:focus:hover:checked:focus, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:focus:hover:checked:focus, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:focus:hover:checked:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:focus:hover:checked:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:focus:hover:checked:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:focus:hover:checked:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:focus:hover:checked:focus, GtkPopover .button.flat:focus:hover:checked:hover:focus, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:focus:hover:checked:hover:focus, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:focus:hover:checked:hover:focus, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:focus:hover:checked:hover:focus, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:focus:hover:checked:hover:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:focus:hover:checked:hover:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:focus:hover:checked:hover:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:focus:hover:checked:hover:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:focus:hover:checked:hover:focus {
-          border-color: rgba(25, 25, 25, 0.3); }
+          border-color: rgba(183, 183, 163, 0.4); }
         GtkPopover .button:focus:hover:insensitive, GtkPopover .button.flat:focus:hover:insensitive {
-          border-color: rgba(31, 31, 31, 0.3); }
+          border-color: rgba(216, 216, 204, 0.4); }
         GtkPopover .button:focus:hover:active:insensitive, GtkPopover .button:focus:hover:checked:insensitive, GtkPopover .button.flat:focus:hover:active:insensitive, GtkPopover .button.flat:focus:hover:checked:insensitive {
-          border-color: rgba(29, 29, 29, 0.3); }
+          border-color: rgba(205, 205, 190, 0.4); }
     GtkPopover .button:checked, GtkPopover .selection-mode.header-bar .button.suggested-action:checked, .selection-mode.header-bar GtkPopover .button.suggested-action:checked, GtkPopover .selection-mode.toolbar .button.suggested-action:checked, .selection-mode.toolbar GtkPopover .button.suggested-action:checked, GtkPopover .button:active, GtkPopover .selection-mode.header-bar .button.suggested-action:active, .selection-mode.header-bar GtkPopover .button.suggested-action:active, GtkPopover .selection-mode.toolbar .button.suggested-action:active, .selection-mode.toolbar GtkPopover .button.suggested-action:active, GtkPopover .button.flat:checked, GtkPopover .button.flat:active {
       background-color: #fefa67;
       background-image: none;
-      border-color: rgba(29, 29, 29, 0.22);
+      border-color: rgba(205, 205, 190, 0.32);
       color: #000507;
-      box-shadow: inset 1px 0 rgba(36, 36, 36, 0.06), inset 0 1px rgba(36, 36, 36, 0.07), inset -1px 0 rgba(36, 36, 36, 0.06), inset 0 -1px rgba(36, 36, 36, 0.05); }
+      box-shadow: inset 1px 0 rgba(248, 248, 246, 0.06), inset 0 1px rgba(248, 248, 246, 0.07), inset -1px 0 rgba(248, 248, 246, 0.06), inset 0 -1px rgba(248, 248, 246, 0.05); }
       GtkPopover .button:checked:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:checked:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:checked:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:checked:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:checked:focus, GtkPopover .button:checked:hover, GtkPopover .selection-mode.header-bar .button.suggested-action:checked:hover, .selection-mode.header-bar GtkPopover .button.suggested-action:checked:hover, GtkPopover .selection-mode.toolbar .button.suggested-action:checked:hover, .selection-mode.toolbar GtkPopover .button.suggested-action:checked:hover, GtkPopover .button:active:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:active:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:active:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:active:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:active:focus, GtkPopover .button:active:hover, GtkPopover .selection-mode.header-bar .button.suggested-action:active:hover, .selection-mode.header-bar GtkPopover .button.suggested-action:active:hover, GtkPopover .selection-mode.toolbar .button.suggested-action:active:hover, .selection-mode.toolbar GtkPopover .button.suggested-action:active:hover, GtkPopover .button.flat:checked:focus, GtkPopover .button.flat:checked:hover, GtkPopover .button.flat:active:focus, GtkPopover .button.flat:active:hover {
-        border-color: mix(#fefa67,rgba(36, 36, 36, 0.22),0.3); }
+        border-color: mix(#fefa67,rgba(248, 248, 246, 0.32),0.3); }
       GtkPopover .button:checked:active, GtkPopover .selection-mode.header-bar .button.suggested-action:checked:active, .selection-mode.header-bar GtkPopover .button.suggested-action:checked:active, GtkPopover .selection-mode.toolbar .button.suggested-action:checked:active, .selection-mode.toolbar GtkPopover .button.suggested-action:checked:active, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:checked:active, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:checked:active, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:checked:active, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:checked:active, GtkPopover .button:checked:active:hover, GtkPopover .selection-mode.header-bar .button.suggested-action:checked:active:hover, .selection-mode.header-bar GtkPopover .button.suggested-action:checked:active:hover, GtkPopover .selection-mode.toolbar .button.suggested-action:checked:active:hover, .selection-mode.toolbar GtkPopover .button.suggested-action:checked:active:hover, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:checked:active:hover, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:checked:active:hover, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:checked:active:hover, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:checked:active:hover, GtkPopover .button:checked:active:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:checked:active:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:checked:active:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:checked:active:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:checked:active:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:checked:active:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:checked:active:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:checked:active:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:checked:active:focus, GtkPopover .button:checked:active:hover:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:checked:active:hover:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:checked:active:hover:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:checked:active:hover:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:checked:active:hover:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:checked:active:hover:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:checked:active:hover:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:checked:active:hover:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:checked:active:hover:focus, GtkPopover .button:checked:checked, GtkPopover .selection-mode.header-bar .button.suggested-action:checked:checked, .selection-mode.header-bar GtkPopover .button.suggested-action:checked:checked, GtkPopover .selection-mode.toolbar .button.suggested-action:checked:checked, .selection-mode.toolbar GtkPopover .button.suggested-action:checked:checked, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:checked:checked, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:checked:checked, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:checked:checked, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:checked:checked, GtkPopover .button:checked:checked:hover, GtkPopover .selection-mode.header-bar .button.suggested-action:checked:checked:hover, .selection-mode.header-bar GtkPopover .button.suggested-action:checked:checked:hover, GtkPopover .selection-mode.toolbar .button.suggested-action:checked:checked:hover, .selection-mode.toolbar GtkPopover .button.suggested-action:checked:checked:hover, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:checked:checked:hover, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:checked:checked:hover, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:checked:checked:hover, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:checked:checked:hover, GtkPopover .button:checked:checked:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:checked:checked:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:checked:checked:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:checked:checked:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:checked:checked:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:checked:checked:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:checked:checked:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:checked:checked:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:checked:checked:focus, GtkPopover .button:checked:checked:hover:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:checked:checked:hover:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:checked:checked:hover:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:checked:checked:hover:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:checked:checked:hover:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:checked:checked:hover:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:checked:checked:hover:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:checked:checked:hover:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:checked:checked:hover:focus, GtkPopover .button:active:active, GtkPopover .selection-mode.header-bar .button.suggested-action:active:active, .selection-mode.header-bar GtkPopover .button.suggested-action:active:active, GtkPopover .selection-mode.toolbar .button.suggested-action:active:active, .selection-mode.toolbar GtkPopover .button.suggested-action:active:active, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:active:active, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:active:active, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:active:active, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:active:active, GtkPopover .button:active:active:hover, GtkPopover .selection-mode.header-bar .button.suggested-action:active:active:hover, .selection-mode.header-bar GtkPopover .button.suggested-action:active:active:hover, GtkPopover .selection-mode.toolbar .button.suggested-action:active:active:hover, .selection-mode.toolbar GtkPopover .button.suggested-action:active:active:hover, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:active:active:hover, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:active:active:hover, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:active:active:hover, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:active:active:hover, GtkPopover .button:active:active:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:active:active:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:active:active:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:active:active:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:active:active:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:active:active:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:active:active:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:active:active:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:active:active:focus, GtkPopover .button:active:active:hover:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:active:active:hover:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:active:active:hover:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:active:active:hover:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:active:active:hover:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:active:active:hover:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:active:active:hover:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:active:active:hover:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:active:active:hover:focus, GtkPopover .button:active:checked, GtkPopover .selection-mode.header-bar .button.suggested-action:active:checked, .selection-mode.header-bar GtkPopover .button.suggested-action:active:checked, GtkPopover .selection-mode.toolbar .button.suggested-action:active:checked, .selection-mode.toolbar GtkPopover .button.suggested-action:active:checked, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:active:checked, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:active:checked, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:active:checked, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:active:checked, GtkPopover .button:active:checked:hover, GtkPopover .selection-mode.header-bar .button.suggested-action:active:checked:hover, .selection-mode.header-bar GtkPopover .button.suggested-action:active:checked:hover, GtkPopover .selection-mode.toolbar .button.suggested-action:active:checked:hover, .selection-mode.toolbar GtkPopover .button.suggested-action:active:checked:hover, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:active:checked:hover, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:active:checked:hover, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:active:checked:hover, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:active:checked:hover, GtkPopover .button:active:checked:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:active:checked:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:active:checked:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:active:checked:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:active:checked:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:active:checked:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:active:checked:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:active:checked:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:active:checked:focus, GtkPopover .button:active:checked:hover:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:active:checked:hover:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:active:checked:hover:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:active:checked:hover:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:active:checked:hover:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .suggested-action.button:active:checked:hover:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .suggested-action.button:active:checked:hover:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .suggested-action.button:active:checked:hover:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .suggested-action.button:active:checked:hover:focus, GtkPopover .button.flat:checked:active, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:checked:active, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:checked:active, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:checked:active, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:checked:active, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:checked:active, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:checked:active, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:checked:active, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:checked:active, GtkPopover .button.flat:checked:active:hover, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:checked:active:hover, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:checked:active:hover, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:checked:active:hover, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:checked:active:hover, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:checked:active:hover, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:checked:active:hover, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:checked:active:hover, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:checked:active:hover, GtkPopover .button.flat:checked:active:focus, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:checked:active:focus, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:checked:active:focus, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:checked:active:focus, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:checked:active:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:checked:active:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:checked:active:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:checked:active:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:checked:active:focus, GtkPopover .button.flat:checked:active:hover:focus, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:checked:active:hover:focus, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:checked:active:hover:focus, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:checked:active:hover:focus, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:checked:active:hover:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:checked:active:hover:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:checked:active:hover:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:checked:active:hover:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:checked:active:hover:focus, GtkPopover .button.flat:checked:checked, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:checked:checked, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:checked:checked, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:checked:checked, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:checked:checked, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:checked:checked, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:checked:checked, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:checked:checked, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:checked:checked, GtkPopover .button.flat:checked:checked:hover, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:checked:checked:hover, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:checked:checked:hover, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:checked:checked:hover, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:checked:checked:hover, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:checked:checked:hover, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:checked:checked:hover, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:checked:checked:hover, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:checked:checked:hover, GtkPopover .button.flat:checked:checked:focus, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:checked:checked:focus, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:checked:checked:focus, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:checked:checked:focus, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:checked:checked:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:checked:checked:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:checked:checked:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:checked:checked:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:checked:checked:focus, GtkPopover .button.flat:checked:checked:hover:focus, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:checked:checked:hover:focus, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:checked:checked:hover:focus, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:checked:checked:hover:focus, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:checked:checked:hover:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:checked:checked:hover:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:checked:checked:hover:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:checked:checked:hover:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:checked:checked:hover:focus, GtkPopover .button.flat:active:active, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:active:active, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:active:active, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:active:active, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:active:active, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:active:active, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:active:active, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:active:active, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:active:active, GtkPopover .button.flat:active:active:hover, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:active:active:hover, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:active:active:hover, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:active:active:hover, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:active:active:hover, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:active:active:hover, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:active:active:hover, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:active:active:hover, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:active:active:hover, GtkPopover .button.flat:active:active:focus, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:active:active:focus, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:active:active:focus, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:active:active:focus, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:active:active:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:active:active:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:active:active:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:active:active:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:active:active:focus, GtkPopover .button.flat:active:active:hover:focus, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:active:active:hover:focus, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:active:active:hover:focus, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:active:active:hover:focus, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:active:active:hover:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:active:active:hover:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:active:active:hover:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:active:active:hover:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:active:active:hover:focus, GtkPopover .button.flat:active:checked, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:active:checked, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:active:checked, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:active:checked, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:active:checked, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:active:checked, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:active:checked, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:active:checked, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:active:checked, GtkPopover .button.flat:active:checked:hover, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:active:checked:hover, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:active:checked:hover, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:active:checked:hover, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:active:checked:hover, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:active:checked:hover, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:active:checked:hover, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:active:checked:hover, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:active:checked:hover, GtkPopover .button.flat:active:checked:focus, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:active:checked:focus, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:active:checked:focus, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:active:checked:focus, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:active:checked:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:active:checked:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:active:checked:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:active:checked:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:active:checked:focus, GtkPopover .button.flat:active:checked:hover:focus, GtkPopover .selection-mode.header-bar .flat.button.suggested-action:active:checked:hover:focus, .selection-mode.header-bar GtkPopover .flat.button.suggested-action:active:checked:hover:focus, GtkPopover .selection-mode.toolbar .flat.button.suggested-action:active:checked:hover:focus, .selection-mode.toolbar GtkPopover .flat.button.suggested-action:active:checked:hover:focus, GtkPopover .selection-mode.header-bar .selection-mode.toolbar .flat.suggested-action.button:active:checked:hover:focus, .selection-mode.header-bar .selection-mode.toolbar GtkPopover .flat.suggested-action.button:active:checked:hover:focus, GtkPopover .selection-mode.toolbar .selection-mode.header-bar .flat.suggested-action.button:active:checked:hover:focus, .selection-mode.toolbar .selection-mode.header-bar GtkPopover .flat.suggested-action.button:active:checked:hover:focus {
-        border-color: rgba(25, 25, 25, 0.22); }
+        border-color: rgba(183, 183, 163, 0.32); }
       GtkPopover .button:checked:insensitive, GtkPopover .selection-mode.header-bar .button.suggested-action:checked:insensitive, .selection-mode.header-bar GtkPopover .button.suggested-action:checked:insensitive, GtkPopover .selection-mode.toolbar .button.suggested-action:checked:insensitive, .selection-mode.toolbar GtkPopover .button.suggested-action:checked:insensitive, GtkPopover .button:active:insensitive, GtkPopover .selection-mode.header-bar .button.suggested-action:active:insensitive, .selection-mode.header-bar GtkPopover .button.suggested-action:active:insensitive, GtkPopover .selection-mode.toolbar .button.suggested-action:active:insensitive, .selection-mode.toolbar GtkPopover .button.suggested-action:active:insensitive, GtkPopover .button.flat:checked:insensitive, GtkPopover .button.flat:active:insensitive {
-        border-color: rgba(31, 31, 31, 0.22); }
+        border-color: rgba(216, 216, 204, 0.32); }
       GtkPopover .button:active:checked:insensitive, GtkPopover .button.flat:active:checked:insensitive {
-        border-color: rgba(29, 29, 29, 0.22); }
+        border-color: rgba(205, 205, 190, 0.32); }
       GtkPopover .button:checked:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:checked:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:checked:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:checked:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:checked:focus, GtkPopover .button:checked:hover, GtkPopover .selection-mode.header-bar .button.suggested-action:checked:hover, .selection-mode.header-bar GtkPopover .button.suggested-action:checked:hover, GtkPopover .selection-mode.toolbar .button.suggested-action:checked:hover, .selection-mode.toolbar GtkPopover .button.suggested-action:checked:hover, GtkPopover .button:active:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:active:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:active:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:active:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:active:focus, GtkPopover .button:active:hover, GtkPopover .selection-mode.header-bar .button.suggested-action:active:hover, .selection-mode.header-bar GtkPopover .button.suggested-action:active:hover, GtkPopover .selection-mode.toolbar .button.suggested-action:active:hover, .selection-mode.toolbar GtkPopover .button.suggested-action:active:hover, GtkPopover .button.flat:checked:focus, GtkPopover .button.flat:checked:hover, GtkPopover .button.flat:active:focus, GtkPopover .button.flat:active:hover {
         background-color: #fefb79;
         background-image: none;
         color: #000507; }
     GtkPopover .button:focus, GtkPopover .selection-mode.header-bar .button.suggested-action:focus, .selection-mode.header-bar GtkPopover .button.suggested-action:focus, GtkPopover .selection-mode.toolbar .button.suggested-action:focus, .selection-mode.toolbar GtkPopover .button.suggested-action:focus, GtkPopover .button:hover, GtkPopover .selection-mode.header-bar .button.suggested-action:hover, .selection-mode.header-bar GtkPopover .button.suggested-action:hover, GtkPopover .selection-mode.toolbar .button.suggested-action:hover, .selection-mode.toolbar GtkPopover .button.suggested-action:hover, GtkPopover .button.flat:focus, GtkPopover .button.flat:hover {
-      color: #242424; }
+      color: #f8f8f6; }
     GtkPopover .button:insensitive:insensitive, GtkPopover .selection-mode.header-bar .button.suggested-action:insensitive:insensitive, .selection-mode.header-bar GtkPopover .button.suggested-action:insensitive:insensitive, GtkPopover .selection-mode.toolbar .button.suggested-action:insensitive:insensitive, .selection-mode.toolbar GtkPopover .button.suggested-action:insensitive:insensitive, GtkPopover .button.flat:insensitive:insensitive {
-      background-color: alpha(mix(#a978f6,#242424,0.2),0.4);
+      background-color: alpha(mix(#242424,#f8f8f6,0.2),0.4);
       background-image: none;
       opacity: .6;
-      color: mix(#a978f6,#242424,0.6);
+      color: mix(#242424,#f8f8f6,0.6);
       box-shadow: none; }
       GtkPopover .button:insensitive:insensitive :insensitive, GtkPopover .button.flat:insensitive:insensitive :insensitive {
-        color: mix(#a978f6,#242424,0.6); }
+        color: mix(#242424,#f8f8f6,0.6); }
     GtkPopover .button:active:insensitive, GtkPopover .selection-mode.header-bar .button.suggested-action:active:insensitive, .selection-mode.header-bar GtkPopover .button.suggested-action:active:insensitive, GtkPopover .selection-mode.toolbar .button.suggested-action:active:insensitive, .selection-mode.toolbar GtkPopover .button.suggested-action:active:insensitive, GtkPopover .button:checked:insensitive, GtkPopover .selection-mode.header-bar .button.suggested-action:checked:insensitive, .selection-mode.header-bar GtkPopover .button.suggested-action:checked:insensitive, GtkPopover .selection-mode.toolbar .button.suggested-action:checked:insensitive, .selection-mode.toolbar GtkPopover .button.suggested-action:checked:insensitive {
       background-color: rgba(254, 250, 103, 0.6);
       background-image: none;
@@ -2329,15 +2329,15 @@ GtkPopover {
         color: rgba(0, 5, 7, 0.85); }
     GtkPopover .button.separator, GtkPopover .selection-mode.header-bar .separator.button.suggested-action, .selection-mode.header-bar GtkPopover .separator.button.suggested-action, GtkPopover .selection-mode.toolbar .separator.button.suggested-action, .selection-mode.toolbar GtkPopover .separator.button.suggested-action, GtkPopover .button .separator, GtkPopover .selection-mode.header-bar .button.suggested-action .separator, .selection-mode.header-bar GtkPopover .button.suggested-action .separator, GtkPopover .selection-mode.toolbar .button.suggested-action .separator, .selection-mode.toolbar GtkPopover .button.suggested-action .separator {
       border: 1px solid currentColor;
-      color: rgba(169, 120, 246, 0.9); }
+      color: rgba(36, 36, 36, 0.9); }
       GtkPopover .button.separator:insensitive, GtkPopover .selection-mode.header-bar .separator.button.suggested-action:insensitive, .selection-mode.header-bar GtkPopover .separator.button.suggested-action:insensitive, GtkPopover .selection-mode.toolbar .separator.button.suggested-action:insensitive, .selection-mode.toolbar GtkPopover .separator.button.suggested-action:insensitive, GtkPopover .button .separator:insensitive, GtkPopover .selection-mode.header-bar .button.suggested-action .separator:insensitive, .selection-mode.header-bar GtkPopover .button.suggested-action .separator:insensitive, GtkPopover .selection-mode.toolbar .button.suggested-action .separator:insensitive, .selection-mode.toolbar GtkPopover .button.suggested-action .separator:insensitive {
-        color: rgba(169, 120, 246, 0.85); }
+        color: rgba(36, 36, 36, 0.85); }
   GtkPopover > .list, GtkPopover > .view, GtkPopover > GtkHTML, GtkPopover > .toolbar {
     background-color: transparent; }
   GtkPopover .separator {
     border: 0;
     background-color: transparent;
-    color: #202020;
+    color: #101010;
     font-size: 80%;
     font-weight: bold; }
 
@@ -2480,15 +2480,15 @@ GtkMessageDialog, .message-dialog, .prompt {
 **********************/
 .app-notification, .app-notification.frame {
   border-style: solid;
-  border-color: rgba(29, 29, 29, 0.8);
+  border-color: rgba(14, 14, 14, 0.8);
   border-width: 0 1px 1px;
   border-radius: 0 0 2px 2px;
   padding: 6px;
-  background-color: rgba(36, 36, 36, 0.8);
+  background-color: rgba(18, 18, 18, 0.8);
   background-image: none;
   color: #fefefe; }
   .app-notification .button, .app-notification .selection-mode.header-bar .button.suggested-action, .selection-mode.header-bar .app-notification .button.suggested-action, .app-notification .selection-mode.toolbar .button.suggested-action, .selection-mode.toolbar .app-notification .button.suggested-action, .app-notification.frame .button {
-    background-color: rgba(36, 36, 36, 0.8);
+    background-color: rgba(18, 18, 18, 0.8);
     background-image: none;
     border-color: rgba(203, 203, 203, 0.32);
     color: #fefefe;
@@ -2502,13 +2502,13 @@ GtkMessageDialog, .message-dialog, .prompt {
     .app-notification .button:active:insensitive, .app-notification .button:checked:insensitive, .app-notification.frame .button:active:insensitive, .app-notification.frame .button:checked:insensitive {
       border-color: rgba(203, 203, 203, 0.32); }
     .app-notification .button.flat, .app-notification .selection-mode.header-bar .flat.button.suggested-action, .selection-mode.header-bar .app-notification .flat.button.suggested-action, .app-notification .selection-mode.toolbar .flat.button.suggested-action, .selection-mode.toolbar .app-notification .flat.button.suggested-action, .app-notification.frame .button.flat {
-      border-color: rgba(36, 36, 36, 0);
+      border-color: rgba(18, 18, 18, 0);
       color: #fefefe;
-      background-color: rgba(36, 36, 36, 0);
+      background-color: rgba(18, 18, 18, 0);
       background-image: none;
       box-shadow: none; }
     .app-notification .button:hover, .app-notification .selection-mode.header-bar .button.suggested-action:hover, .selection-mode.header-bar .app-notification .button.suggested-action:hover, .app-notification .selection-mode.toolbar .button.suggested-action:hover, .selection-mode.toolbar .app-notification .button.suggested-action:hover, .app-notification .button.flat:hover, .app-notification.frame .button:hover, .app-notification.frame .button.flat:hover {
-      background-color: rgba(38, 38, 38, 0.8);
+      background-color: rgba(19, 19, 19, 0.8);
       background-image: none;
       border-color: rgba(203, 203, 203, 0.4);
       color: #fefefe;
@@ -2522,13 +2522,13 @@ GtkMessageDialog, .message-dialog, .prompt {
       .app-notification .button:hover:active:insensitive, .app-notification .button:hover:checked:insensitive, .app-notification .button.flat:hover:active:insensitive, .app-notification .button.flat:hover:checked:insensitive, .app-notification.frame .button:hover:active:insensitive, .app-notification.frame .button:hover:checked:insensitive, .app-notification.frame .button.flat:hover:active:insensitive, .app-notification.frame .button.flat:hover:checked:insensitive {
         border-color: rgba(203, 203, 203, 0.4); }
     .app-notification .button:focus, .app-notification .selection-mode.header-bar .button.suggested-action:focus, .selection-mode.header-bar .app-notification .button.suggested-action:focus, .app-notification .selection-mode.toolbar .button.suggested-action:focus, .selection-mode.toolbar .app-notification .button.suggested-action:focus, .app-notification .button.flat:focus, .app-notification.frame .button:focus, .app-notification.frame .button.flat:focus {
-      background-color: rgba(38, 38, 38, 0.8);
+      background-color: rgba(19, 19, 19, 0.8);
       background-image: none;
       border-color: rgba(254, 254, 254, 0.32);
       color: #fefefe;
       box-shadow: 0 1px 2px -1px rgba(51, 51, 51, 0.42); }
       .app-notification .button:focus:hover, .app-notification .button.flat:focus:hover, .app-notification.frame .button:focus:hover, .app-notification.frame .button.flat:focus:hover {
-        background-color: rgba(40, 40, 40, 0.8);
+        background-color: rgba(20, 20, 20, 0.8);
         background-image: none;
         border-color: rgba(203, 203, 203, 0.4);
         box-shadow: 0 1px 2px -1px rgba(51, 51, 51, 0.48); }
@@ -2561,13 +2561,13 @@ GtkMessageDialog, .message-dialog, .prompt {
     .app-notification .button:focus, .app-notification .selection-mode.header-bar .button.suggested-action:focus, .selection-mode.header-bar .app-notification .button.suggested-action:focus, .app-notification .selection-mode.toolbar .button.suggested-action:focus, .selection-mode.toolbar .app-notification .button.suggested-action:focus, .app-notification .button:hover, .app-notification .selection-mode.header-bar .button.suggested-action:hover, .selection-mode.header-bar .app-notification .button.suggested-action:hover, .app-notification .selection-mode.toolbar .button.suggested-action:hover, .selection-mode.toolbar .app-notification .button.suggested-action:hover, .app-notification .button.flat:focus, .app-notification .button.flat:hover, .app-notification.frame .button:focus, .app-notification.frame .button:hover, .app-notification.frame .button.flat:focus, .app-notification.frame .button.flat:hover {
       color: #fefefe; }
     .app-notification .button:insensitive:insensitive, .app-notification .button.flat:insensitive:insensitive, .app-notification.frame .button:insensitive:insensitive, .app-notification.frame .button.flat:insensitive:insensitive {
-      background-color: alpha(mix(rgba(36, 36, 36, 0.8),#fefefe,0.2),0.4);
+      background-color: alpha(mix(rgba(18, 18, 18, 0.8),#fefefe,0.2),0.4);
       background-image: none;
       opacity: .6;
-      color: mix(rgba(36, 36, 36, 0.8),#fefefe,0.6);
+      color: mix(rgba(18, 18, 18, 0.8),#fefefe,0.6);
       box-shadow: none; }
       .app-notification .button:insensitive:insensitive :insensitive, .app-notification .button.flat:insensitive:insensitive :insensitive, .app-notification.frame .button:insensitive:insensitive :insensitive, .app-notification.frame .button.flat:insensitive:insensitive :insensitive {
-        color: mix(rgba(36, 36, 36, 0.8),#fefefe,0.6); }
+        color: mix(rgba(18, 18, 18, 0.8),#fefefe,0.6); }
     .app-notification .button:active:insensitive, .app-notification .button:checked:insensitive, .app-notification.frame .button:active:insensitive, .app-notification.frame .button:checked:insensitive {
       background-color: rgba(254, 250, 103, 0.6);
       background-image: none;
@@ -2577,9 +2577,9 @@ GtkMessageDialog, .message-dialog, .prompt {
         color: rgba(0, 5, 7, 0.85); }
     .app-notification .button.separator, .app-notification .selection-mode.header-bar .separator.button.suggested-action, .selection-mode.header-bar .app-notification .separator.button.suggested-action, .app-notification .selection-mode.toolbar .separator.button.suggested-action, .selection-mode.toolbar .app-notification .separator.button.suggested-action, .app-notification .button .separator, .app-notification .selection-mode.header-bar .button.suggested-action .separator, .selection-mode.header-bar .app-notification .button.suggested-action .separator, .app-notification .selection-mode.toolbar .button.suggested-action .separator, .selection-mode.toolbar .app-notification .button.suggested-action .separator, .app-notification.frame .button.separator, .app-notification.frame .button .separator {
       border: 1px solid currentColor;
-      color: rgba(36, 36, 36, 0.7); }
+      color: rgba(18, 18, 18, 0.7); }
       .app-notification .button.separator:insensitive, .app-notification .button .separator:insensitive, .app-notification.frame .button.separator:insensitive, .app-notification.frame .button .separator:insensitive {
-        color: rgba(36, 36, 36, 0.65); }
+        color: rgba(18, 18, 18, 0.65); }
 
 /*************
  ! Expanders *
@@ -2647,7 +2647,7 @@ GtkBubbleWindow {
   border-radius: 2px;
   background-clip: border-box; }
   GtkBubbleWindow.osd.background {
-    background-color: rgba(36, 36, 36, 0.8); }
+    background-color: rgba(18, 18, 18, 0.8); }
   GtkBubbleWindow .toolbar {
     background-color: transparent; }
 
@@ -2798,7 +2798,7 @@ GtkOverlay.osd {
   /* used by Documents */ }
   .osd.background,
   #XfceNotifyWindow.background {
-    background-color: rgba(36, 36, 36, 0.6);
+    background-color: rgba(18, 18, 18, 0.6);
     color: #fefefe; }
   .osd.frame,
   #XfceNotifyWindow.frame {
@@ -2807,7 +2807,7 @@ GtkOverlay.osd {
   .osd.button, .selection-mode.header-bar .osd.button.suggested-action, .selection-mode.toolbar .osd.button.suggested-action, .osd .button, .osd .selection-mode.header-bar .button.suggested-action, .selection-mode.header-bar .osd .button.suggested-action, .osd .selection-mode.toolbar .button.suggested-action, .selection-mode.toolbar .osd .button.suggested-action,
   #XfceNotifyWindow.button,
   #XfceNotifyWindow .button {
-    background-color: rgba(36, 36, 36, 0.8);
+    background-color: rgba(18, 18, 18, 0.8);
     background-image: none;
     border-color: rgba(203, 203, 203, 0.32);
     color: #fefefe;
@@ -2945,9 +2945,9 @@ GtkOverlay.osd {
     .osd.button.flat, .selection-mode.header-bar .osd.flat.button.suggested-action, .selection-mode.toolbar .osd.flat.button.suggested-action, .osd .button.flat, .osd .selection-mode.header-bar .flat.button.suggested-action, .selection-mode.header-bar .osd .flat.button.suggested-action, .osd .selection-mode.toolbar .flat.button.suggested-action, .selection-mode.toolbar .osd .flat.button.suggested-action,
     #XfceNotifyWindow.button.flat,
     #XfceNotifyWindow .button.flat {
-      border-color: rgba(36, 36, 36, 0);
+      border-color: rgba(18, 18, 18, 0);
       color: #fefefe;
-      background-color: rgba(36, 36, 36, 0);
+      background-color: rgba(18, 18, 18, 0);
       background-image: none;
       box-shadow: none; }
     .osd.button:hover, .selection-mode.header-bar .osd.button.suggested-action:hover, .selection-mode.toolbar .osd.button.suggested-action:hover, .osd.button.flat:hover, .osd .button:hover, .osd .selection-mode.header-bar .button.suggested-action:hover, .selection-mode.header-bar .osd .button.suggested-action:hover, .osd .selection-mode.toolbar .button.suggested-action:hover, .selection-mode.toolbar .osd .button.suggested-action:hover, .osd .button.flat:hover,
@@ -2955,7 +2955,7 @@ GtkOverlay.osd {
     #XfceNotifyWindow.button.flat:hover,
     #XfceNotifyWindow .button:hover,
     #XfceNotifyWindow .button.flat:hover {
-      background-color: rgba(38, 38, 38, 0.8);
+      background-color: rgba(19, 19, 19, 0.8);
       background-image: none;
       border-color: rgba(203, 203, 203, 0.4);
       color: #fefefe;
@@ -3313,7 +3313,7 @@ GtkOverlay.osd {
     #XfceNotifyWindow.button.flat:focus,
     #XfceNotifyWindow .button:focus,
     #XfceNotifyWindow .button.flat:focus {
-      background-color: rgba(38, 38, 38, 0.8);
+      background-color: rgba(19, 19, 19, 0.8);
       background-image: none;
       border-color: rgba(254, 254, 254, 0.32);
       color: #fefefe;
@@ -3323,7 +3323,7 @@ GtkOverlay.osd {
       #XfceNotifyWindow.button.flat:focus:hover,
       #XfceNotifyWindow .button:focus:hover,
       #XfceNotifyWindow .button.flat:focus:hover {
-        background-color: rgba(40, 40, 40, 0.8);
+        background-color: rgba(20, 20, 20, 0.8);
         background-image: none;
         border-color: rgba(203, 203, 203, 0.4);
         box-shadow: 0 1px 2px -1px rgba(51, 51, 51, 0.48); }
@@ -4652,17 +4652,17 @@ GtkOverlay.osd {
     #XfceNotifyWindow.button.flat:insensitive:insensitive,
     #XfceNotifyWindow .button:insensitive:insensitive,
     #XfceNotifyWindow .button.flat:insensitive:insensitive {
-      background-color: alpha(mix(rgba(36, 36, 36, 0.8),#fefefe,0.2),0.4);
+      background-color: alpha(mix(rgba(18, 18, 18, 0.8),#fefefe,0.2),0.4);
       background-image: none;
       opacity: .6;
-      color: mix(rgba(36, 36, 36, 0.8),#fefefe,0.6);
+      color: mix(rgba(18, 18, 18, 0.8),#fefefe,0.6);
       box-shadow: none; }
       .osd.button:insensitive:insensitive :insensitive, .osd.button.flat:insensitive:insensitive :insensitive, .osd .button:insensitive:insensitive :insensitive, .osd .button.flat:insensitive:insensitive :insensitive,
       #XfceNotifyWindow.button:insensitive:insensitive :insensitive,
       #XfceNotifyWindow.button.flat:insensitive:insensitive :insensitive,
       #XfceNotifyWindow .button:insensitive:insensitive :insensitive,
       #XfceNotifyWindow .button.flat:insensitive:insensitive :insensitive {
-        color: mix(rgba(36, 36, 36, 0.8),#fefefe,0.6); }
+        color: mix(rgba(18, 18, 18, 0.8),#fefefe,0.6); }
     .osd.button:active:insensitive, .osd.button:checked:insensitive, .osd .button:active:insensitive, .osd .button:checked:insensitive,
     #XfceNotifyWindow.button:active:insensitive,
     #XfceNotifyWindow.button:checked:insensitive,
@@ -4684,40 +4684,40 @@ GtkOverlay.osd {
     #XfceNotifyWindow .button.separator,
     #XfceNotifyWindow .button .separator {
       border: 1px solid currentColor;
-      color: rgba(36, 36, 36, 0.7); }
+      color: rgba(18, 18, 18, 0.7); }
       .osd.button.separator:insensitive, .osd.button .separator:insensitive, .osd .button.separator:insensitive, .osd .button .separator:insensitive,
       #XfceNotifyWindow.button.separator:insensitive,
       #XfceNotifyWindow.button .separator:insensitive,
       #XfceNotifyWindow .button.separator:insensitive,
       #XfceNotifyWindow .button .separator:insensitive {
-        color: rgba(36, 36, 36, 0.65); }
+        color: rgba(18, 18, 18, 0.65); }
   .osd.toolbar,
   #XfceNotifyWindow.toolbar {
     -GtkToolbar-button-relief: normal;
     padding: 3px;
-    border: 1px solid rgba(29, 29, 29, 0.8);
+    border: 1px solid rgba(14, 14, 14, 0.8);
     border-radius: 2px;
-    background-color: rgba(36, 36, 36, 0.8);
+    background-color: rgba(18, 18, 18, 0.8);
     background-image: none;
     color: #fefefe; }
     .osd.toolbar .separator,
     #XfceNotifyWindow.toolbar .separator {
-      color: rgba(32, 32, 32, 0.8); }
+      color: rgba(16, 16, 16, 0.8); }
   .osd.trough,
   #XfceNotifyWindow.trough {
-    background-color: rgba(29, 29, 29, 0.8); }
+    background-color: rgba(14, 14, 14, 0.8); }
   .osd.progressbar,
   #XfceNotifyWindow.progressbar {
     background-color: #fefefe; }
   .osd .scale.slider,
   #XfceNotifyWindow .scale.slider {
-    background-color: rgba(39, 39, 39, 0.8);
+    background-color: rgba(19, 19, 19, 0.8);
     background-image: none;
-    border-color: rgba(29, 29, 29, 0.8); }
+    border-color: rgba(14, 14, 14, 0.8); }
     .osd .scale.slider:focus, .osd .scale.slider:hover,
     #XfceNotifyWindow .scale.slider:focus,
     #XfceNotifyWindow .scale.slider:hover {
-      border-color: mix(#fefa67,rgba(36, 36, 36, 0.8),0.3); }
+      border-color: mix(#fefa67,rgba(18, 18, 18, 0.8),0.3); }
     .osd .scale.slider:active, .osd .scale.slider:active:hover, .osd .scale.slider:active:focus, .osd .scale.slider:active:hover:focus, .osd .scale.slider:checked, .osd .scale.slider:checked:hover, .osd .scale.slider:checked:focus, .osd .scale.slider:checked:hover:focus,
     #XfceNotifyWindow .scale.slider:active,
     #XfceNotifyWindow .scale.slider:active:hover,
@@ -4727,22 +4727,22 @@ GtkOverlay.osd {
     #XfceNotifyWindow .scale.slider:checked:hover,
     #XfceNotifyWindow .scale.slider:checked:focus,
     #XfceNotifyWindow .scale.slider:checked:hover:focus {
-      border-color: rgba(25, 25, 25, 0.8); }
+      border-color: rgba(13, 13, 13, 0.8); }
     .osd .scale.slider:insensitive,
     #XfceNotifyWindow .scale.slider:insensitive {
-      border-color: rgba(31, 31, 31, 0.8); }
+      border-color: rgba(15, 15, 15, 0.8); }
     .osd .scale.slider:active:insensitive, .osd .scale.slider:checked:insensitive,
     #XfceNotifyWindow .scale.slider:active:insensitive,
     #XfceNotifyWindow .scale.slider:checked:insensitive {
-      border-color: rgba(29, 29, 29, 0.8); }
+      border-color: rgba(14, 14, 14, 0.8); }
     .osd .scale.slider:insensitive,
     #XfceNotifyWindow .scale.slider:insensitive {
-      background-color: rgba(32, 32, 32, 0.8);
+      background-color: rgba(16, 16, 16, 0.8);
       background-image: none; }
   .osd .scale.trough,
   #XfceNotifyWindow .scale.trough {
-    border-color: rgba(29, 29, 29, 0.8);
-    background-color: rgba(39, 39, 39, 0.8);
+    border-color: rgba(14, 14, 14, 0.8);
+    background-color: rgba(19, 19, 19, 0.8);
     background-image: none; }
     .osd .scale.trough.highlight,
     #XfceNotifyWindow .scale.trough.highlight {
@@ -4752,27 +4752,27 @@ GtkOverlay.osd {
     .osd .scale.trough:insensitive, .osd .scale.trough.highlight:insensitive,
     #XfceNotifyWindow .scale.trough:insensitive,
     #XfceNotifyWindow .scale.trough.highlight:insensitive {
-      border-color: rgba(31, 31, 31, 0.8);
-      background-color: rgba(32, 32, 32, 0.8);
+      border-color: rgba(15, 15, 15, 0.8);
+      background-color: rgba(16, 16, 16, 0.8);
       background-image: none; }
   .osd.view, GtkHTML.osd, .osd .view, .osd GtkHTML,
   #XfceNotifyWindow.view,
   GtkHTML#XfceNotifyWindow,
   #XfceNotifyWindow .view,
   #XfceNotifyWindow GtkHTML {
-    background-color: rgba(36, 36, 36, 0.8); }
+    background-color: rgba(18, 18, 18, 0.8); }
   .osd .scrollbar .trough,
   #XfceNotifyWindow .scrollbar .trough {
-    background-color: rgba(36, 36, 36, 0.8); }
+    background-color: rgba(18, 18, 18, 0.8); }
   .osd .scrollbar .slider,
   #XfceNotifyWindow .scrollbar .slider {
-    border: 1px solid mix(rgba(31, 31, 31, 0.8),#fefefe,0.21);
+    border: 1px solid mix(rgba(16, 16, 16, 0.8),#fefefe,0.21);
     border-radius: 0;
-    background-color: mix(rgba(36, 36, 36, 0.8),#fefefe,0.21); }
+    background-color: mix(rgba(18, 18, 18, 0.8),#fefefe,0.21); }
     .osd .scrollbar .slider:hover,
     #XfceNotifyWindow .scrollbar .slider:hover {
-      border-color: mix(rgba(31, 31, 31, 0.8),#fefefe,0.31);
-      background-color: mix(rgba(36, 36, 36, 0.8),#fefefe,0.31); }
+      border-color: mix(rgba(16, 16, 16, 0.8),#fefefe,0.31);
+      background-color: mix(rgba(18, 18, 18, 0.8),#fefefe,0.31); }
     .osd .scrollbar .slider:active,
     #XfceNotifyWindow .scrollbar .slider:active {
       border-color: #fef944;
@@ -4781,14 +4781,14 @@ GtkOverlay.osd {
   #XfceNotifyWindow GtkIconView.cell:selected,
   #XfceNotifyWindow GtkIconView.cell:selected:focus {
     background-color: transparent;
-    border: 3px solid mix(rgba(31, 31, 31, 0.8),#fefefe,0.21);
+    border: 3px solid mix(rgba(16, 16, 16, 0.8),#fefefe,0.21);
     border-radius: 2px;
     outline-color: transparent; }
   .osd .page-thumbnail,
   #XfceNotifyWindow .page-thumbnail {
-    border: 1px solid rgba(32, 32, 32, 0.8);
+    border: 1px solid rgba(16, 16, 16, 0.8);
     /* when there's no pixbuf yet */
-    background-color: rgba(36, 36, 36, 0.8); }
+    background-color: rgba(18, 18, 18, 0.8); }
 
 .osd GtkProgressBar, GtkProgressBar.osd {
   -GtkProgressBar-xspacing: 0;
@@ -5455,7 +5455,7 @@ GtkTreeView {
   -GtkTreeView-expander-size: 8;
   -GtkTreeView-vertical-separator: 0;
   outline-offset: -1px;
-  border-top-color: #202020; }
+  border-top-color: #101010; }
   GtkTreeView:hover, GtkTreeView:selected, GtkTreeView:selected:focus, GtkTreeView:backdrop:selected, GtkTreeView:backdrop:selected:focus {
     border-top-color: #fefa67; }
   GtkTreeView.dnd {
@@ -5536,7 +5536,7 @@ column-header .button:last-child .button, column-header .selection-mode.header-b
 .window-frame {
   border: 0;
   border-radius: 2px 2px 0 0;
-  background-color: mix(#191919,#fefefe,0.21);
+  background-color: mix(#0d0d0d,#fefefe,0.21);
   /* this is used for the resize cursor area */
   margin: 9px; }
   .window-frame.tiled {
@@ -5544,7 +5544,7 @@ column-header .button:last-child .button, column-header .selection-mode.header-b
   .window-frame.solid-csd {
     border-radius: 0;
     margin: 0;
-    background-color: mix(#191919,#fefefe,0.21);
+    background-color: mix(#0d0d0d,#fefefe,0.21);
     box-shadow: none; }
   .window-frame.csd.popup {
     border-radius: 0; }
@@ -5570,7 +5570,7 @@ column-header .button:last-child .button, column-header .selection-mode.header-b
   color: #00070a; }
 
 .lightdm-combo .menu {
-  background-color: #272727;
+  background-color: #131313;
   border-radius: 0;
   padding: 0;
   color: #00070a; }
@@ -5941,7 +5941,7 @@ NemoWindow .nemo-inactive-pane .view, NemoWindow .nemo-inactive-pane GtkHTML, Ne
  ! Fallback mode panel *
 ************************/
 UnityPanelWidget, .unity-panel, .xfce4-panel, WnckPager, WnckTasklist, PanelAppletFrame, PanelApplet > GtkMenuBar.menubar.menuitem, PanelMenuBar.menubar.menuitem, .gnome-panel-menu-bar.menuitem, PanelSeparator, PanelWidget, PanelApplet, PanelToplevel {
-  background-color: #242424;
+  background-color: #121212;
   background-image: none;
   color: #fefefe; }
 
@@ -5953,19 +5953,19 @@ UnityPanelWidget, .unity-panel, .xfce4-panel, WnckPager, WnckTasklist, PanelAppl
   background-image: none;
   color: #fefefe; }
   .xfce4-panel .button:hover, .xfce4-panel .selection-mode.header-bar .button.suggested-action:hover, .selection-mode.header-bar .xfce4-panel .button.suggested-action:hover, .xfce4-panel .selection-mode.toolbar .button.suggested-action:hover, .selection-mode.toolbar .xfce4-panel .button.suggested-action:hover, PanelApplet .button:hover, PanelApplet .selection-mode.header-bar .button.suggested-action:hover, .selection-mode.header-bar PanelApplet .button.suggested-action:hover, PanelApplet .selection-mode.toolbar .button.suggested-action:hover, .selection-mode.toolbar PanelApplet .button.suggested-action:hover {
-    background-color: mix(#242424,#fefefe,0.11);
+    background-color: mix(#121212,#fefefe,0.11);
     background-image: none;
-    border-color: mix(#242424,#fefefe,0.11);
+    border-color: mix(#121212,#fefefe,0.11);
     color: white; }
   .xfce4-panel .button:active, .xfce4-panel .selection-mode.header-bar .button.suggested-action:active, .selection-mode.header-bar .xfce4-panel .button.suggested-action:active, .xfce4-panel .selection-mode.toolbar .button.suggested-action:active, .selection-mode.toolbar .xfce4-panel .button.suggested-action:active, PanelApplet .button:active, PanelApplet .selection-mode.header-bar .button.suggested-action:active, .selection-mode.header-bar PanelApplet .button.suggested-action:active, PanelApplet .selection-mode.toolbar .button.suggested-action:active, .selection-mode.toolbar PanelApplet .button.suggested-action:active, .xfce4-panel .button:checked, .xfce4-panel .selection-mode.header-bar .button.suggested-action:checked, .selection-mode.header-bar .xfce4-panel .button.suggested-action:checked, .xfce4-panel .selection-mode.toolbar .button.suggested-action:checked, .selection-mode.toolbar .xfce4-panel .button.suggested-action:checked, PanelApplet .button:checked, PanelApplet .selection-mode.header-bar .button.suggested-action:checked, .selection-mode.header-bar PanelApplet .button.suggested-action:checked, PanelApplet .selection-mode.toolbar .button.suggested-action:checked, .selection-mode.toolbar PanelApplet .button.suggested-action:checked {
-    background-color: mix(#242424,#fefefe,0.21);
+    background-color: mix(#121212,#fefefe,0.21);
     background-image: none;
-    border-color: mix(#242424,#fefefe,0.21);
+    border-color: mix(#121212,#fefefe,0.21);
     color: white; }
     .xfce4-panel .button:active:hover, PanelApplet .button:active:hover, PanelApplet .selection-mode.header-bar .button.suggested-action:active:hover, .selection-mode.header-bar PanelApplet .button.suggested-action:active:hover, PanelApplet .selection-mode.toolbar .button.suggested-action:active:hover, .selection-mode.toolbar PanelApplet .button.suggested-action:active:hover, .xfce4-panel .button:checked:hover, PanelApplet .button:checked:hover, PanelApplet .selection-mode.header-bar .button.suggested-action:checked:hover, .selection-mode.header-bar PanelApplet .button.suggested-action:checked:hover, PanelApplet .selection-mode.toolbar .button.suggested-action:checked:hover, .selection-mode.toolbar PanelApplet .button.suggested-action:checked:hover {
-      background-color: mix(#242424,#fefefe,0.31);
+      background-color: mix(#121212,#fefefe,0.31);
       background-image: none;
-      border-color: mix(#242424,#fefefe,0.31); }
+      border-color: mix(#121212,#fefefe,0.31); }
 
 PanelWidget, PanelApplet, PanelToplevel {
   padding: 0; }
@@ -6035,11 +6035,11 @@ UnityDecoration {
   -UnityDecoration-title-fade: 35px;
   -UnityDecoration-title-alignment: 0; }
   UnityDecoration.top {
-    border: 1px solid mix(#191919,#fefefe,0.21);
+    border: 1px solid mix(#0d0d0d,#fefefe,0.21);
     border-bottom: 0;
     border-radius: 2px 2px 0 0;
     padding: 1px 8px 0 8px;
-    background-color: #242424;
+    background-color: #121212;
     color: #fefefe;
     text-shadow: none; }
     UnityDecoration.top:backdrop {
@@ -6048,7 +6048,7 @@ UnityDecoration {
       background-color: #000507;
       color: mix(#fefefe,#000507,0.4); }
   UnityDecoration.left, UnityDecoration.right, UnityDecoration.bottom {
-    background-color: mix(#191919,#fefefe,0.21); }
+    background-color: mix(#0d0d0d,#fefefe,0.21); }
     UnityDecoration.left:backdrop, UnityDecoration.right:backdrop, UnityDecoration.bottom:backdrop {
       background-color: mix(#000405,mix(#fefefe,#000507,0.4),0.12); }
 
@@ -6059,8 +6059,8 @@ UnityPanelWidget, .unity-panel {
   border-width: 0 1px;
   color: #fefefe; }
   .unity-panel.menuitem:hover, .unity-panel.menuitem *:hover, .unity-panel .menuitem:hover, .unity-panel .menuitem *:hover {
-    border-color: mix(#242424,#fefefe,0.21);
-    background-color: mix(#242424,#fefefe,0.21);
+    border-color: mix(#121212,#fefefe,0.21);
+    background-color: mix(#121212,#fefefe,0.21);
     background-image: none;
     color: white; }
 
@@ -6105,17 +6105,17 @@ SheetStyleDialog.unity-force-quit {
 #login_window, #shutdown_dialog, #restart_dialog {
   border-style: none;
   border-radius: 2px;
-  background-color: #242424;
+  background-color: #121212;
   color: #fefefe;
   /* draw border using box-shadow */
-  box-shadow: inset 1px 0 mix(#191919,#fefefe,0.21), inset -1px 0 mix(#191919,#fefefe,0.21), inset 0 1px mix(#191919,#fefefe,0.21), inset 0 -1px mix(#191919,#fefefe,0.21); }
+  box-shadow: inset 1px 0 mix(#0d0d0d,#fefefe,0.21), inset -1px 0 mix(#0d0d0d,#fefefe,0.21), inset 0 1px mix(#0d0d0d,#fefefe,0.21), inset 0 -1px mix(#0d0d0d,#fefefe,0.21); }
   #login_window .button, #shutdown_dialog .button, #restart_dialog .button {
     padding: 3px 15px;
     border-width: 1px;
     border-radius: 2px;
     border-style: solid;
-    border-color: #1d1d1d;
-    background-color: #272727;
+    border-color: #0e0e0e;
+    background-color: #131313;
     background-image: none;
     color: #fefefe;
     transition: all 150ms ease-out; }
@@ -6141,15 +6141,15 @@ SheetStyleDialog.unity-force-quit {
   padding: 3px 5px;
   border-width: 1px;
   border-style: solid;
-  border-color: #1d1d1d;
+  border-color: #0e0e0e;
   border-radius: 2px;
-  background-color: #202020;
+  background-color: #101010;
   background-image: none;
   color: #fefefe;
   box-shadow: none;
   transition: all 150ms ease-out; }
   #login_window .entry:focus, #login_window .entry:hover {
-    border-color: #191919;
+    border-color: #0d0d0d;
     box-shadow: inset 1px 0 rgba(51, 51, 51, 0.1), inset 0 1px rgba(51, 51, 51, 0.12), inset -1px 0 rgba(51, 51, 51, 0.1), inset 0 -1px rgba(51, 51, 51, 0.05); }
 
 #user_combobox {
@@ -6158,17 +6158,17 @@ SheetStyleDialog.unity-force-quit {
   #user_combobox .menu {
     font: normal; }
   #user_combobox .arrow {
-    color: mix(#fefefe,#242424,0.5); }
+    color: mix(#fefefe,#121212,0.5); }
 
 #user_image {
   padding: 3px;
   border-radius: 2px;
   /* draw border using box-shadow */
-  box-shadow: inset 1px 0 #191919, inset -1px 0 #191919, inset 0 1px #191919, inset 0 -1px #191919; }
+  box-shadow: inset 1px 0 #0d0d0d, inset -1px 0 #0d0d0d, inset 0 1px #0d0d0d, inset 0 -1px #0d0d0d; }
 
 #user_image_border {
   border-radius: 2px;
-  background-color: #202020;
+  background-color: #101010;
   background-image: none;
   box-shadow: inset 1px 0 rgba(51, 51, 51, 0.07), inset 0 1px rgba(51, 51, 51, 0.08), inset -1px 0 rgba(51, 51, 51, 0.07), inset 0 -1px rgba(51, 51, 51, 0.05); }
 
@@ -6210,31 +6210,31 @@ SheetStyleDialog.unity-force-quit {
  ! Genome Terminal *
 ***********************/
 VteTerminal {
-  background-color: #242424;
+  background-color: #121212;
   color: #fefefe; }
 
 TerminalWindow .scrollbars-junction {
-  background-color: #242424; }
+  background-color: #121212; }
 
 TerminalWindow .scrollbar.trough {
-  background-color: #242424; }
+  background-color: #121212; }
 
 TerminalWindow .scrollbar.button, TerminalWindow .selection-mode.header-bar .scrollbar.button.suggested-action, .selection-mode.header-bar TerminalWindow .scrollbar.button.suggested-action, TerminalWindow .selection-mode.toolbar .scrollbar.button.suggested-action, .selection-mode.toolbar TerminalWindow .scrollbar.button.suggested-action {
-  color: #161616; }
+  color: #0b0b0b; }
   TerminalWindow .scrollbar.button:active, TerminalWindow .selection-mode.header-bar .scrollbar.button.suggested-action:active, .selection-mode.header-bar TerminalWindow .scrollbar.button.suggested-action:active, TerminalWindow .selection-mode.toolbar .scrollbar.button.suggested-action:active, .selection-mode.toolbar TerminalWindow .scrollbar.button.suggested-action:active {
-    color: #161616; }
+    color: #0b0b0b; }
     TerminalWindow .scrollbar.button:active:hover {
-      color: #161616; }
+      color: #0b0b0b; }
 
 TerminalWindow .scrollbar.slider {
-  border-color: mix(#1f1f1f,#fefefe,0.21);
-  background-color: mix(#242424,#fefefe,0.21); }
+  border-color: mix(#101010,#fefefe,0.21);
+  background-color: mix(#121212,#fefefe,0.21); }
   TerminalWindow .scrollbar.slider:hover {
-    border-color: mix(#1f1f1f,#fefefe,0.31);
-    background-color: mix(#242424,#fefefe,0.31); }
+    border-color: mix(#101010,#fefefe,0.31);
+    background-color: mix(#121212,#fefefe,0.31); }
   TerminalWindow .scrollbar.slider.vertical:hover {
-    border-color: mix(#1f1f1f,#fefefe,0.31);
-    background-color: mix(#242424,#fefefe,0.31); }
+    border-color: mix(#101010,#fefefe,0.31);
+    background-color: mix(#121212,#fefefe,0.31); }
   TerminalWindow .scrollbar.slider.vertical:active {
     border-color: #fef944;
     background-color: #fefa67; }
@@ -6251,9 +6251,9 @@ TerminalNotebook.notebook {
   padding: 0;
   border-width: 1px 0 0;
   border-style: solid;
-  border-color: #191919;
+  border-color: #0d0d0d;
   border-radius: 0;
-  background-color: #242424;
+  background-color: #121212;
   background-image: none;
   background-clip: border-box;
   color: #fefefe;
@@ -6266,9 +6266,9 @@ TerminalNotebook.notebook {
     border-width: 1px; }
   TerminalNotebook.notebook.header {
     border-width: 0;
-    background-color: #1f1f1f; }
+    background-color: #0f0f0f; }
     TerminalNotebook.notebook.header.frame {
-      border-color: mix(#fefa67,#242424,0.3); }
+      border-color: mix(#fefa67,#121212,0.3); }
       TerminalNotebook.notebook.header.frame.top {
         border-width: 1px 1px 0 1px; }
       TerminalNotebook.notebook.header.frame.right {
@@ -6279,7 +6279,7 @@ TerminalNotebook.notebook {
         border-width: 1px 0 1px 1px; }
   TerminalNotebook.notebook GtkViewport {
     border-width: 0;
-    background-color: #242424;
+    background-color: #121212;
     color: #fefefe; }
   TerminalNotebook.notebook tab {
     padding: 4px 6px;
@@ -6323,18 +6323,18 @@ TerminalNotebook.notebook {
       TerminalNotebook.notebook tab.left:active {
         border-right-color: #fefa67; }
     TerminalNotebook.notebook tab GtkLabel {
-      color: mix(#fefefe,#242424,0.3); }
+      color: mix(#fefefe,#121212,0.3); }
     TerminalNotebook.notebook tab.reorderable-page:hover {
-      background-color: #1f1f1f;
+      background-color: #0f0f0f;
       border-left: 0;
       border-right: 0;
       /* using box shadows instead of borders due to slanted edges */
-      box-shadow: inset 0 3px rgba(102, 102, 102, 0.03), inset 0 2px rgba(102, 102, 102, 0.03), inset 0 1px rgba(102, 102, 102, 0.03), inset 1px 0 #191919, inset -1px 0 #191919; }
+      box-shadow: inset 0 3px rgba(102, 102, 102, 0.03), inset 0 2px rgba(102, 102, 102, 0.03), inset 0 1px rgba(102, 102, 102, 0.03), inset 1px 0 #0d0d0d, inset -1px 0 #0d0d0d; }
     TerminalNotebook.notebook tab.reorderable-page:active {
-      background-color: #202020;
+      background-color: #101010;
       border-left: 0;
       border-right: 0;
-      box-shadow: inset 0 3px rgba(102, 102, 102, 0.03), inset 0 2px rgba(102, 102, 102, 0.03), inset 0 1px rgba(102, 102, 102, 0.03), inset 1px 0 #1b1b1b, inset -1px 0 #1b1b1b; }
+      box-shadow: inset 0 3px rgba(102, 102, 102, 0.03), inset 0 2px rgba(102, 102, 102, 0.03), inset 0 1px rgba(102, 102, 102, 0.03), inset 1px 0 #0e0e0e, inset -1px 0 #0e0e0e; }
     TerminalNotebook.notebook tab .button, TerminalNotebook.notebook tab .selection-mode.header-bar .button.suggested-action, .selection-mode.header-bar TerminalNotebook.notebook tab .button.suggested-action, TerminalNotebook.notebook tab .selection-mode.toolbar .button.suggested-action, .selection-mode.toolbar TerminalNotebook.notebook tab .button.suggested-action, TerminalNotebook.notebook tab .button:active, TerminalNotebook.notebook tab .button:checked, TerminalNotebook.notebook tab .button:hover {
       padding: 1px;
       border-width: 1px;
@@ -6343,14 +6343,14 @@ TerminalNotebook.notebook {
       border-color: transparent;
       background-image: none;
       background-color: transparent;
-      color: mix(#fefefe,#242424,0.5); }
+      color: mix(#fefefe,#121212,0.5); }
     TerminalNotebook.notebook tab .button:hover, TerminalNotebook.notebook tab .selection-mode.header-bar .button.suggested-action:hover, .selection-mode.header-bar TerminalNotebook.notebook tab .button.suggested-action:hover, TerminalNotebook.notebook tab .selection-mode.toolbar .button.suggested-action:hover, .selection-mode.toolbar TerminalNotebook.notebook tab .button.suggested-action:hover {
       color: #fefefe;
-      border-color: #1d1d1d; }
+      border-color: #0e0e0e; }
     TerminalNotebook.notebook tab .button:active, TerminalNotebook.notebook tab .selection-mode.header-bar .button.suggested-action:active, .selection-mode.header-bar TerminalNotebook.notebook tab .button.suggested-action:active, TerminalNotebook.notebook tab .selection-mode.toolbar .button.suggested-action:active, .selection-mode.toolbar TerminalNotebook.notebook tab .button.suggested-action:active, TerminalNotebook.notebook tab .button:checked, TerminalNotebook.notebook tab .selection-mode.header-bar .button.suggested-action:checked, .selection-mode.header-bar TerminalNotebook.notebook tab .button.suggested-action:checked, TerminalNotebook.notebook tab .selection-mode.toolbar .button.suggested-action:checked, .selection-mode.toolbar TerminalNotebook.notebook tab .button.suggested-action:checked, TerminalNotebook.notebook tab .button:active:hover, TerminalNotebook.notebook tab .button:checked:hover {
-      border-color: #191919;
-      background-color: #222222; }
+      border-color: #0d0d0d;
+      background-color: #111111; }
   TerminalNotebook.notebook .prelight-page, TerminalNotebook.notebook .prelight-page GtkLabel {
-    color: mix(#fefefe,#242424,0.15); }
+    color: mix(#fefefe,#121212,0.15); }
   TerminalNotebook.notebook .active-page, TerminalNotebook.notebook .active-page GtkLabel {
     color: #fefefe; }
