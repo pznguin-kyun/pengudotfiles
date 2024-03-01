@@ -2,7 +2,7 @@
 size = 11
 
 [font.normal]
-family = "M PLUS Code Latin"
+family = "Cascadia Code"
 style = "Regular"
 
 [font.bold]
