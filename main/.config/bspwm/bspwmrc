@@ -27,4 +27,3 @@ bspc config right_padding 0
 "$HOME"/.config/bspwm/config/autostart & 
 "$HOME"/.config/bspwm/config/decoration & 
 "$HOME"/.config/bspwm/config/misc &
-bspc config external_rules_command "$HOME"/.config/bspwm/config/externalrules &
