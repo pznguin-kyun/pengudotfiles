@@ -53,3 +53,6 @@ command_not_found_handler() {
 if [ -d "$HOME/.local/bin" ] ;
   then PATH="$HOME/.local/bin:$PATH"
 fi
+
+# Plugins
+source ~/.config/zsh/zsh-autosuggestions.zsh
