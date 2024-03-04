@@ -11,5 +11,5 @@ convert $PICTURE -blur $BLUR \
     -font Roboto \
     -pointsize 26 -fill white -gravity center \
     -annotate +0+160 "Type Password to Unlock" $PICTURE
-i3lock -i $PICTURE
+i3lock -f -i $PICTURE
 rm $PICTURE
