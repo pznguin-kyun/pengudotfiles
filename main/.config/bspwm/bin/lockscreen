@@ -1,6 +1,15 @@
 #!/usr/bin/env bash
 
-source "$HOME"/.config/bspwm/.color
-source "$HOME"/.config/bspwm/color/"$color"/"$color".sh
+PICTURE=/tmp/i3lock.png
+SCREENSHOT="maim -u $PICTURE"
 
-i3lock -c "$bg" -f
+BLUR="3x3"
+
+sleep 0.2
+$SCREENSHOT
+convert $PICTURE -blur $BLUR \
+    -font Roboto \
+    -pointsize 26 -fill white -gravity center \
+    -annotate +0+160 "Type Password to Unlock" $PICTURE
+i3lock -i $PICTURE
+rm $PICTURE
