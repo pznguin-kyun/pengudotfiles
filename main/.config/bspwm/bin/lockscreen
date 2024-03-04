@@ -3,7 +3,7 @@
 PICTURE=/tmp/i3lock.png
 SCREENSHOT="maim -u $PICTURE"
 
-BLUR="3x3"
+BLUR="5x4"
 
 sleep 0.2
 $SCREENSHOT
