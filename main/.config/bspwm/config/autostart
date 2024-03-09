@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
-# Autostart file for penguinRice
+
+# ################# #
+# -=- Autostart -=- #
+# ################# #
+
+# // Necessary //
 
 # Bar
 "$HOME"/.config/polybar/launch &
@@ -22,6 +27,8 @@ xss-lock -- "$HOME"/.config/bspwm/bin/lockscreen &
 
 # MPD
 mpd &
+
+# // Other //
 
 # Network Manager Applet
 # nm-applet &
