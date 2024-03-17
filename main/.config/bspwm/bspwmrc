@@ -28,8 +28,13 @@ audio(){
 
 # // Config files //
 "$HOME"/.screenlayout/monitor.sh &
+"$HOME"/.screenlayout/monitor.sh &
 "$HOME"/.config/bspwm/config/cfg &
 "$HOME"/.config/bspwm/config/rules &
 "$HOME"/.config/bspwm/config/autostart & 
 "$HOME"/.config/bspwm/config/decoration & 
 "$HOME"/.config/bspwm/config/misc &
+
+# // User's config //
+"$HOME"/.config/bspwm/user/autostart &
+"$HOME"/.config/bspwm/user/rules &
