@@ -3,7 +3,6 @@
 # bootstrap config files
 
 "$HOME"/.screenlayout/monitor.sh &
-"$HOME"/.screenlayout/monitor.sh &
 "$HOME"/.config/bspwm/config/cfg &
 "$HOME"/.config/bspwm/config/rules &
 "$HOME"/.config/bspwm/config/autostart & 

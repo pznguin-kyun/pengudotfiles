@@ -5,23 +5,17 @@ color_dir="$HOME/.config/bspwm/color"
 rofi_command="rofi -dmenu -p Colors"
 
 # list colorschemes
-list_cols(){
-    options=()
-    for file in "$color_dir"/*; do
-    	options+=("$(basename "$file")")
-    done
-}
+options=()
+for file in "$color_dir"/*; do
+	options+=("$(basename "$file")")
+done
 
 # show the rofi selection menu and store the result in a variable.
-show_rofi(){
-    color=$(printf "%s\n" "${options[@]}" | $rofi_command)
-}
+color=$(printf "%s\n" "${options[@]}" | $rofi_command)
 
 # If a valid option was selected, write the value to config files
-check(){
-    [[ -n "$color" ]] || exit 0
-    [[ -d "$HOME"/.config/bspwm/color/"$color" ]] || exit 0
-}
+[[ -n "$color" ]] || exit 0
+[[ -d "$HOME"/.config/bspwm/color/"$color" ]] || exit 0
 
 source "$HOME"/.config/bspwm/color/"$color"/"$color".sh
 
