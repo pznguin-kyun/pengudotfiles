@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
-# ############################### #
-# -=- User specific autostart -=- #
-# ############################### #
+# user specific autostart
 
 # Network Manager Applet
 # nm-applet &

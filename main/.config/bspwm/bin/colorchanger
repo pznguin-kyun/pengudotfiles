@@ -1,20 +1,27 @@
 #!/usr/bin/env bash
 
+# consts
 color_dir="$HOME/.config/bspwm/color"
 rofi_command="rofi -dmenu -p Colors"
 
-# List colorschemes
-options=()
-for file in "$color_dir"/*; do
-	options+=("$(basename "$file")")
-done
+# list colorschemes
+list_cols(){
+    options=()
+    for file in "$color_dir"/*; do
+    	options+=("$(basename "$file")")
+    done
+}
 
-# Show the rofi selection menu and store the result in a variable.
-color=$(printf "%s\n" "${options[@]}" | $rofi_command)
+# show the rofi selection menu and store the result in a variable.
+show_rofi(){
+    color=$(printf "%s\n" "${options[@]}" | $rofi_command)
+}
 
 # If a valid option was selected, write the value to config files
-[[ -n "$color" ]] || exit 0
-[[ -d "$HOME"/.config/bspwm/color/"$color" ]] || exit 0
+check(){
+    [[ -n "$color" ]] || exit 0
+    [[ -d "$HOME"/.config/bspwm/color/"$color" ]] || exit 0
+}
 
 source "$HOME"/.config/bspwm/color/"$color"/"$color".sh
 
@@ -58,10 +65,16 @@ restart(){
 }
 
 # Main
-generate_fehbg
-term_col
-ui_col
-dunst
-restart
+main(){
+    list_cols
+    show_rofi
+    check
+    generate_fehbg
+    term_col
+    ui_col
+    dunst
+    restart
+}
 
+main
 exit 0

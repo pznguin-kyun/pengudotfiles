@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-# Constants
+# constants
 divider="---------"
 goback="Back"
 
-# Checks if bluetooth controller is powered on
+# checks if bluetooth controller is powered on
 power_on() {
     if bluetoothctl show | grep -q "Powered: yes"; then
         return 0
@@ -13,7 +13,7 @@ power_on() {
     fi
 }
 
-# Toggles power state
+# toggles power state
 toggle_power() {
     if power_on; then
         bluetoothctl power off
@@ -27,7 +27,7 @@ toggle_power() {
     fi
 }
 
-# Checks if controller is scanning for new devices
+# checks if controller is scanning for new devices
 scan_on() {
     if bluetoothctl show | grep -q "Discovering: yes"; then
         echo "Scan: on"
@@ -38,7 +38,7 @@ scan_on() {
     fi
 }
 
-# Toggles scanning state
+# toggles scanning state
 toggle_scan() {
     if scan_on; then
         kill $(pgrep -f "bluetoothctl scan on")
@@ -52,7 +52,7 @@ toggle_scan() {
     fi
 }
 
-# Checks if controller is able to pair to devices
+# checks if controller is able to pair to devices
 pairable_on() {
     if bluetoothctl show | grep -q "Pairable: yes"; then
         echo "Pairable: on"
@@ -63,7 +63,7 @@ pairable_on() {
     fi
 }
 
-# Toggles pairable state
+# toggles pairable state
 toggle_pairable() {
     if pairable_on; then
         bluetoothctl pairable off
@@ -74,7 +74,7 @@ toggle_pairable() {
     fi
 }
 
-# Checks if controller is discoverable by other devices
+# checks if controller is discoverable by other devices
 discoverable_on() {
     if bluetoothctl show | grep -q "Discoverable: yes"; then
         echo "Discoverable: on"
@@ -85,7 +85,7 @@ discoverable_on() {
     fi
 }
 
-# Toggles discoverable state
+# toggles discoverable state
 toggle_discoverable() {
     if discoverable_on; then
         bluetoothctl discoverable off
@@ -96,7 +96,7 @@ toggle_discoverable() {
     fi
 }
 
-# Checks if a device is connected
+# checks if a device is connected
 device_connected() {
     device_info=$(bluetoothctl info "$1")
     if echo "$device_info" | grep -q "Connected: yes"; then
@@ -106,7 +106,7 @@ device_connected() {
     fi
 }
 
-# Toggles device connection
+# toggles device connection
 toggle_connection() {
     if device_connected "$1"; then
         bluetoothctl disconnect "$1"
@@ -117,7 +117,7 @@ toggle_connection() {
     fi
 }
 
-# Checks if a device is paired
+# checks if a device is paired
 device_paired() {
     device_info=$(bluetoothctl info "$1")
     if echo "$device_info" | grep -q "Paired: yes"; then
@@ -129,7 +129,7 @@ device_paired() {
     fi
 }
 
-# Toggles device paired state
+# toggles device paired state
 toggle_paired() {
     if device_paired "$1"; then
         bluetoothctl remove "$1"
@@ -140,7 +140,7 @@ toggle_paired() {
     fi
 }
 
-# Checks if a device is trusted
+# checks if a device is trusted
 device_trusted() {
     device_info=$(bluetoothctl info "$1")
     if echo "$device_info" | grep -q "Trusted: yes"; then
@@ -152,7 +152,7 @@ device_trusted() {
     fi
 }
 
-# Toggles device connection
+# toggles device connection
 toggle_trust() {
     if device_trusted "$1"; then
         bluetoothctl untrust "$1"
@@ -163,8 +163,8 @@ toggle_trust() {
     fi
 }
 
-# Prints a short string with the current bluetooth status
-# Useful for status bars like polybar, etc.
+# prints a short string with the current bluetooth status
+# useful for status bars like polybar, etc.
 print_status() {
     if power_on; then
         printf '󰂯'
@@ -197,7 +197,7 @@ print_status() {
     fi
 }
 
-# A submenu for a specific device that allows connecting, pairing, and trusting
+# a submenu for a specific device that allows connecting, pairing, and trusting
 device_menu() {
     device=$1
 
@@ -238,7 +238,7 @@ device_menu() {
     esac
 }
 
-# Opens a rofi menu with current bluetooth status and options to connect
+# opens a menu with current bluetooth status and options to connect
 show_menu() {
     # Get menu options
     if power_on; then
@@ -288,7 +288,7 @@ show_menu() {
     esac
 }
 
-# Rofi command to pipe into, can add any options here
+# rofi command to pipe into, can add any options here
 rofi_command="rofi -dmenu $* -p"
 
 case "$1" in

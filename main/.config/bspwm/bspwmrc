@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 
-# ################### #
-# -=- penguinRice -=- #
-# ################### #
+# penguinRice: p3nguin-kun's auto rice script
 
-# // Terminate already running programs //
+# terminate already running programs
 processes=("sxhkd" "polybar" "dunst")
 for process in "${processes[@]}"; do
     if pgrep -f "$process"; then
@@ -12,12 +10,12 @@ for process in "${processes[@]}"; do
     fi
 done
 
-# // Start sxhkd //
+# start sxhkd: keybind daemon
 killall -q sxhkd 
 sleep 0.2
 sxhkd -c "$HOME"/.config/bspwm/config/keys &
 
-# // Audio //
+# audio
 audio(){
   if ! pgrep -f pipewire; then
     pipewire &
@@ -26,9 +24,9 @@ audio(){
 
 # audio &
 
-# // Config files //
+# config files
 "$HOME"/.screenlayout/monitor.sh &
 "$HOME"/.config/bspwm/config/init &
 
-# // User's config //
+# user's config
 "$HOME"/.config/bspwm/user/init &

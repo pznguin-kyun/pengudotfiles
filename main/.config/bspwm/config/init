@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-# // Bootstrap config files //
+# bootstrap config files
+
 "$HOME"/.screenlayout/monitor.sh &
 "$HOME"/.screenlayout/monitor.sh &
 "$HOME"/.config/bspwm/config/cfg &

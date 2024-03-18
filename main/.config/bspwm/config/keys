@@ -1,72 +1,72 @@
-# ################### #
-# -=- Keybindings -=- #
-# ################### #
+# keybindings
 
-# Terminal
+# terminal
 super + Return
 	alacritty
 super + shift + Return
   alacritty --class float,Alacritty -o window.dimensions.lines=22 window.dimensions.columns=90
 
-# Menu
+# menu
 super + x
   "$HOME"/.config/bspwm/bin/menu
 
-# Launcher
+# launcher
 super + d
 	rofi -show drun -theme "$HOME"/.config/rofi/theme.rasi
 
-# Power menu
+# power menu
 super + BackSpace
     "$HOME"/.config/bspwm/bin/powermenu
 
-# Window menu
+# window menu
 super + Tab
     rofi -show window -theme "$HOME"/.config/rofi/theme.rasi
 
-# Toggle compositor
+# toggle compositor
 super + shift + p
   "$HOME"/.config/bspwm/bin/toggle-comp
 
-# Quit/Restart BSPWM
+# quit/restart bspwm
 super + alt + {q,r}
 	bspc {quit,wm -r}
 
-# Restart sxhkd
+# restart sxhkd
 super + Escape
 	pkill -USR1 -x sxhkd
 
-# Close (all) window(s)
+# close (all) window(s)
 super + {_,shift + }q
 	bspc node -{c,k}
 
-# Maximize window
+# maximize window
 super + m
 	bspc desktop -l next
 
-# Hide window
+# hide window
 super + n
   $HOME/.config/bspwm/bin/minimize
 
+# idk
 super + y
 	bspc node newest.marked.local -n newest.!automatic.local
 
-# Change layout
+# change layout
 super + {t,shift + t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
-# Rotate
+# rotate
 super + r
   bspc node @/ --rotate {90,-90}
 
-# Equalize
+# equalize
 super + equal
   bspc node @/ --equalize
 
+# idk
 super + ctrl + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
 
-# Move window
+# move window
 super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 super + {_,shift + }{Left,Down,Up,Right}
@@ -75,15 +75,15 @@ super + {_,shift + }{Left,Down,Up,Right}
 super + {p,b,comma,period}
 	bspc node -f @{parent,brother,first,second}
 
-# Previous/Next workspace
+# previous/next workspace
 super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 
-# Change workspace/Move window to workspace
+# change workspace/move window to workspace
 super + {_,shift + }{1-9}
 	bspc {desktop -f,node -d} '^{1-9}'
 
-# Preselect
+# preselect
 super + ctrl + {h,j,k,l}
 	bspc node -p {west,south,north,east}
 super + ctrl + {Left,Down,Up,Right}
@@ -91,44 +91,44 @@ super + ctrl + {Left,Down,Up,Right}
 super + ctrl + {1-9}
 	bspc node -o 0.{1-9}
 
-# Cancel preselect
+# cancel preselect
 super + ctrl + space
 	bspc node -p cancel
 super + ctrl + shift + space
 	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
-# Resize window
+# resize window
 super + alt + {h,j,k,l}
 	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 super + alt + {Left,Down,Up,Right}
   bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
-# Focus workspace
+# focus workspace
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-# Screenshot
+# screenshot
 Print
   "$HOME"/.config/bspwm/bin/screenshot
 super + Delete
   "$HOME"/.config/bspwm/bin/screenshot
 
-# Colorscheme changer
+# colorscheme changer
 super + shift + c
   "$HOME"/.config/bspwm/bin/colorchanger
 
-# Volume
+# volume
 super + ctrl + {minus,equal,0}
     "$HOME"/.config/bspwm/bin/volume {--down,--up,--toggle}
 {XF86AudioLowerVolume,XF86AudioRaiseVolume,XF86AudioMute}
     "$HOME"/.config/bspwm/bin/volume {--down,--up,--toggle}
 
-# Brightness
+# brightness
 super + ctrl + bracket{left,right}
     "$HOME"/.config/bspwm/bin/brightness {--down,--up}
 {XF86MonBrightnessDown,XF86MonBrightnessUp}
     "$HOME"/.config/bspwm/bin/brightness {--down,--up}
 
-# Toggle Polybar
+# toggle polybar
 super + shift + b
     "$HOME"/.config/bspwm/bin/toggle-bar

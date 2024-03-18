@@ -1,11 +1,9 @@
 #!/usr/bin/env bash
 
-# ############ #
-# -=- Misc -=- #
-# ############ #
+# misc
 
-# Cursor config
+# cursor config
 xsetroot -cursor_name left_ptr
 
-# Fix java apps
+# fix java apps
 export _JAVA_AWT_WM_NONREPARENTING=1

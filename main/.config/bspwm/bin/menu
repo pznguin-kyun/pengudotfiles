@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Get current status
+# get current status
 stats(){
     # Blue light filter
     [ -f /tmp/redshift.lock ] && bluelight_stat='On' || bluelight_stat='Off'

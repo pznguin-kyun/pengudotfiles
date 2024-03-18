@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# ############# #
-# -=- Rules -=- #
-# ############# #
+# rules
 
 bspc rule -a Galculator state=floating

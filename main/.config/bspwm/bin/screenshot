@@ -1,28 +1,28 @@
 #!/usr/bin/env bash
 
-# Options
+# options
 option_1="Capture Desktop"
 option_2="Capture Area"
 option_3="Capture in 5s"
 option_4="Capture in 10s"
 close='Close menu'
 
-# Rofi CMD
+# rofi cmd
 rofi_cmd() {
 	rofi -dmenu -p "Screenshot" 
 }
 
-# Pass variables to rofi dmenu
+# pass variables to rofi dmenu
 run_rofi() {
 	echo -e "$option_1\n$option_2\n$option_3\n$option_4\n$close" | rofi_cmd
 }
 
-# Screenshot
+# screenshot
 time=$(date +%Y%m%d-%H%M%S)
 dir="$(xdg-user-dir PICTURES)/Screenshots"
 file="Screenshot_$time.png"
 
-# Directory
+# directory
 if [[ ! -d "$dir" ]]; then
 	mkdir -p "$dir"
 fi
@@ -38,7 +38,7 @@ notify_view() {
 	fi
 }
 
-# Copy screenshot to clipboard
+# copy screenshot to clipboard
 copy_shot () {
 	tee "$file" | xclip -selection clipboard -t image/png
 }
@@ -74,7 +74,7 @@ shotarea () {
 	notify_view
 }
 
-# Run
+# run
 case $1 in
   --area) shotarea ;;
   --delay) shot5 ;;

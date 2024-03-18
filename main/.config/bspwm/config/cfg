@@ -1,17 +1,15 @@
 #!/usr/bin/env bash
 
-# #################### #
-# -=- BSPWM Config -=- #
-# #################### #
+# bspwm config
 
 source "$HOME"/.config/bspwm/user/options
 
-# // Workspaces //
+# workspaces
 for monitor in $(xrandr -q | grep -w 'connected' | cut -d' ' -f1); do
 		bspc monitor "$monitor" -d '1' '2' '3' '4' '5' '6' '7'
 done
 
-# // Config //
+# config
 bspc config remove_unplugged_monitors true
 bspc config remove_disabled_monitors true
 bspc config window_gap $bsp_gaps
