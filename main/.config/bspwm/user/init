@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# // Bootstrap user's config //
+"$HOME"/.config/bspwm/user/autostart &
+"$HOME"/.config/bspwm/user/rules &
