@@ -6,23 +6,13 @@
 processes=("sxhkd" "polybar" "dunst")
 for process in "${processes[@]}"; do
     if pgrep -f "$process"; then
-        pkill -f "$process" > /dev/null; sleep 0.2
+        killall -q "$process"
+        sleep 0.2
     fi
 done
 
 # start sxhkd: keybind daemon
-killall -q sxhkd 
-sleep 0.2
 sxhkd -c "$HOME"/.config/bspwm/config/keys &
-
-# audio
-audio(){
-  if ! pgrep -f pipewire; then
-    pipewire &
-  fi
-}
-
-audio &
 
 # config files
 "$HOME"/.screenlayout/monitor.sh &
