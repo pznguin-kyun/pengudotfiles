@@ -22,7 +22,7 @@ audio(){
   fi
 }
 
-# audio &
+audio &
 
 # config files
 "$HOME"/.screenlayout/monitor.sh &

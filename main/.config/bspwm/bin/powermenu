@@ -32,7 +32,7 @@ option_poweroff() {
 
 option_reboot() {
   if command -v systemctl &>/dev/null; then
-		systemctl reboot
+	systemctl reboot
   elif command -v loginctl &>/dev/null; then
     loginctl reboot
   elif command -v shutdown &>/dev/null; then

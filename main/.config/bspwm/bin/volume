@@ -1,19 +1,19 @@
 #!/usr/bin/env bash
 
 get_volume(){
-    amixer -D pipewire get Master | awk -F 'Left:|[][]' 'BEGIN {RS=""}{ print $3 }'
+    pamixer --get-volume-human
 }
 
 volume_up(){
-    amixer -D pipewire -q set Master 5%+ unmute
+    pamixer --allow-boost --set-limit 150 -i 5
 }
 
 volume_down(){
-    amixer -D pipewire -q set Master 5%- unmute
+    pamixer --allow-boost --set-limit 150 -d 5
 }
 
 toggle_mute(){
-    amixer -D pipewire sset Master toggle-mute
+    pamixer --toggle-mute
 }
 
 notify_cmd(){ 
