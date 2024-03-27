@@ -2,7 +2,7 @@
 
 # user specific options
 
-# weather location
+# weather location (space = "+")
 weather_location="London"
 
 # current colorscheme
