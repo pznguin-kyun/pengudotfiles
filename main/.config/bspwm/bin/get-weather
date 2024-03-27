@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+source "$HOME"/.config/bspwm/user/options
+
+get_weather(){
+    curl "wttr.in/$weather_location?format=%C+%t" -o /tmp/weather &>/dev/null
+    cat /tmp/weather
+}
+
+get_weather
