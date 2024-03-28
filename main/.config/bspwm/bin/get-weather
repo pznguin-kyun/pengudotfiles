@@ -3,16 +3,13 @@
 source "$HOME"/.config/bspwm/user/options
 
 get_weather(){
-    sleep 0.5
     curl "wttr.in/$weather_location?format=%C+%t" -o /tmp/weather &>/dev/null
 }
 
-print_weather(){
-    if [ -f /tmp/weather ]; then
-        cat /tmp/weather
-    else 
-        get_weather
-    fi
-}
+get_weather
 
-print_weather
+if [ -f /tmp/weather ]; then
+    cat /tmp/weather
+else
+    get_weather
+fi
