@@ -15,7 +15,7 @@ window.background.chromium .titlebutton {
   border: transparent;
 }
 window.background.chromium entry:focus {
-  border-color: #f6f6f6;
+  border-color: #fdfdfd;
 }
 window.background.chromium menu {
   background: #e9f2f2;
@@ -30,7 +30,7 @@ window.background.chromium menu menuitem:disabled label {
   color: rgba(38, 38, 38, 0.06);
 }
 window.background.chromium headerbar, window.background.chromium menubar {
-  background: #f6f6f6;
+  background: #fdfdfd;
 }
 window.background.chromium headerbar label, window.background.chromium menubar label {
   color: rgba(38, 38, 38, 0.34);
@@ -52,17 +52,17 @@ window.background.chromium scrollbar junction {
   background: rgba(38, 38, 38, 0.06);
 }
 window.background.chromium textview {
-  background-color: #f6f6f6;
+  background-color: #fdfdfd;
   color: rgba(38, 38, 38, 0.87);
 }
 
 #MozillaGtkWidget {
-  background: #f6f6f6;
+  background: #fdfdfd;
   color: rgba(38, 38, 38, 0.87);
 }
 #MozillaGtkWidget menubar {
   color: rgba(38, 38, 38, 0.34);
-  background: #f6f6f6;
+  background: #fdfdfd;
 }
 #MozillaGtkWidget text {
   background: #e9f2f2;
@@ -81,7 +81,7 @@ window.background.chromium textview {
 }
 
 .nemo-window .nemo-places-sidebar {
-  background: #f6f6f6;
+  background: #fdfdfd;
 }
 .nemo-window .primary-toolbar {
   background: #e9f2f2;
@@ -104,7 +104,7 @@ window.background.chromium textview {
 
 actionbar {
   padding: 0.6em;
-  background: #f6f6f6;
+  background: #fdfdfd;
   border-top: 1px solid rgba(38, 38, 38, 0.06);
 }
 
@@ -174,7 +174,7 @@ button.small-button image:only-child {
 }
 
 calendar {
-  background: #f6f6f6;
+  background: #fdfdfd;
 }
 calendar.button {
   background: #e9f2f2;
@@ -295,7 +295,7 @@ dialog filechooser #pathbarbox, messagedialog filechooser #pathbarbox {
   background: #e9f2f2;
 }
 dialog filechooser treeview, messagedialog filechooser treeview {
-  background: #f6f6f6;
+  background: #fdfdfd;
 }
 
 entry {
@@ -450,10 +450,10 @@ levelbar.discrete block:not(:first-child) {
 }
 
 list {
-  background: #f6f6f6;
+  background: #fdfdfd;
 }
 list row {
-  background: #f6f6f6;
+  background: #fdfdfd;
   padding: 0.6em;
 }
 list row:hover {
@@ -474,7 +474,7 @@ menu menuitem:hover {
 }
 
 menubar {
-  background: #f6f6f6;
+  background: #fdfdfd;
 }
 menubar menuitem {
   padding: 0.6em;
@@ -806,7 +806,7 @@ switch:hover:checked slider {
 }
 
 tabs {
-  background: #f6f6f6;
+  background: #fdfdfd;
 }
 .top > tabs {
   border-bottom: 0.2em solid #e9f2f2;
@@ -862,7 +862,7 @@ textview selection {
 }
 
 toolbar, .toolbar {
-  background: #f6f6f6;
+  background: #fdfdfd;
   padding: 0.6em;
 }
 toolbar.osd, .toolbar.osd {
@@ -902,20 +902,20 @@ treeview:selected {
 }
 treeview header button {
   padding: 0.6em;
-  background: #f6f6f6;
+  background: #fdfdfd;
   border-radius: 0;
   color: rgba(38, 38, 38, 0.34);
 }
 treeview header button:hover:not(:active) {
   color: rgba(38, 38, 38, 0.87);
-  background: #f6f6f6;
+  background: #fdfdfd;
 }
 treeview header button:not(:last-child) {
   border-right: 1px solid rgba(38, 38, 38, 0.06);
 }
 
 window, assistant {
-  background: #f6f6f6;
+  background: #fdfdfd;
   color: rgba(38, 38, 38, 0.87);
 }
 
