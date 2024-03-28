@@ -8,4 +8,12 @@ get_weather(){
     cat /tmp/weather
 }
 
-get_weather
+print_weather(){
+    if [ -f /tmp/weather ]; then
+        cat /tmp/weather
+    else 
+        get_weather
+    fi
+}
+
+print_weather
