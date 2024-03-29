@@ -3,7 +3,8 @@
 # user specific options
 
 # weather location (space = "+")
-weather_location="London"
+# example: "London", "Salt+Lake+City"
+weather_location=""
 
 # current colorscheme
 bsp_color=macaroni

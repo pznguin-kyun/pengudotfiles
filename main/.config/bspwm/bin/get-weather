@@ -2,14 +2,5 @@
 
 source "$HOME"/.config/bspwm/user/options
 
-get_weather(){
-    curl "wttr.in/$weather_location?format=%C+%t" -o /tmp/weather &>/dev/null
-}
-
-get_weather
-
-if [ -f /tmp/weather ]; then
-    cat /tmp/weather
-else
-    get_weather
-fi
+weather=$(curl -sf "wttr.in/$weather_location?format=%c%C+%t")
+echo "$weather"
