@@ -6,6 +6,12 @@
 # example: "London", "Salt+Lake+City"
 weather_location=""
 
+# weather units (default = "?m")
+# ?u - USCS (farenheit, mph)
+# ?m - metric (celcius, km/h)
+# ?M - metric (celcius, m/s)
+weather_unit="?m"
+
 # current colorscheme
 bsp_color=macaroni
 

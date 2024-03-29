@@ -2,5 +2,5 @@
 
 source "$HOME"/.config/bspwm/user/options
 
-weather=$(curl -sf "wttr.in/$weather_location?format=%c%C+%t")
+weather=$(curl -sf "wttr.in/$weather_location?format=%c%C+%t&$weather_unit")
 echo "$weather"
