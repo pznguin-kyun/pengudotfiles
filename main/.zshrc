@@ -20,7 +20,7 @@ fi
 
 # Vars
 export TERMINAL="alacritty"
-export BROWSER="firefox"
+export BROWSER="librewolf"
 export EDITOR="nvim"
 export VISUAL="${EDITOR}"
 

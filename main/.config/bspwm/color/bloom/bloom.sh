@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+mode="light"
 bg="#fffaf5"
 fg="#4b4646"
 bl="#4b4646"

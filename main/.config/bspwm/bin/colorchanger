@@ -46,6 +46,11 @@ ui_col(){
          -e "s/foreground = .*/foreground = \"$fg\"/g" "$HOME"/.config/dunst/dunstrc
   # GTK
   sed -i -e "s/gtk-theme-name=.*/gtk-theme-name=$color/" "$HOME"/.config/gtk-3.0/settings.ini
+  if [ "$mode" == "light" ]; then
+        sed -i -e "s/gtk-icon-theme-name=.*/gtk-icon-theme-name=Papirus-Light/" "$HOME"/.config/gtk-3.0/settings.ini
+  else
+        sed -i -e "s/gtk-icon-theme-name=.*/gtk-icon-theme-name=Papirus-Dark/" "$HOME"/.config/gtk-3.0/settings.ini
+  fi
   # sth
   sed -i -e "s/bsp_color=.*/bsp_color="$color"/g" "$HOME"/.config/bspwm/user/options
 }
