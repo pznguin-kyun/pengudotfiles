@@ -103,10 +103,6 @@ super + alt + {h,j,k,l}
 super + alt + {Left,Down,Up,Right}
   bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
-# focus workspace
-super + {Left,Down,Up,Right}
-	bspc node -v {-20 0,0 20,0 -20,20 0}
-
 # screenshot
 Print
   "$HOME"/.config/bspwm/bin/screenshot
