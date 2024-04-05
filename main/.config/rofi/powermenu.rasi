@@ -2,12 +2,12 @@
 @import "colors.rasi"
 
 window {
-    width: 64%;
-    height: 38%;
+    width: 62%;
+    height: 34%;
     transparency: "real";
     background-color: var(background);
     text-color: var(foreground);
-    padding: 30px 10px 25px 20px;
+    padding: 30px 10px 10px 10px;
 }
 
 inputbar {
@@ -29,26 +29,27 @@ dummy {
 
 mainbox {
     background-color: var(background);
-    children: ["inputbar", "listview", "message"];
+    children: ["inputbar", "listview"];
 }
 
 listview {
     background-color: var(background);
     padding: 6px;
     expand: false;
-    columns: 1;
-    spacing: 40px;
+    columns: 6;
+    lines: 1;
+    spacing: 30px;
     cycle: true;
     dynamic: false;
     reverse: false;
-    layout: horizontal;
+    layout: vertical;
     fixed-height: true;
     fixed-columns: true;
 }
 
 element {
     enabled:                     true;
-    padding:                     45px 60px;
+    padding:                     50px;
     background-color:            var(background);
     text-color:                  var(foreground);
     cursor:                      pointer;
@@ -69,19 +70,3 @@ element selected.normal {
     background-color:            var(foreground-alt);
     text-color:                  var(background);
 }
-
-message {
-    margin: 0px 350px;
-    padding: 14px;
-    background-color: var(background);
-    text-color: var(foreground);
-}
-
-textbox {
-    font:                        "Iosevka 12";
-    background-color:            transparent;
-    text-color:                  inherit;
-    vertical-align:              0.5;
-    horizontal-align:            0.5;
-}
-
