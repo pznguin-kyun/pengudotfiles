@@ -1,0 +1,86 @@
+@import "fonts.rasi"
+@import "colors.rasi"
+
+window {
+    width: 64%;
+    height: 38%;
+    transparency: "real";
+    background-color: var(background);
+    text-color: var(foreground);
+    padding: 30px 10px 25px 20px;
+}
+
+inputbar {
+    enabled:                     true;
+    background-color:            transparent;
+    children:                    [ "dummy", "prompt", "dummy"];
+    padding: 25px;
+}
+
+prompt {
+    font: var(big-font);
+    background-color: var(background);
+    text-color: var(foreground);
+}
+
+dummy {
+    background-color:            transparent;
+}
+
+mainbox {
+    background-color: var(background);
+    children: ["inputbar", "listview", "message"];
+}
+
+listview {
+    background-color: var(background);
+    padding: 6px;
+    expand: false;
+    columns: 1;
+    spacing: 40px;
+    cycle: true;
+    dynamic: false;
+    reverse: false;
+    layout: horizontal;
+    fixed-height: true;
+    fixed-columns: true;
+}
+
+element {
+    enabled:                     true;
+    padding:                     45px 60px;
+    background-color:            var(background);
+    text-color:                  var(foreground);
+    cursor:                      pointer;
+}
+
+element-text {
+    font: var(big-font);
+    background-color: transparent;
+    cursor:           inherit;
+    highlight:        inherit;
+    text-color:       inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+}
+
+element selected.normal {
+    background-color:            var(foreground-alt);
+    text-color:                  var(background);
+}
+
+message {
+    margin: 0px 350px;
+    padding: 14px;
+    background-color: var(background);
+    text-color: var(foreground);
+}
+
+textbox {
+    font:                        "Iosevka 12";
+    background-color:            transparent;
+    text-color:                  inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+}
+

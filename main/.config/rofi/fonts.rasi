@@ -1,3 +1,4 @@
 * {
- font: "Roboto Mono 11";
+    font: "Iosevka 12";
+    big-font: "Iosevka 34";
 }

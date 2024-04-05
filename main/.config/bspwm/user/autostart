@@ -22,7 +22,10 @@ run() {
 # run ibus-daemon -drx
 
 # Fcitx5
-# run fcitx5
+run fcitx5
 
 # Bluetooth
 # run blueberry-tray
+
+# Syncthing
+run syncthing --no-browser

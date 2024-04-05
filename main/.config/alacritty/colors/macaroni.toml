@@ -1,19 +1,19 @@
 [colors.primary]
-background = "0x000507"
+background = "0x021b21"
 foreground = "0xf8f8f6"
 
 [colors.normal]
-black = "0x242424"
+black = "0x032b32"
 blue = "0xa978f6"
 cyan = "0x8afeff"
-green = "0xf2ff8a"
+green = "0x37bf8d"
 magenta = "0xfd56f9"
 red = "0xff8989"
 white = "0xfefefe"
 yellow = "0xfefa67"
 
 [colors.bright]
-black = "0x323232"
+black = "0x043c43"
 blue = "0xaddef8"
 cyan = "0x8affff"
 green = "0xf7ff9f"

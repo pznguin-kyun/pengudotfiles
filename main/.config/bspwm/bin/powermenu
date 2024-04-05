@@ -1,16 +1,22 @@
 #!/usr/bin/env bash
 
 # options
-shutdown='Shutdown'
-reboot='Reboot'
-lock='Lock'
-suspend='Suspend'
-logout='Log Out'
-close='Close menu'
+shutdown='󰐥'
+reboot='󰜉'
+lock='󰌾'
+suspend='󰤄'
+logout='󰍃'
+close=''
+
+# consts
+uptime="`uptime -p | sed -e 's/up //g'`"
 
 # rofi cmd
 rofi_cmd() {
-	rofi -dmenu -p "Power"
+	rofi -dmenu \
+        -p "Goodbye $USER!" \
+        -theme "$HOME"/.config/rofi/powermenu.rasi \
+        -mesg "Uptime: $uptime"
 }
 
 # pass variables to rofi dmenu
