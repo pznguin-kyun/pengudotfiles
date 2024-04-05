@@ -30,11 +30,11 @@ fi
 # notify and view screenshot
 notify_view() {
 	notify_cmd_shot='dunstify -u low -h string:x-dunst-stack-tag:screenshot'
-	${notify_cmd_shot} "📋 Copied to clipboard."
+	${notify_cmd_shot} "📋 Copied to clipboard"
 	if [[ -e "$dir/$file" ]]; then
-    ${notify_cmd_shot} "📷 Screenshot taken."
+    ${notify_cmd_shot} "📷 Screenshot taken"
 	else
-		${notify_cmd_shot} "📷 Screenshot deleted."
+		${notify_cmd_shot} "📷 Screenshot deleted"
 	fi
 }
 
