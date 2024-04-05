@@ -17,7 +17,7 @@ configuration {
     me-select-entry: "";
     me-accept-entry: "MousePrimary";
     me-accept-custom: "MouseMiddle";
-    dpi: 120;
+    dpi: 96;
 }
 
 @theme "theme.rasi"

@@ -52,6 +52,7 @@ element {
     background-color:            var(background);
     text-color:                  var(foreground);
     cursor:                      pointer;
+    border-radius: 8px;
 }
 
 element-text {
