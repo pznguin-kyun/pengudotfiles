@@ -2,8 +2,8 @@
 @import "colors.rasi"
 
 window {
-    width: 62%;
-    height: 34%;
+    width: 30%;
+    height: 48%;
     transparency: "real";
     background-color: var(background);
     text-color: var(foreground);
@@ -36,8 +36,8 @@ listview {
     background-color: var(background);
     padding: 6px;
     expand: false;
-    columns: 6;
-    lines: 1;
+    columns: 3;
+    lines: 2;
     spacing: 30px;
     cycle: true;
     dynamic: false;
