@@ -1,9 +1,11 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
 Name=macaroni
-Comment=a.
+Comment=a
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
 Name=macaroni
 GtkTheme=macaroni
+IconTheme=macaroni
+MetacityTheme=macaroni
