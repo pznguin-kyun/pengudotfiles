@@ -7,7 +7,7 @@ processes=("sxhkd" "polybar" "dunst")
 for process in "${processes[@]}"; do
     if pgrep -f "$process"; then
         killall -q "$process"
-        sleep 0.2
+        sleep 0.1
     fi
 done
 
