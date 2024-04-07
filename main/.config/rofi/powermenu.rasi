@@ -2,8 +2,8 @@
 @import "colors.rasi"
 
 window {
-    width: 30%;
-    height: 48%;
+    width: 32%;
+    height: 50%;
     transparency: "real";
     background-color: var(background);
     text-color: var(foreground);
