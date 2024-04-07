@@ -2,7 +2,7 @@
 size = 11
 
 [font.normal]
-family = "Iosevka"
+family = "Fira Code"
 style = "Regular"
 
 [font.bold]

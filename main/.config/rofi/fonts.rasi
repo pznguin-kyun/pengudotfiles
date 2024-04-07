@@ -1,4 +1,4 @@
 * {
-    font: "Iosevka 12";
-    big-font: "Iosevka 34";
+    font: "Fira Code 11";
+    big-font: "Fira Code 28";
 }
