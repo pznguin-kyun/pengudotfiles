@@ -2,5 +2,23 @@
 
 source "$HOME"/.config/bspwm/user/options
 
-weather=$(curl -sf "wttr.in/$weather_location?format=%c%C+%t&$weather_unit")
-echo "$weather"
+weather_status(){
+    weather=$(curl -sf "wttr.in/$weather_location?format=%c%C+%t&$weather_unit")
+    echo "$weather"
+}
+
+print_weather(){
+    if ping wttr.in -c 1 &> /dev/null; then
+        echo "Getting weather information..."
+        curl -s "wttr.in/$weather_location?$weather_unit" -o /tmp/weather
+        [ -f /tmp/weather ] && clear && cat /tmp/weather
+        read -rp "Press any key to exit..." exit
+    else
+        echo "Can't get weather information"
+    fi
+}
+
+case "$1" in
+    -o) print_weather ;;
+    *) weather_status ;;
+esac
