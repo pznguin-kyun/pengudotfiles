@@ -10,7 +10,7 @@
 - `polybar`: Bar
 - `rofi`: Launcher
 - `curl`: for some stuffs
-- `Roboto`, `Iosevka`: Fonts
+- `Roboto`, `Fira Code`: Fonts
 
 ## Other
 - `ranger`: File manager
