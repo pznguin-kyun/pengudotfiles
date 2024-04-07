@@ -40,7 +40,7 @@ main_window_color = "default"
 startup_screen = "playlist"
 
 # Progress bar
-progressbar_look = "==━"
+progressbar_look = "━━-"
 progressbar_elapsed_color = "magenta"
 
 # UI Visibility
