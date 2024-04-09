@@ -1,4 +1,4 @@
 * {
-    font: "Fira Code 11";
-    big-font: "Fira Code 28";
+    font: "Fira Code Medium 11";
+    big-font: "Fira Code Medium 28";
 }
