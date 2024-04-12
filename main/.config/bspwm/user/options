@@ -2,7 +2,7 @@
 
 # user specific options
 
-# weather location (space = "+")
+# weather location (space = "+", empty = auto-detect location)
 # example: "London", "Salt+Lake+City"
 weather_location=""
 
