@@ -6,7 +6,7 @@
 # example: "London", "Salt+Lake+City"
 weather_location=""
 
-# weather units (default = "?m")
+# weather units (default = "", empty = auto-detect unit)
 # ?u - USCS (farenheit, mph)
 # ?m - metric (celcius, km/h)
 # ?M - metric (celcius, m/s)
