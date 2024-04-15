@@ -10,7 +10,7 @@ weather_location=""
 # ?u - USCS (farenheit, mph)
 # ?m - metric (celcius, km/h)
 # ?M - metric (celcius, m/s)
-weather_unit="?m"
+weather_unit=""
 
 # current colorscheme
 bsp_color=macaroni
