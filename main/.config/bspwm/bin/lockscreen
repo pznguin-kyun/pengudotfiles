@@ -12,7 +12,8 @@ main(){
     convert $PICTURE -blur $BLUR \
         -font "Roboto-Medium" \
         -pointsize 26 -fill white -gravity center \
-        -annotate +0+160 "Type Password to Unlock" $PICTURE
+        -annotate +0+160 "Type Password to Unlock" \
+        -annotate +0-160 "Logged in as $USER" $PICTURE
     i3lock -f -i $PICTURE
     rm $PICTURE
 }
