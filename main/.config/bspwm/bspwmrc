@@ -2,6 +2,9 @@
 
 # penguinRice: p3nguin-kun's auto rice script
 
+# audio
+# "$HOME"/.config/bspwm/bin/audio
+
 # terminate already running programs
 processes=("sxhkd" "polybar" "dunst")
 for process in "${processes[@]}"; do

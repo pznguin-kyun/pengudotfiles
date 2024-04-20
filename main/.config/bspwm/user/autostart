@@ -9,9 +9,6 @@ run() {
 # user specific autostart
 # usage: run [command]
 
-# PipeWire
-# run pipewire
-
 # Network Manager Applet
 # run nm-applet
 

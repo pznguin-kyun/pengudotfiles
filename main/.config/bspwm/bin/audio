@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+run() {
+	if ! pgrep -f "$1" ; then
+		"$@"&
+	fi
+}
+
+run /usr/bin/pipewire
+run /usr/bin/wireplumber
+run /usr/bin/pipewire-pulse
