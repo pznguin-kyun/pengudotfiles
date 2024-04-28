@@ -11,7 +11,7 @@ setopt hist_ignore_dups
 
 # Prompt
 #PROMPT='%~ » '
-PROMPT="%F{1}%n%F{reset}@%m%f %F{3}%~ %F{reset}> "
+PROMPT="%F{1}%n%F{reset}@%m%f %F{3}%~ %F{reset}"
 
 # Auto startx
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
