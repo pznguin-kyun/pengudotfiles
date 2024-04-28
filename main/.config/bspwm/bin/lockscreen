@@ -10,7 +10,7 @@ main(){
     sleep 0.1
     $SCREENSHOT
     convert $PICTURE -blur $BLUR \
-        -font "Roboto-Medium" \
+        -font "Noto-Sans-Medium" \
         -pointsize 26 -fill white -gravity center \
         -annotate +0+160 "Type Password to Unlock" \
         -annotate +0-160 "Logged in as $USER" $PICTURE
