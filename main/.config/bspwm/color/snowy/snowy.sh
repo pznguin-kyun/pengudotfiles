@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 
+# settings
 mode="light"
+wall="fill"
+
+# colors
 bg="#f6f6f6"
 fg="#262626"
 bl="#404040"

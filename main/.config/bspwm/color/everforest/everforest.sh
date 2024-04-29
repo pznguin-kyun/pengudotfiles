@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 
+# settings
 mode="dark"
+wall="fill"
+
+# colors
 bg="#2d353b"
 fg="#d3c6aa"
 bl="#475258"
