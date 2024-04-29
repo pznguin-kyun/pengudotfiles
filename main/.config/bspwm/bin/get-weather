@@ -3,7 +3,7 @@
 source "$HOME"/.config/bspwm/user/options
 
 weather_status(){
-    weather=$(curl -sf "wttr.in/$weather_location?format=%t+%C&$weather_unit")
+    weather=$(timeout --signal=1 2s curl -sf "wttr.in/$weather_location?format=%t+%C&$weather_unit")
     echo "$weather"
 }
 
