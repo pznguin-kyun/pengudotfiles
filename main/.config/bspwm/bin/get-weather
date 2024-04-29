@@ -1,18 +1,24 @@
 #!/usr/bin/env bash
 
+# shellcheck disable=SC1091
 source "$HOME"/.config/bspwm/user/options
 
 weather_status(){
-    weather=$(timeout --signal=1 2s curl -sf "wttr.in/$weather_location?format=%t+%C&$weather_unit")
+    while ! ping -c 1 wttr.in &> /dev/null; do
+        wait
+    done
+    # shellcheck disable=SC2154
+    weather=$(curl -sf "wttr.in/$weather_location?format=%t+%C&$weather_unit")
     echo "$weather"
 }
 
 print_weather(){
     if ping wttr.in -c 1 &> /dev/null; then
         echo "Getting weather information..."
+        # shellcheck disable=SC2154
         curl -s "wttr.in/$weather_location?$weather_unit" -o /tmp/weather
         [ -f /tmp/weather ] && clear && cat /tmp/weather
-        read -rp "Press any key to exit..." exit
+        read -rp "Press any key to exit..."
     else
         echo "Can't get weather information"
     fi
