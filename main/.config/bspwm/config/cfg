@@ -6,7 +6,7 @@ source "$HOME"/.config/bspwm/user/options
 
 # workspaces
 for monitor in $(xrandr -q | grep -w 'connected' | cut -d' ' -f1); do
-		bspc monitor "$monitor" -d '1' '2' '3' '4' '5' '6' '7'
+		bspc monitor "$monitor" -d '1' '2' '3' '4' '5' '6' '7' '8' '9'
 done
 
 # config
