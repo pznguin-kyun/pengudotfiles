@@ -38,9 +38,10 @@ display_bitrate = "no"
 external_editor = "nvim"
 main_window_color = "default"
 startup_screen = "playlist"
+seek_time = 5
 
 # Progress bar
-progressbar_look = "-- "
+progressbar_look = "── "
 progressbar_elapsed_color = "magenta"
 
 # UI Visibility
@@ -55,7 +56,7 @@ color1 = "white"
 color2 = "blue"
 
 # UI Appearance
-now_playing_prefix = "$b$6+ "
+now_playing_prefix = "$b$6× "
 now_playing_suffix = "$/b$9"
 current_item_prefix = "$b$3- "
 song_list_format = "{%t}|{%f}$R{%a}  {%l}"
