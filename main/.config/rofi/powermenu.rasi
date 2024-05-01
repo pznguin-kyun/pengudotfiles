@@ -2,18 +2,18 @@
 @import "colors.rasi"
 
 window {
-    width: 32%;
-    height: 50%;
+    width: 25%;
+    height: 40%;
     transparency: "real";
     background-color: var(background);
     text-color: var(foreground);
-    padding: 30px 10px 10px 10px;
+    padding: 20px 10px 10px 10px;
 }
 
 inputbar {
     enabled:                     true;
     background-color:            transparent;
-    children:                    [ "dummy", "prompt", "dummy"];
+    children:                    [ "prompt"];
     padding: 25px;
 }
 
@@ -36,9 +36,9 @@ listview {
     background-color: var(background);
     padding: 6px;
     expand: false;
-    columns: 3;
-    lines: 2;
-    spacing: 30px;
+    columns: 1;
+    lines: 6;
+    spacing: 1px;
     cycle: true;
     dynamic: false;
     reverse: false;
@@ -49,7 +49,7 @@ listview {
 
 element {
     enabled:                     true;
-    padding:                     50px;
+    padding:                     10px;
     background-color:            var(background);
     text-color:                  var(foreground);
     cursor:                      pointer;
@@ -57,13 +57,11 @@ element {
 }
 
 element-text {
-    font: var(big-font);
+    font: var(font);
     background-color: transparent;
     cursor:           inherit;
     highlight:        inherit;
     text-color:       inherit;
-    vertical-align:              0.5;
-    horizontal-align:            0.5;
 }
 
 element selected.normal {

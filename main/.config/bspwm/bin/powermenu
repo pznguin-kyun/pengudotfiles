@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
 # options
-shutdown='󰐥'
-reboot='󰜉'
-lock='󰌾'
-suspend='󰤄'
-logout='󰍃'
-close=''
+shutdown='Power Off'
+reboot='Reboot'
+lock='Lock'
+suspend='Suspend'
+logout='Log Out'
+close='Close'
 
 # consts
 uptime="`uptime -p | sed -e 's/up //g'`"
