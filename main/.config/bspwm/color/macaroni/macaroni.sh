@@ -2,10 +2,10 @@
 
 # settings
 mode="dark"
-wall="tile"
+wall="fill"
 
 # colors
-bg="#051418"
+bg="#0e0e18"
 fg="#f8f8f6"
 bl="#032b32"
 wh="#fefefe"
@@ -16,4 +16,4 @@ b="#a978f6"
 m="#fd56f9"
 c="#8afeff"
 br="#032c32"
-br2="#37bf8d"
+br2="#606494"

@@ -3,4 +3,4 @@
 # decoration
 
 bspc config normal_border_color "#032c32"
-bspc config focused_border_color "#37bf8d"
+bspc config focused_border_color "#606494"
