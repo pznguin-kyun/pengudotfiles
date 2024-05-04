@@ -20,7 +20,7 @@ color=$(printf "%s\n" "${options[@]}" | $rofi_command)
 source "$HOME"/.config/bspwm/color/"$color"/"$color".sh
 
 generate_fehbg(){
-  echo -e "#!/usr/bin/env sh\nfeh --no-fehbg --bg-$wall --randomize $HOME/.config/bspwm/color/$color/wall/" > "$HOME"/.fehbg
+  echo -e "feh --no-fehbg --bg-$wall --randomize $HOME/.config/bspwm/color/$color/wall/" > "$HOME"/.fehbg
   chmod 777 "$HOME"/.fehbg
 }
 
