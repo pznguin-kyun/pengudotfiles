@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Newsboat
-Comment=RSS Reader
-Type=Application
-Exec=newsboat
-Terminal=true
-Categories=news;rss;
