@@ -2,12 +2,12 @@
 @import "colors.rasi"
 
 window {
-    width: 65%;
+    width: 25%;
     height: 55%;
     transparency: "real";
     background-color: var(background);
     text-color: var(foreground);
-    padding: 20px 25px 20px 25px;
+    padding: 15px 20px 15px 20px;
 }
 
 inputbar {
@@ -47,9 +47,18 @@ entry {
 listview {
     background-color: var(background);
     padding: 6px;
-    columns: 3;
-    spacing: 4px;
-    lines: 12;
+    columns: 1;
+    spacing: 1px;
+    lines: 8;
+}
+
+element {
+    enabled:                     true;
+    padding:                     10px;
+    background-color:            var(background);
+    text-color:                  var(foreground);
+    cursor:                      pointer;
+    border-radius: 0px;
 }
 
 element-text {
@@ -74,14 +83,14 @@ element alternate.normal {
     text-color: var(foreground);
 }
 
-element alternate.normal {
-    background-color: var(background);
-    text-color: var(foreground);
+element selected.normal {
+    background-color:            var(foreground-alt);
+    text-color:                  var(background);
 }
 
-element selected.normal {
-    background-color: var(background);
-    text-color: var(foreground-alt);
+element selected.active {
+    background-color:            var(foreground-alt);
+    text-color:                  var(background);
 }
 
 mode-switcher{

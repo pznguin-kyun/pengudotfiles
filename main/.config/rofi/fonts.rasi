@@ -1,4 +1,4 @@
 * {
-    font: "monospace Medium 11";
+    font: "monospace Medium 10";
     big-font: "monospace Medium 20";
 }
