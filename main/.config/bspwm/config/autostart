@@ -12,9 +12,6 @@ run() {
 # polybar
 run "$HOME"/.config/polybar/launch
 
-# xresources
-run xrdb merge "$HOME"/.Xresources
-
 # wallpaper
 run "$HOME"/.fehbg
 
