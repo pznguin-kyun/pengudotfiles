@@ -8,7 +8,7 @@
 # terminate already running programs
 processes=("sxhkd" "polybar" "dunst")
 for process in "${processes[@]}"; do
-    if pgrep -f "$process"; then
+    if pgrep -x "$process" > /dev/null; then
         killall -q "$process"
     fi
 done
