@@ -3,6 +3,7 @@
 # options
 shutdown='Power Off'
 reboot='Reboot'
+restart_wm='Restart WM'
 lock='Lock'
 suspend='Suspend'
 logout='Log Out'
@@ -21,7 +22,7 @@ rofi_cmd() {
 
 # pass variables to rofi dmenu
 run_rofi() {
-	echo -e "$lock\n$suspend\n$logout\n$reboot\n$shutdown\n$close" | rofi_cmd
+	echo -e "$lock\n$suspend\n$logout\n$reboot\n$restart_wm\n$shutdown\n$close" | rofi_cmd
 }
 
 option_poweroff() {
@@ -61,6 +62,7 @@ chosen="$(run_rofi)"
 case "$chosen" in
     "$shutdown") option_poweroff ;;
     "$reboot") option_reboot ;;
+    "$restart_wm") bspc wm -r ;;
     "$lock") "$HOME"/.config/bspwm/bin/lockscreen ;;
     "$suspend") option_suspend ;;
     "$logout") bspc quit ;;
