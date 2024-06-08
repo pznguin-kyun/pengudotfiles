@@ -9,11 +9,14 @@ run() {
 # autostart
 # usage: run [command]
 
-# polybar
-run "$HOME"/.config/polybar/launch
+# xsettingsd
+run xsettingsd
 
 # wallpaper
 run "$HOME"/.fehbg
+
+# polybar
+run "$HOME"/.config/polybar/launch
 
 # notification
 run dunst
