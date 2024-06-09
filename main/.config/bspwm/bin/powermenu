@@ -65,5 +65,5 @@ case "$chosen" in
     "$restart_wm") bspc wm -r ;;
     "$lock") "$HOME"/.config/bspwm/bin/lockscreen ;;
     "$suspend") option_suspend ;;
-    "$logout") bspc quit ;;
+    "$logout") pkill -SIGKILL -u $(whoami) ;;
 esac
