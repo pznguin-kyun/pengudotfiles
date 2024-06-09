@@ -22,7 +22,7 @@ rofi_cmd() {
 
 # pass variables to rofi dmenu
 run_rofi() {
-	echo -e "$lock\n$suspend\n$logout\n$reboot\n$restart_wm\n$shutdown\n$close" | rofi_cmd
+	echo -e "$lock\n$restart_wm\n$suspend\n$logout\n$reboot\n$shutdown\n$close" | rofi_cmd
 }
 
 option_poweroff() {
