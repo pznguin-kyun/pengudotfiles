@@ -25,7 +25,7 @@ run dunst
 run picom
 
 # autolock
-run xss-lock slock
+run xss-lock -- "$HOME"/.config/bspwm/bin/lockscreen
 
 # mpd
 run mpd

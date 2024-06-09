@@ -63,7 +63,7 @@ case "$chosen" in
     "$shutdown") option_poweroff ;;
     "$reboot") option_reboot ;;
     "$restart_wm") bspc wm -r ;;
-    "$lock") slock ;;
+    "$lock") "$HOME"/.config/bspwm/bin/lockscreen ;;
     "$suspend") option_suspend ;;
     "$logout") bspc quit ;;
 esac
