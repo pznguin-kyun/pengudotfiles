@@ -4,7 +4,7 @@
 super + Return
 	alacritty
 super + shift + Return
-  alacritty --class float,float -o window.dimensions.lines=22 window.dimensions.columns=90
+  alacritty --class float,float -o window.dimensions.lines=25 window.dimensions.columns=80
 
 # menu
 super + x
