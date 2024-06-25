@@ -38,6 +38,9 @@ super + Escape
 super + {_,shift + }q
 	bspc node -{c,k}
 
+alt + {_,shift + }F4
+   bspc node -{c,k}
+
 # maximize window
 super + m
 	bspc desktop -l next
