@@ -2,16 +2,6 @@
 
 # user specific options
 
-# weather location (space = "+", empty = auto-detect location)
-# example: "London", "Salt+Lake+City"
-weather_location=""
-
-# weather units (default = "", empty = auto-detect unit)
-# ?u - USCS (farenheit, mph)
-# ?m - metric (celcius, km/h)
-# ?M - metric (celcius, m/s)
-weather_unit=""
-
 # current colorscheme
 bsp_color=macaroni
 
