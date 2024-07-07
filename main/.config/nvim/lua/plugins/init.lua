@@ -150,15 +150,6 @@ local plugins = {
             require("plugins.config.telescope")
         end
     },
-    -- Gitsigns
-    {
-        "lewis6991/gitsigns.nvim",
-        lazy = true,
-        event = { "BufRead" },
-        config = function()
-            require("plugins.config.gitsigns")
-        end
-    },
     -- nvim-cmp
     {
         "hrsh7th/nvim-cmp",
