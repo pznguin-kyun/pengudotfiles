@@ -1,6 +1,5 @@
 # Display settings
 Xft/Antialias 1
-Xft/DPI 122880
 Xft/Hinting 1
 Xft/HintStyle "hintfull"
 Xft/lcdfilter "lcddefault"
