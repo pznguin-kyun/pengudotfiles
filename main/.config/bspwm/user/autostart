@@ -12,9 +12,6 @@ run() {
 # Network Manager Applet
 # run nm-applet
 
-# Polkit
-# run /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-
 # Ibus daemon
 # run ibus-daemon -drx
 
