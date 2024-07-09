@@ -2,7 +2,6 @@
 
 # bootstrap config files
 
-xrdb merge "$HOME"/.Xresources
 "$HOME"/.screenlayout/monitor.sh &
 "$HOME"/.config/bspwm/config/cfg &
 "$HOME"/.config/bspwm/config/rules &
