@@ -1,12 +1,20 @@
 @import "fonts.rasi"
 @import "colors.rasi"
 
+* {
+    background-color: var(background);
+    text-color: var(foreground);
+    foreground-colour: var(foreground);
+}
+
+configuration {
+    show-icons: false;
+}
+
 window {
     width: 25%;
     height: 45%;
     transparency: "real";
-    background-color: var(background);
-    text-color: var(foreground);
     padding: 20px 10px 10px 10px;
 }
 
@@ -19,8 +27,6 @@ inputbar {
 
 prompt {
     font: var(big-font);
-    background-color: var(background);
-    text-color: var(foreground);
 }
 
 dummy {
@@ -33,7 +39,6 @@ mainbox {
 }
 
 listview {
-    background-color: var(background);
     padding: 6px;
     expand: false;
     columns: 1;
@@ -50,8 +55,6 @@ listview {
 element {
     enabled:                     true;
     padding:                     10px;
-    background-color:            var(background);
-    text-color:                  var(foreground);
     cursor:                      pointer;
     border-radius: 0px;
 }

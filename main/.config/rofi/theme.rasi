@@ -1,43 +1,43 @@
 @import "fonts.rasi"
 @import "colors.rasi"
 
+* {
+    background-color: var(background);
+    text-color: var(foreground);
+    foreground-colour: var(foreground);
+}
+
+configuration {
+    show-icons: true;
+}
+
 window {
     width: 25%;
     height: 55%;
     transparency: "real";
-    background-color: var(background);
-    text-color: var(foreground);
     padding: 15px 20px 15px 20px;
 }
 
 inputbar {
-    background-color: var(background);
-    text-color: var(background);
     padding: 10px;
     children: [ "prompt","textbox-prompt-colon","entry"];
 }
 
 prompt {
-    background-color: var(background);
     text-color: var(foreground-alt);
 }
 
 textbox-prompt-colon {
-    background-color: var(background);
     margin:     0px 4px 0px 0px ;
     expand:     false;
     str:        ":";
-    text-color: var(foreground);
 }
 
 mainbox {
-    background-color: var(background);
     children: ["inputbar", "listview", "mode-switcher"];
 }
 
 entry {
-    background-color: var(background);
-    text-color:        var(foreground);
     cursor:            text;
     spacing:           0;
     placeholder-color: Gray;
@@ -45,7 +45,6 @@ entry {
 }
 
 listview {
-    background-color: var(background);
     padding: 6px;
     columns: 1;
     spacing: 1px;
@@ -55,8 +54,6 @@ listview {
 element {
     enabled:                     true;
     padding:                     10px;
-    background-color:            var(background);
-    text-color:                  var(foreground);
     cursor:                      pointer;
     border-radius: 0px;
 }
@@ -68,19 +65,8 @@ element-text {
     text-color:       inherit;
 }
 
-element normal.normal {
-    background-color: var(background);
-    text-color: var(foreground);
-}
-
-element normal.active {
-    background-color: var(background);
-    text-color: var(foreground);
-}
-
-element alternate.normal {
-    background-color: var(background);
-    text-color: var(foreground);
+element-icon {
+    background-color:            transparent;
 }
 
 element selected.normal {
@@ -100,19 +86,15 @@ mode-switcher{
     padding:                     0px;
     border:                      0px solid;
     border-radius:               0px;
-    background-color:            var(background);
-    text-color:                  var(foreground);
 }
 
 button {
     padding:                     5px 10px;
     border:                      0px solid;
-    background-color:            var(background);
     text-color:                  inherit;
     cursor:                      pointer;
 }
 
 button selected {
-    background-color:   var(background);
     text-color:     var(foreground-alt);
 }
