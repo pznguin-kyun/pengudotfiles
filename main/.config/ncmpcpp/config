@@ -41,11 +41,11 @@ startup_screen = "playlist"
 seek_time = 5
 
 # Progress bar
-progressbar_look = "-- "
+progressbar_look = "── "
 progressbar_elapsed_color = "magenta"
 
 # UI Visibility
-header_visibility = "yes"
+header_visibility = "no"
 statusbar_visibility = "yes"
 titles_visibility = "yes"
 enable_window_title = "no"
