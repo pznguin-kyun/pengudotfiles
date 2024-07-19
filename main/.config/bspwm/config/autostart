@@ -29,3 +29,6 @@ run xss-lock -- "$HOME"/.config/bspwm/bin/lockscreen
 
 # mpd
 run mpd
+
+# polkit-gnome
+run /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
