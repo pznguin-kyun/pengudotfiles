@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# penguinRice: p3nguin-kun's auto rice script
+# pengurice: p3nguin-kun's auto rice script
 
 # audio
 # "$HOME"/.config/bspwm/bin/audio
