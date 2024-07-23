@@ -1,5 +1,5 @@
-# penguinDotfiles
-📁 penguinRice's dotfiles
+# pengudotfiles
+📁 pengurice's dotfiles
 
 # Dependencies
 ## Necessary
@@ -22,21 +22,21 @@
 
 # Installation
 ## Auto
-Use [penguinRice](https://github.com/Haruzona/penguinRice) to install automatically
+Use [pengurice](https://github.com/Haruzona/pengurice) to install automatically
 ```
-git clone https://github.com/Haruzona/penguinRice
-cd penguinRice
-./penguinrice-linux.sh
+$ git clone https://github.com/Haruzona/pengurice
+$ cd pengurice
+# ./pengurice.sh
 ```
 
 ## Manual
 - Install all dependencies (and `git` too)
 - Clone dotfiles
 ```
-git clone https://github.com/Haruzona/penguinDotfiles
+$ git clone https://github.com/Haruzona/pengudotfiles
 ```
 - Copy all files to main folder
 ```
-cd penguinDotfiles
-cp -rfT main ~/
+$ cd pengudotfiles
+$ cp -rfT main ~/
 ```
