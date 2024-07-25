@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 run() {
-	if ! pgrep -f "$1" ; then
+	if ! pgrep -fx "$1" ; then
 		"$@"&
 	fi
 }
