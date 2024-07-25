@@ -1,9 +1,9 @@
 [font]
-size = 10
+size = 11
 
 [font.normal]
 family = "monospace"
-style = "Medium"
+style = "Regular"
 
 [font.bold]
 style = "Bold"
