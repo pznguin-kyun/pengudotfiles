@@ -1,1 +1,1 @@
-feh --no-fehbg --bg-tile $HOME/.config/bspwm/color/macaroni/wall/macaroni.png
+feh --no-fehbg --bg-fill $HOME/.config/bspwm/color/macaroni/wall/macaroni.png
