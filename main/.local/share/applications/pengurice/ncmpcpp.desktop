@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=ncmpcpp
+Name=cmus
 Comment=Music Player
 Type=Application
-Exec=ncmpcpp
+Exec=cmus
 Terminal=true
 Categories=media;music;player;
