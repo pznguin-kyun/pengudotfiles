@@ -10,15 +10,14 @@
 - `polybar`: Bar
 - `rofi`: Launcher
 - `curl`: for some stuffs
-- `Roboto`, `Fira Code`: Fonts
+- `Noto Sans`, `IBM Plex Mono`: Fonts
 
 ## Other
 - `ranger`: File manager
-- `mpd`, `ncmpcpp`: Music player
+- `cmus`: Music player
 - `neofetch`: Fetch
 - `neovim`: Text editor
 - `htop`: System monitor
-- `newsboat`: News reader
 
 # Installation
 ## Auto
