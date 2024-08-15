@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
+config() { bspc config "$@" }
+
 # decoration
+# usage: config [argument]
 
 bspc config normal_border_color "#242424"
 bspc config focused_border_color "#ff4343"

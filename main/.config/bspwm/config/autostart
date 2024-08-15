@@ -1,34 +1,34 @@
 #!/usr/bin/env bash
 
-run() {
+autostart() {
 	if ! pgrep -fx "$1" ; then
 		"$@"&
 	fi
 }
 
 # autostart
-# usage: run [command]
+# usage: autostart [command]
 
 # xsettingsd
-run xsettingsd
+autostart xsettingsd
 
 # wallpaper
-run "$HOME"/.fehbg
+autostart "$HOME"/.fehbg
 
 # polybar
-run "$HOME"/.config/polybar/launch
+autostart "$HOME"/.config/polybar/launch
 
 # notification
-run dunst
+autostart dunst
 
 # compositor
-run picom
+autostart picom
 
 # autolock
-run xss-lock -- "$HOME"/.config/bspwm/bin/lockscreen
+autostart xss-lock -- "$HOME"/.config/bspwm/bin/lockscreen
 
 # mpd
-run mpd
+autostart mpd
 
 # polkit-gnome
-run /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+autostart /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
