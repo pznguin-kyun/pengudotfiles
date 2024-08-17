@@ -8,7 +8,7 @@ bsp_color=macaroni
 # gaps (default: 5)
 bsp_gaps=5
 
-# window border (default: 3)
+# window border (default: 5)
 bsp_border=5
 
 # split ratio (default: 0.5)
