@@ -21,9 +21,9 @@
 
 # Installation
 ## Auto
-Use [pengurice](https://github.com/p3nguin-kun/pengurice) to install automatically
+Use [pengurice](https://github.com/pznguin-kyun/pengurice) to install automatically
 ```
-$ git clone https://github.com/p3nguin-kun/pengurice
+$ git clone https://github.com/pznguin-kyun/pengurice
 $ cd pengurice
 # ./pengurice.sh
 ```
@@ -32,7 +32,7 @@ $ cd pengurice
 - Install all dependencies (and `git` too)
 - Clone dotfiles
 ```
-$ git clone https://github.com/p3nguin-kun/pengudotfiles
+$ git clone https://github.com/pznguin-kyun/pengudotfiles
 ```
 - Copy all files to main folder
 ```
